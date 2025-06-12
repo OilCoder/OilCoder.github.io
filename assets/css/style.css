@@ -1,18 +1,20 @@
 :root {
-    --primary-blue: #1e3a8a;
-    --secondary-blue: #3b82f6;
-    --light-blue: #dbeafe;
-    --accent-yellow: #f59e0b;
-    --light-yellow: #fef3c7;
-    --dark-navy: #0f172a;
-    --text-dark: #1e293b;
-    --text-light: #64748b;
+    --primary-navy: #0C2840;
+    --secondary-blue: #1e3a5f;
+    --light-blue: #e6f1ff;
+    --accent-gold: #D9985F;
+    --dark-gold: #733703;
+    --medium-gold: #BF7534;
+    --light-gold: #f4e6d3;
+    --deep-black: #0D0D0D;
+    --text-dark: #1a1a1a;
+    --text-light: #666666;
     --white: #ffffff;
     --light-gray: #f8fafc;
     --border-gray: #e2e8f0;
     --transition: all 0.3s ease;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 6px -1px rgba(12, 40, 64, 0.1), 0 2px 4px -1px rgba(12, 40, 64, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(12, 40, 64, 0.1), 0 4px 6px -2px rgba(12, 40, 64, 0.05);
 }
 
 * {
@@ -36,7 +38,7 @@ body {
 
 /* Header & Navigation */
 header {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 100%);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -67,14 +69,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: var(--accent-yellow);
-    color: var(--primary-blue);
+    background-color: var(--accent-gold);
+    color: var(--primary-navy);
     transform: translateY(-2px);
 }
 
 /* Hero Section */
 #hero {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 50%, var(--accent-yellow) 100%);
+    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--secondary-blue) 30%, var(--medium-gold) 70%, var(--accent-gold) 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -92,7 +94,7 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(30, 58, 138, 0.8);
+    background: rgba(12, 40, 64, 0.85);
     z-index: 1;
 }
 
@@ -111,7 +113,7 @@ nav ul li a:hover {
 #hero h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: var(--light-yellow);
+    color: var(--light-gold);
     font-weight: 400;
 }
 
@@ -145,7 +147,7 @@ nav ul li a:hover {
 }
 
 .social-links a:hover {
-    color: var(--accent-yellow);
+    color: var(--accent-gold);
     transform: translateY(-3px) scale(1.1);
 }
 
@@ -154,8 +156,8 @@ nav ul li a:hover {
 }
 
 .btn-download {
-    background: var(--accent-yellow);
-    color: var(--primary-blue);
+    background: var(--accent-gold);
+    color: var(--primary-navy);
     padding: 1rem 2rem;
     border-radius: 50px;
     text-decoration: none;
@@ -167,7 +169,7 @@ nav ul li a:hover {
 }
 
 .btn-download:hover {
-    background: var(--light-yellow);
+    background: var(--light-gold);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -184,7 +186,7 @@ section:nth-child(even) {
 h2 {
     text-align: center;
     margin-bottom: 3rem;
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     font-size: 2.5rem;
     font-weight: 700;
     position: relative;
@@ -198,7 +200,7 @@ h2::after {
     transform: translateX(-50%);
     width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, var(--accent-yellow), var(--secondary-blue));
+    background: linear-gradient(90deg, var(--accent-gold), var(--medium-gold));
     border-radius: 2px;
 }
 
@@ -217,6 +219,7 @@ h2::after {
     border-radius: 15px;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    border-top: 4px solid var(--accent-gold);
 }
 
 .highlight-item:hover {
@@ -226,12 +229,12 @@ h2::after {
 
 .highlight-item i {
     font-size: 3rem;
-    color: var(--accent-yellow);
+    color: var(--medium-gold);
     margin-bottom: 1rem;
 }
 
 .highlight-item h3 {
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     margin-bottom: 0.5rem;
 }
 
@@ -248,7 +251,7 @@ h2::after {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
-    border-left: 5px solid var(--accent-yellow);
+    border-left: 5px solid var(--accent-gold);
     transition: var(--transition);
 }
 
@@ -258,13 +261,13 @@ h2::after {
 }
 
 .education-item h3 {
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
 }
 
 .education-item h4 {
-    color: var(--secondary-blue);
+    color: var(--medium-gold);
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -279,7 +282,7 @@ h2::after {
 }
 
 .languages h3 {
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     text-align: center;
     margin-bottom: 1.5rem;
 }
@@ -297,8 +300,8 @@ h2::after {
 }
 
 .level {
-    background: var(--light-yellow);
-    color: var(--primary-blue);
+    background: var(--light-gold);
+    color: var(--dark-gold);
     padding: 0.3rem 0.8rem;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -319,7 +322,7 @@ h2::after {
     transform: translateX(-50%);
     width: 4px;
     height: 100%;
-    background: linear-gradient(180deg, var(--secondary-blue), var(--accent-yellow));
+    background: linear-gradient(180deg, var(--primary-navy), var(--accent-gold));
     border-radius: 2px;
 }
 
@@ -339,8 +342,8 @@ h2::after {
 
 .timeline-date {
     flex: 0 0 120px;
-    background: var(--accent-yellow);
-    color: var(--primary-blue);
+    background: var(--accent-gold);
+    color: var(--primary-navy);
     padding: 0.8rem;
     border-radius: 25px;
     text-align: center;
@@ -356,7 +359,7 @@ h2::after {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
-    border-left: 5px solid var(--secondary-blue);
+    border-left: 5px solid var(--medium-gold);
     transition: var(--transition);
 }
 
@@ -366,13 +369,13 @@ h2::after {
 }
 
 .timeline-content h3 {
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     margin-bottom: 0.5rem;
     font-size: 1.4rem;
 }
 
 .timeline-content h4 {
-    color: var(--secondary-blue);
+    color: var(--medium-gold);
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -392,7 +395,7 @@ h2::after {
     content: '▶';
     position: absolute;
     left: 0;
-    color: var(--accent-yellow);
+    color: var(--accent-gold);
     font-size: 0.8rem;
 }
 
@@ -410,7 +413,7 @@ h2::after {
     border-radius: 20px;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    border-top: 5px solid var(--accent-yellow);
+    border-top: 5px solid var(--accent-gold);
     position: relative;
     overflow: hidden;
 }
@@ -422,7 +425,7 @@ h2::after {
     left: 0;
     right: 0;
     height: 5px;
-    background: linear-gradient(90deg, var(--accent-yellow), var(--secondary-blue));
+    background: linear-gradient(90deg, var(--accent-gold), var(--medium-gold));
 }
 
 .project-card:hover {
@@ -437,17 +440,17 @@ h2::after {
 
 .project-icon i {
     font-size: 3rem;
-    color: var(--secondary-blue);
+    color: var(--primary-navy);
 }
 
 .project-card h3 {
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     margin-bottom: 0.5rem;
     font-size: 1.4rem;
 }
 
 .project-date {
-    color: var(--accent-yellow);
+    color: var(--dark-gold);
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 0.9rem;
@@ -460,7 +463,7 @@ h2::after {
 .achievement {
     display: inline-block;
     background: var(--light-blue);
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     padding: 0.4rem 0.8rem;
     border-radius: 15px;
     font-size: 0.85rem;
@@ -474,14 +477,14 @@ h2::after {
 
 .tech-stack span {
     display: inline-block;
-    background: var(--light-yellow);
-    color: var(--primary-blue);
+    background: var(--light-gold);
+    color: var(--dark-gold);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
     font-size: 0.85rem;
     margin: 0.3rem;
     font-weight: 500;
-    border: 1px solid var(--accent-yellow);
+    border: 1px solid var(--accent-gold);
 }
 
 /* Skills Section */
@@ -497,6 +500,7 @@ h2::after {
     border-radius: 15px;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    border-top: 4px solid var(--accent-gold);
 }
 
 .skill-category:hover {
@@ -505,7 +509,7 @@ h2::after {
 }
 
 .skill-category h3 {
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     display: flex;
@@ -514,7 +518,7 @@ h2::after {
 }
 
 .skill-category h3 i {
-    color: var(--accent-yellow);
+    color: var(--medium-gold);
 }
 
 .skill-list {
@@ -525,7 +529,7 @@ h2::after {
 
 .skill-list span {
     background: var(--light-blue);
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     padding: 0.5rem 1rem;
     border-radius: 25px;
     font-size: 0.9rem;
@@ -534,7 +538,7 @@ h2::after {
 }
 
 .skill-list span:hover {
-    background: var(--accent-yellow);
+    background: var(--accent-gold);
     color: var(--white);
     transform: scale(1.05);
 }
@@ -553,11 +557,12 @@ h2::after {
     padding: 2rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
+    border-top: 4px solid var(--accent-gold);
 }
 
 .contact-info h3,
 .social-links h3 {
-    color: var(--primary-blue);
+    color: var(--primary-navy);
     margin-bottom: 1.5rem;
 }
 
@@ -567,13 +572,13 @@ h2::after {
 }
 
 .contact-info i {
-    color: var(--accent-yellow);
+    color: var(--accent-gold);
     margin-right: 0.5rem;
 }
 
 .social-links a {
     display: block;
-    color: var(--secondary-blue);
+    color: var(--primary-navy);
     text-decoration: none;
     margin: 1rem 0;
     font-size: 1.1rem;
@@ -581,13 +586,13 @@ h2::after {
 }
 
 .social-links a:hover {
-    color: var(--accent-yellow);
+    color: var(--medium-gold);
     transform: translateX(5px);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, var(--dark-navy) 0%, var(--primary-blue) 100%);
+    background: linear-gradient(135deg, var(--deep-black) 0%, var(--primary-navy) 100%);
     color: var(--white);
     text-align: center;
     padding: 2rem 0;
