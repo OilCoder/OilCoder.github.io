@@ -171,6 +171,12 @@ header {
     border-radius: 1px;
 }
 
+.lang-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--bg);
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
