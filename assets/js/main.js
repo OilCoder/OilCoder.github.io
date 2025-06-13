@@ -41,7 +41,7 @@ function initializeLanguage() {
 async function loadContent(language) {
     try {
         console.log('Loading content for language:', language);
-        const response = await fetch(`assets/data/content-${language}.json`);
+        const response = await fetch(`assets/data/content-${language}.json?v=2.0.0`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
