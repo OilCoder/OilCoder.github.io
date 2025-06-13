@@ -1,0 +1,231 @@
+{
+    "project": {
+        "id": "kansas-petrophysical-analysis",
+        "title": "Neural Network Pipeline para Análisis Petrofísico",
+        "subtitle": "Pipeline avanzado de Machine Learning para análisis y predicción de propiedades petrofísicas a partir de registros de pozos",
+        "status": "Completado",
+        "duration": "2023 - Presente",
+        "category": "Machine Learning & Petrofísica",
+        "github_url": "https://github.com/OilCoder/Kansas",
+        "demo_url": null,
+        "documentation_url": "https://github.com/OilCoder/Kansas/tree/main/docs/Spanish"
+    },
+    "overview": {
+        "problem": "La industria del petróleo y gas requiere análisis precisos de propiedades petrofísicas para optimizar la exploración y producción. Los métodos tradicionales son lentos y propensos a errores humanos.",
+        "solution": "Pipeline completo de redes neuronales que automatiza el procesamiento de archivos LAS, genera características petrofísicas avanzadas y produce modelos predictivos robustos para la industria.",
+        "impact": "Automatización completa del análisis petrofísico con validación rigurosa y modelos listos para producción."
+    },
+    "technical_highlights": [
+        {
+            "icon": "fas fa-brain",
+            "title": "Redes Neuronales Avanzadas",
+            "description": "Arquitecturas optimizadas con GPU RTX 4080, entrenamiento de precisión mixta y algoritmos de optimización bayesiana para máximo rendimiento."
+        },
+        {
+            "icon": "fas fa-cogs",
+            "title": "Pipeline Automatizado",
+            "description": "Procesamiento completo desde archivos LAS crudos hasta modelos desplegables, incluyendo ingeniería de características y validación cruzada."
+        },
+        {
+            "icon": "fas fa-chart-line",
+            "title": "Validación Rigurosa",
+            "description": "Validación cruzada K-fold con métricas compuestas, evaluación de estabilidad y control de calidad automatizado."
+        },
+        {
+            "icon": "fas fa-docker",
+            "title": "Entorno Containerizado",
+            "description": "Desarrollo con Docker y dev containers, soporte completo para GPU NVIDIA y frameworks TensorFlow/RAPIDS."
+        }
+    ],
+    "methodology": {
+        "title": "Pipeline de 8 Pasos",
+        "description": "Metodología completa desde datos crudos hasta modelos de producción",
+        "steps": [
+            {
+                "number": 1,
+                "title": "Análisis Exploratorio",
+                "description": "EDA completo de archivos LAS con visualización de curvas y detección de anomalías"
+            },
+            {
+                "number": 2,
+                "title": "Ingeniería de Características",
+                "description": "Generación de características petrofísicas avanzadas desde registros crudos"
+            },
+            {
+                "number": 3,
+                "title": "Normalización",
+                "description": "Estrategias de normalización por pozo y global para optimizar el entrenamiento"
+            },
+            {
+                "number": 4,
+                "title": "Optimización Hiperparámetros",
+                "description": "Búsqueda bayesiana con Optuna para arquitecturas y parámetros óptimos"
+            },
+            {
+                "number": 5,
+                "title": "Validación Cruzada",
+                "description": "Validación K-fold rigurosa con métricas compuestas y evaluación de estabilidad"
+            },
+            {
+                "number": 6,
+                "title": "Entrenamiento Final",
+                "description": "Entrenamiento de producción con mejores hiperparámetros y datos completos"
+            },
+            {
+                "number": 7,
+                "title": "Evaluación Modelo",
+                "description": "Evaluación exhaustiva con métricas múltiples y visualizaciones por pozo"
+            },
+            {
+                "number": 8,
+                "title": "Despliegue",
+                "description": "Empaquetado completo del modelo con escaladores y transformadores"
+            }
+        ]
+    },
+    "technologies": [
+        {
+            "icon": "fab fa-python",
+            "name": "Python",
+            "description": "Lenguaje principal del pipeline"
+        },
+        {
+            "icon": "fas fa-brain",
+            "name": "TensorFlow",
+            "description": "Framework de deep learning"
+        },
+        {
+            "icon": "fas fa-chart-bar",
+            "name": "RAPIDS",
+            "description": "Procesamiento GPU acelerado"
+        },
+        {
+            "icon": "fab fa-docker",
+            "name": "Docker",
+            "description": "Containerización y despliegue"
+        },
+        {
+            "icon": "fas fa-microchip",
+            "name": "CUDA",
+            "description": "Computación GPU NVIDIA"
+        },
+        {
+            "icon": "fas fa-search",
+            "name": "Optuna",
+            "description": "Optimización hiperparámetros"
+        },
+        {
+            "icon": "fas fa-chart-line",
+            "name": "Pandas",
+            "description": "Manipulación de datos"
+        },
+        {
+            "icon": "fas fa-eye",
+            "name": "Matplotlib",
+            "description": "Visualización científica"
+        }
+    ],
+    "results": [
+        {
+            "number": "8",
+            "label": "Pasos del Pipeline",
+            "description": "Metodología completa automatizada"
+        },
+        {
+            "number": "100%",
+            "label": "Automatización",
+            "description": "Proceso completamente automatizado"
+        },
+        {
+            "number": "GPU",
+            "label": "Aceleración",
+            "description": "Optimizado para RTX 4080"
+        },
+        {
+            "number": "K-Fold",
+            "label": "Validación",
+            "description": "Validación cruzada rigurosa"
+        }
+    ],
+    "documentation": [
+        {
+            "icon": "fas fa-search",
+            "title": "00_Metodología",
+            "description": "Análisis Exploratorio de Datos (EDA)",
+            "url": "https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/00_Metodologia_Analisis_Petrofisico.md"
+        },
+        {
+            "icon": "fas fa-project-diagram",
+            "title": "01_Pipeline Completo",
+            "description": "Pipeline completo de redes neuronales",
+            "url": "https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/01_Pipeline_Neural_Network_Completo.md"
+        },
+        {
+            "icon": "fas fa-cogs",
+            "title": "02_Ingeniería de Características",
+            "description": "De registros crudos a características predictivas",
+            "url": "https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/02_Ingeniería%20de%20Características%20Petrofísicas%20De%20Registros%20Crudos%20a%20Características%20Predictivas.md"
+        },
+        {
+            "icon": "fas fa-balance-scale",
+            "title": "03_Normalización",
+            "description": "Normalización en procesamiento petrofísico",
+            "url": "https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/03_Normalización%20en%20el%20procesamiento%20de%20datos%20petrofísicos.md"
+        },
+        {
+            "icon": "fas fa-sliders-h",
+            "title": "04_Optimización Hiperparámetros",
+            "description": "Exploración inicial con Optuna",
+            "url": "https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/04_Exploracion_Inicial_Hyperparametros_Optuna.md"
+        },
+        {
+            "icon": "fas fa-check-double",
+            "title": "05_Validación Cruzada",
+            "description": "Validación rigurosa cross-validation",
+            "url": "https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/05_Validacion_Rigurosa_Cross_Validation.md"
+        },
+        {
+            "icon": "fas fa-rocket",
+            "title": "06_Entrenamiento Final",
+            "description": "Entrenamiento final para producción",
+            "url": "https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/06_Entrenamiento_Final_Produccion.md"
+        }
+    ],
+    "features": [
+        "Procesamiento automatizado de archivos LAS",
+        "Ingeniería de características petrofísicas avanzadas",
+        "Optimización bayesiana de hiperparámetros",
+        "Validación cruzada K-fold rigurosa",
+        "Entrenamiento con precisión mixta GPU",
+        "Modelos multi-tarea (regresión y clasificación)",
+        "Pipeline completo de producción",
+        "Visualizaciones científicas automatizadas",
+        "Containerización con Docker",
+        "Documentación técnica completa"
+    ],
+    "challenges": [
+        {
+            "challenge": "Procesamiento de grandes volúmenes de datos LAS",
+            "solution": "Implementación de procesamiento GPU acelerado con RAPIDS y optimización de memoria"
+        },
+        {
+            "challenge": "Variabilidad entre pozos y formaciones geológicas",
+            "solution": "Estrategias de normalización adaptativas y validación cruzada por grupos"
+        },
+        {
+            "challenge": "Optimización de arquitecturas de redes neuronales",
+            "solution": "Búsqueda bayesiana automatizada con Optuna y métricas compuestas"
+        },
+        {
+            "challenge": "Validación rigurosa para entornos de producción",
+            "solution": "Validación cruzada K-fold con evaluación de estabilidad y control de calidad"
+        }
+    ],
+    "future_work": [
+        "Implementación de modelos transformer para secuencias temporales",
+        "Integración con datos sísmicos y geológicos adicionales",
+        "Desarrollo de API REST para despliegue en la nube",
+        "Extensión a análisis de múltiples campos petrolíferos",
+        "Implementación de técnicas de aprendizaje federado"
+    ]
+}

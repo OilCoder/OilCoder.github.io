@@ -330,14 +330,30 @@ function updateProjects() {
 
             if (githubLink && project.github) {
                 githubLink.href = project.github;
+                githubLink.target = '_blank';
+                githubLink.rel = 'noopener noreferrer';
                 githubLink.style.display = 'flex';
+
+                // Remove any existing click handlers and add new one
+                githubLink.onclick = function (e) {
+                    e.preventDefault();
+                    window.open(project.github, '_blank', 'noopener,noreferrer');
+                };
             } else if (githubLink) {
                 githubLink.style.display = 'none';
             }
 
             if (demoLink && project.demo && project.demo !== '#') {
                 demoLink.href = project.demo;
+                demoLink.target = '_blank';
+                demoLink.rel = 'noopener noreferrer';
                 demoLink.style.display = 'flex';
+
+                // Remove any existing click handlers and add new one
+                demoLink.onclick = function (e) {
+                    e.preventDefault();
+                    window.open(project.demo, '_blank', 'noopener,noreferrer');
+                };
             } else if (demoLink) {
                 demoLink.style.display = 'none';
             }

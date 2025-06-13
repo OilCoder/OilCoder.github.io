@@ -143,19 +143,21 @@
                 "icon": "fas fa-chart-line",
                 "title": "Petrophysical Analysis and Synthetic Log Prediction",
                 "period": "2023 – Present",
-                "description": "Led the development of a predictive model for synthetic curves in well logs, applying machine learning and artificial intelligence. Implemented advanced techniques of SVM, decision trees and deep learning.",
+                "description": "Complete Machine Learning pipeline for analysis and prediction of petrophysical properties from well logs. Implemented optimized neural networks, rigorous validation, and GPU-accelerated processing.",
                 "achievements": [
-                    "5x accuracy improvement",
-                    "Significant RMSE reduction",
-                    "R² increase"
+                    "8-step automated pipeline",
+                    "Bayesian optimization with Optuna",
+                    "Rigorous K-fold cross-validation"
                 ],
                 "technologies": [
                     "Python",
-                    "Scikit-learn",
-                    "Deep Learning",
-                    "SVM",
-                    "ipywidgets"
-                ]
+                    "TensorFlow",
+                    "RAPIDS",
+                    "Docker",
+                    "Optuna"
+                ],
+                "github": "https://github.com/OilCoder/Kansas",
+                "demo": "projects/petrophysical-analysis.html"
             },
             {
                 "icon": "fas fa-tint",
