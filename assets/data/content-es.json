@@ -1,0 +1,250 @@
+{
+    "meta": {
+        "title": "Carlos Andrés Esquivel - Ingeniero de Petróleos | IA & ML",
+        "lang": "es"
+    },
+    "navigation": {
+        "about": "Sobre Mí",
+        "education": "Educación",
+        "experience": "Experiencia",
+        "projects": "Proyectos",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "name": "Carlos Andrés Esquivel Plazas",
+        "title": "Ingeniero de Petróleos | IA & Machine Learning",
+        "objective": "Ingeniero de petróleos con sólida experiencia en operaciones de campo y en el uso de inteligencia artificial para la caracterización de yacimientos, buscando oportunidades para aplicar soluciones tecnológicas avanzadas en el área de petrofísica.",
+        "contact": {
+            "phone": "+1 (929) 340 8548",
+            "email": "carlos.esquivel000@gmail.com",
+            "location": "Nueva York, USA"
+        },
+        "downloadCV": "Descargar CV"
+    },
+    "about": {
+        "title": "Perfil Profesional",
+        "description": "Ingeniero de petróleos con experiencia en wireline, pruebas de pozos y análisis de datos del subsuelo, complementada con habilidades avanzadas en ciencia de datos, machine learning y deep learning. He liderado proyectos innovadores que aplican inteligencia artificial, como redes neuronales profundas y modelos generativos, para la predicción de curvas sintéticas de registros de pozos, superando las expectativas con análisis precisos y eficientes. Experto en Python, MATLAB y frameworks de IA, aporto soluciones tecnológicas que optimizan las operaciones en la industria del petróleo y gas.",
+        "highlights": [
+            {
+                "icon": "fas fa-brain",
+                "title": "Aprendizaje Rápido",
+                "description": "Software y procedimientos"
+            },
+            {
+                "icon": "fas fa-tools",
+                "title": "Resolución de Problemas",
+                "description": "Técnicos y complejos"
+            },
+            {
+                "icon": "fas fa-project-diagram",
+                "title": "Gestión de Proyectos",
+                "description": "Técnicos e innovadores"
+            }
+        ]
+    },
+    "education": {
+        "title": "Educación",
+        "items": [
+            {
+                "institution": "Universidad Surcolombiana",
+                "degree": "Ingeniero de Petróleos",
+                "details": "Matrícula profesional 6677"
+            },
+            {
+                "institution": "Carrera de Inteligencia Artificial y Machine Learning",
+                "degree": "Platzi | Junio 2020",
+                "details": "Técnicas avanzadas de ML e IA, Deep Learning, redes neuronales y algoritmos de clustering aplicados a la industria petrolera."
+            },
+            {
+                "institution": "Platzi English Academy",
+                "degree": "Platzi | Julio 2020",
+                "details": "Uso avanzado del inglés para comunicación efectiva en ambientes multiculturales y profesionales."
+            }
+        ],
+        "languages": {
+            "title": "Idiomas",
+            "items": [
+                {
+                    "language": "Español",
+                    "level": "Nativo"
+                },
+                {
+                    "language": "English",
+                    "level": "Intermedio / Avanzado"
+                }
+            ]
+        }
+    },
+    "experience": {
+        "title": "Experiencia Profesional",
+        "items": [
+            {
+                "period": "2020 - 2023",
+                "position": "Coordinador de Equipos y Operaciones",
+                "company": "Ribalta NYC (Top 50 Pizza USA)",
+                "responsibilities": [
+                    "Coordiné flujos de trabajo en tres áreas especializadas: Área caliente, Barra fría y Pizzería",
+                    "Optimicé la entrega de platos a más de 400 comensales diarios en horas pico",
+                    "Reduje los tiempos de entrega de las órdenes de 10-20 minutos a 5-10 minutos",
+                    "Mejoré habilidades de liderazgo gestionando equipos bilingües en ambiente de alta presión"
+                ]
+            },
+            {
+                "period": "2018 - 2020",
+                "position": "Ingeniero de Automatización",
+                "company": "Luna Company S.A.S",
+                "responsibilities": [
+                    "Desarrollé modelo de visión por computadora para reconocimiento automático de herramientas",
+                    "Reduje el tiempo de elaboración de reportes en un 40%",
+                    "Implementé solución en Python utilizando frameworks de visión artificial",
+                    "Optimicé flujos de trabajo y reduje errores del procesamiento manual"
+                ]
+            },
+            {
+                "period": "2015 - 2016",
+                "position": "Analista de Datos y Administrador de Base de Datos",
+                "company": "Maxim & Fishing S.A.S.",
+                "responsibilities": [
+                    "Preparé y compilé datos para reportes de desarrollo estratégico del negocio",
+                    "Diseñé bases de datos en Excel y SQL, modelé datos utilizando MATLAB",
+                    "Automaticé procesos de almacenamiento y recuperación de datos",
+                    "Optimicé gestión documental de archivos físicos y electrónicos"
+                ]
+            },
+            {
+                "period": "2014 - 2015",
+                "position": "Ingeniero de Operaciones Wireline",
+                "company": "Maxim & Fishing S.A.S.",
+                "responsibilities": [
+                    "Realicé operaciones de wireline y well testing",
+                    "Gestioné pruebas de presión y temperatura (declinación/restauración, inyección e interferencia)",
+                    "Supervisé pruebas de campo para asegurar integridad y calidad de datos",
+                    "Mejoré confiabilidad de registros memorizados garantizando resultados precisos"
+                ]
+            },
+            {
+                "period": "2013 - 2014",
+                "position": "Analista de Operaciones",
+                "company": "Maxim & Fishing S.A.S.",
+                "responsibilities": [
+                    "Proporcioné apoyo operativo y analítico asegurando cumplimiento de QHSE",
+                    "Evalué procesos operativos para implementar sistema de gestión integrada",
+                    "Apliqué mejoras en procedimientos para optimizar tiempos de ejecución",
+                    "Garanticé cumplimiento de estándares de calidad"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Proyectos Destacados",
+        "items": [
+            {
+                "icon": "fas fa-chart-line",
+                "title": "Análisis Petrofísico y Predicción de Registros Sintéticos",
+                "period": "2023 – Presente",
+                "description": "Lideré el desarrollo de un modelo predictivo para curvas sintéticas en registros de pozos, aplicando machine learning e inteligencia artificial. Implementé técnicas avanzadas de SVM, árboles de decisión y deep learning.",
+                "achievements": [
+                    "5x mejora en precisión",
+                    "Reducción significativa de RMSE",
+                    "Aumento del R²"
+                ],
+                "technologies": [
+                    "Python",
+                    "Scikit-learn",
+                    "Deep Learning",
+                    "SVM",
+                    "ipywidgets"
+                ]
+            },
+            {
+                "icon": "fas fa-tint",
+                "title": "Efecto de Empuje por Intrusión de Agua",
+                "period": "2016 – 2018",
+                "description": "Desarrollé un software para detectar la intrusión de agua en yacimientos con actividad hidráulica, mejorando la precisión de los cálculos de OOIP y área de drenaje del pozo.",
+                "achievements": [
+                    "Algoritmos personalizados",
+                    "Análisis preciso de flujo",
+                    "Mejora en cálculos OOIP"
+                ],
+                "technologies": [
+                    "MATLAB",
+                    "Algoritmos Personalizados",
+                    "Well Testing",
+                    "Análisis de Flujo"
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "title": "Habilidades y Tecnologías",
+        "categories": [
+            {
+                "icon": "fas fa-heart",
+                "title": "Habilidades Blandas",
+                "items": [
+                    "Liderazgo",
+                    "Comunicación Efectiva",
+                    "Adaptabilidad",
+                    "Trabajo en Equipo",
+                    "Pensamiento Crítico",
+                    "Resolución de Problemas",
+                    "Toma de Decisiones"
+                ]
+            },
+            {
+                "icon": "fas fa-code",
+                "title": "Lenguajes de Programación",
+                "items": [
+                    "Python",
+                    "MATLAB",
+                    "SQL"
+                ]
+            },
+            {
+                "icon": "fas fa-robot",
+                "title": "Frameworks IA y Análisis de Datos",
+                "items": [
+                    "TensorFlow",
+                    "Keras",
+                    "Scikit-learn",
+                    "Pandas",
+                    "NumPy",
+                    "Matplotlib",
+                    "Seaborn",
+                    "PyTorch",
+                    "Plotly"
+                ]
+            },
+            {
+                "icon": "fas fa-tools",
+                "title": "Software y Herramientas Técnicas",
+                "items": [
+                    "F.A.S.T. WellTest™",
+                    "LogView++",
+                    "OpenWells",
+                    "Git",
+                    "Microsoft Power BI",
+                    "Jupyter Notebooks"
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contacto",
+        "info": {
+            "title": "Información de Contacto",
+            "phone": "+1 (929) 340 8548",
+            "email": "carlos.esquivel000@gmail.com",
+            "location": "Nueva York, USA"
+        },
+        "social": {
+            "title": "Redes Sociales",
+            "linkedin": "LinkedIn",
+            "github": "GitHub"
+        }
+    },
+    "footer": {
+        "copyright": "© 2024 Carlos Andrés Esquivel Plazas. Todos los derechos reservados."
+    }
+}
