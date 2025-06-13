@@ -1,0 +1,36 @@
+{
+    "name": "oilcoder-portfolio",
+    "version": "2.0.0",
+    "description": "Portfolio website for Carlos Andrés Esquivel - Petroleum Engineer specialized in AI & ML",
+    "main": "index.html",
+    "scripts": {
+        "lint:html": "htmlhint **/*.html",
+        "lint:css": "stylelint assets/css/**/*.css",
+        "lint:js": "eslint assets/js/**/*.js",
+        "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+        "serve": "python3 -m http.server 8000",
+        "build": "echo 'Static site - no build process required'",
+        "deploy": "git add . && git commit -m 'Update site' && git push origin main"
+    },
+    "keywords": [
+        "portfolio",
+        "cv",
+        "petroleum-engineer",
+        "ai",
+        "machine-learning",
+        "data-science"
+    ],
+    "author": "Carlos Andrés Esquivel Plazas <carlos.esquivel000@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "htmlhint": "^1.1.4",
+        "stylelint": "^15.10.3",
+        "stylelint-config-standard": "^34.0.0",
+        "eslint": "^8.48.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OilCoder/OilCoder.github.io.git"
+    },
+    "homepage": "https://oilcoder.github.io"
+}
