@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loadContent(currentLanguage);
     initializeLanguageSelector();
     initializeMobileMenu();
+    initializeSkillsCarousel();
 });
 
 /**
@@ -611,4 +612,118 @@ function updateThemeIcon(theme) {
             }
         }
     }
+}
+
+/**
+ * Inicializa el carrusel de habilidades
+ */
+function initializeSkillsCarousel() {
+    const carousel = document.getElementById('skillsCarousel');
+    const prevBtn = document.getElementById('skillsPrev');
+    const nextBtn = document.getElementById('skillsNext');
+    const indicators = document.querySelectorAll('.indicator');
+
+    let currentSlide = 0;
+    const totalSlides = document.querySelectorAll('.skill-card').length;
+
+    if (!carousel || !prevBtn || !nextBtn) return;
+
+    /**
+     * Actualiza la posición del carrusel
+     * @param {number} slideIndex - Índice del slide a mostrar
+     */
+    function updateCarousel(slideIndex) {
+        const translateX = -slideIndex * 100;
+        carousel.style.transform = `translateX(${translateX}%)`;
+
+        // Actualizar indicadores
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === slideIndex);
+        });
+
+        currentSlide = slideIndex;
+    }
+
+    /**
+     * Ir al siguiente slide
+     */
+    function nextSlide() {
+        const nextIndex = (currentSlide + 1) % totalSlides;
+        updateCarousel(nextIndex);
+    }
+
+    /**
+     * Ir al slide anterior
+     */
+    function prevSlide() {
+        const prevIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateCarousel(prevIndex);
+    }
+
+    // Event listeners para botones
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Event listeners para indicadores
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            updateCarousel(index);
+        });
+    });
+
+    // Auto-play del carrusel (opcional)
+    let autoPlayInterval;
+
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 5000); // Cambiar cada 5 segundos
+    }
+
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+
+    // Iniciar auto-play
+    startAutoPlay();
+
+    // Pausar auto-play al hacer hover
+    const carouselContainer = document.querySelector('.skills-carousel-container');
+    if (carouselContainer) {
+        carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+        carouselContainer.addEventListener('mouseleave', startAutoPlay);
+    }
+
+    // Soporte para gestos táctiles en móviles
+    let startX = 0;
+    let endX = 0;
+
+    carousel.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    carousel.addEventListener('touchend', (e) => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = startX - endX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                nextSlide(); // Swipe left - next slide
+            } else {
+                prevSlide(); // Swipe right - previous slide
+            }
+        }
+    }
+
+    // Soporte para teclado
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+        }
+    });
 } 

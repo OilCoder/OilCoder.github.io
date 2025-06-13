@@ -692,60 +692,149 @@ h2::after {
     color: var(--bg);
 }
 
-/* Skills */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+/* Skills Carousel */
+.skills-carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    overflow: hidden;
 }
 
-.skill-category {
+.skills-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 2rem;
+}
+
+.skill-card {
+    min-width: 100%;
     background: var(--bg);
     border: 1px solid var(--border);
-    padding: 2rem;
-    border-radius: 15px;
+    border-radius: 20px;
+    padding: 3rem;
     box-shadow: var(--shadow);
     transition: var(--transition);
 }
 
-.skill-category:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.skill-category h3 {
+.skill-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.skill-category-icon {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.skill-header h3 {
     color: var(--text);
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.skill-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-}
-
-.skill-category h3 i {
-    color: var(--accent);
-}
-
-.skill-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.skill-list span {
+    gap: 1rem;
     background: var(--bg-alt);
-    color: var(--text);
-    padding: 0.4rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
     border: 1px solid var(--border);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.skill-item:hover {
+    background: var(--accent);
+    color: var(--bg);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item i {
+    font-size: 1.5rem;
+    color: var(--accent);
+    min-width: 24px;
+    text-align: center;
+}
+
+.skill-item:hover i {
+    color: var(--bg);
+}
+
+.skill-item span {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Carousel Controls */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 10;
+    box-shadow: var(--shadow);
+}
+
+.carousel-btn:hover {
+    background: var(--secondary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn-prev {
+    left: -25px;
+}
+
+.carousel-btn-next {
+    right: -25px;
+}
+
+/* Carousel Indicators */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--border);
+    cursor: pointer;
     transition: var(--transition);
 }
 
-.skill-list span:hover {
+.indicator.active,
+.indicator:hover {
     background: var(--accent);
-    color: var(--bg);
+    transform: scale(1.2);
 }
 
 
@@ -847,10 +936,40 @@ footer {
     }
 
     .project-grid,
-    .skills-grid,
     .education-grid,
     .about-highlights {
         grid-template-columns: 1fr;
+    }
+
+    .skills-carousel-container {
+        margin: 2rem auto 0;
+    }
+
+    .skill-card {
+        padding: 2rem;
+    }
+
+    .skill-items {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skill-item {
+        padding: 0.8rem 1rem;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .carousel-btn-prev {
+        left: -20px;
+    }
+
+    .carousel-btn-next {
+        right: -20px;
     }
 }
 
