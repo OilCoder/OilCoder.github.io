@@ -492,85 +492,70 @@ h2::after {
     line-height: 1.6;
 }
 
-/* Timeline */
+/* Experience Timeline - Card Style */
 .timeline {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background: var(--accent);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
-}
-
 .timeline-item {
-    padding: 10px 40px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border-left: 4px solid var(--accent);
     position: relative;
-    background: inherit;
-    width: 50%;
 }
 
-.timeline-item:nth-child(odd) {
-    left: 0;
-}
-
-.timeline-item:nth-child(even) {
-    left: 50%;
+.timeline-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-date {
     background: var(--accent);
     color: var(--bg);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
     font-weight: 600;
     font-size: 0.9rem;
     display: inline-block;
-    margin-bottom: 1rem;
-}
-
-.timeline-content {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
-.timeline-content:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5rem;
+    position: absolute;
+    top: -12px;
+    right: 2rem;
 }
 
 .timeline-content h3 {
     color: var(--text);
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .timeline-content h4 {
     color: var(--accent);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .timeline-content ul {
     list-style: none;
+    margin-top: 1rem;
 }
 
 .timeline-content li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     color: var(--text-muted);
     position: relative;
     padding-left: 1.5rem;
+    line-height: 1.6;
 }
 
 .timeline-content li::before {
@@ -578,6 +563,7 @@ h2::after {
     color: var(--accent);
     position: absolute;
     left: 0;
+    font-weight: bold;
 }
 
 /* Projects */
@@ -804,18 +790,10 @@ footer {
         margin-left: 0;
     }
 
-    .timeline::before {
-        left: 20px;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 50px;
-        left: 0 !important;
-    }
-
     .timeline-date {
+        position: static;
         margin-bottom: 1rem;
+        margin-right: 0;
     }
 
     .project-grid,
