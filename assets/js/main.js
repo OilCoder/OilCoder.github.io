@@ -8,6 +8,7 @@
 // Variables globales
 let currentLanguage = 'es';
 let contentData = {};
+let isLoaded = false;
 
 // Inicialización del sitio
 document.addEventListener('DOMContentLoaded', function () {
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeLanguage();
     loadContent(currentLanguage);
     initializeLanguageSelector();
+    initializeMobileMenu();
 });
 
 /**
@@ -47,6 +49,8 @@ async function loadContent(language) {
         }
         contentData = await response.json();
         console.log('Content loaded successfully:', contentData);
+        isLoaded = true;
+        hideLoadingPlaceholders();
         updatePageContent();
         updateLanguageSelector();
     } catch (error) {
@@ -57,6 +61,18 @@ async function loadContent(language) {
             loadContent('es');
         }
     }
+}
+
+/**
+ * Oculta los placeholders de "Cargando..." y muestra el contenido
+ */
+function hideLoadingPlaceholders() {
+    const loadingElements = document.querySelectorAll('*');
+    loadingElements.forEach(element => {
+        if (element.textContent && element.textContent.trim() === 'Cargando...') {
+            element.style.opacity = '0.5';
+        }
+    });
 }
 
 /**
@@ -88,6 +104,14 @@ function updateMeta() {
     if (contentData.meta) {
         document.title = contentData.meta.title;
         document.documentElement.lang = contentData.meta.lang;
+
+        // Update meta description based on language
+        const metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && contentData.meta.lang === 'en') {
+            metaDesc.content = "Petroleum Engineer specialized in AI & Machine Learning. Expert in wireline operations, well testing, and advanced data analysis with Python, MATLAB, and deep learning frameworks.";
+        } else if (metaDesc) {
+            metaDesc.content = "Ingeniero de Petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.";
+        }
     }
 }
 
@@ -330,6 +354,49 @@ function updateFooter() {
 
     const footerText = document.querySelector('footer p');
     if (footerText) footerText.textContent = contentData.footer.copyright;
+}
+
+/**
+ * Inicializa el menú móvil hamburger
+ */
+function initializeMobileMenu() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function () {
+            navMenu.classList.toggle('show');
+            const icon = this.querySelector('i');
+            if (navMenu.classList.contains('show')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function (e) {
+            if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('show');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    }
 }
 
 /**

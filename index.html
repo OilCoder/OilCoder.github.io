@@ -6,15 +6,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Andrés Esquivel - Ingeniero de Petróleos | IA & ML</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Petroleum Engineer specialized in AI & Machine Learning. Expert in wireline operations, well testing, and advanced data analysis with Python, MATLAB, and deep learning frameworks.">
+    <meta name="keywords"
+        content="petroleum engineer, AI, machine learning, data science, wireline, well testing, Python, MATLAB, deep learning">
+    <meta name="author" content="Carlos Andrés Esquivel Plazas">
+
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Carlos Andrés Esquivel – Petroleum Engineer · AI & ML">
+    <meta property="og:description"
+        content="Portfolio & CV - Petroleum Engineer with expertise in AI, Machine Learning, and advanced data analysis">
+    <meta property="og:image" content="https://oilcoder.github.io/assets/images/banner_share.png">
+    <meta property="og:url" content="https://oilcoder.github.io">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Carlos Andrés Esquivel - Portfolio">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carlos Andrés Esquivel – Petroleum Engineer · AI & ML">
+    <meta name="twitter:description"
+        content="Portfolio & CV - Petroleum Engineer with expertise in AI, Machine Learning, and advanced data analysis">
+    <meta name="twitter:image" content="https://oilcoder.github.io/assets/images/banner_share.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </noscript>
+
+    <link rel="stylesheet" href="assets/css/style.css?v=2.0.0">
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
             <div class="nav-container">
-                <ul class="nav-menu">
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="#about">Sobre Mí</a></li>
                     <li><a href="#education">Educación</a></li>
                     <li><a href="#experience">Experiencia</a></li>
@@ -64,8 +100,11 @@
                             <a href="https://github.com/OilCoder" target="_blank"><i class="fab fa-github"></i></a>
                         </div>
                         <div class="cv-download">
-                            <a href="cv/CV_Español.pdf" target="_blank" class="btn-download">
+                            <a href="cv/CV_Español.pdf" target="_blank" class="btn-download" download>
                                 <i class="fas fa-download"></i> Descargar CV
+                            </a>
+                            <a href="mailto:carlos.esquivel000@gmail.com" class="btn-contact">
+                                <i class="fas fa-envelope"></i> Let's Talk
                             </a>
                         </div>
                     </div>
