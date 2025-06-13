@@ -14,6 +14,7 @@ let isLoaded = false;
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM loaded, initializing site...');
     initializeLanguage();
+    initializeThemeToggle();
     loadContent(currentLanguage);
     initializeLanguageSelector();
     initializeMobileMenu();
@@ -43,7 +44,7 @@ function initializeLanguage() {
 async function loadContent(language) {
     try {
         console.log('Loading content for language:', language);
-        const response = await fetch(`assets/data/content-${language}.json?v=2.1.0`);
+        const response = await fetch(`assets/data/content-${language}.json?v=2.2.0`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -108,9 +109,9 @@ function updateMeta() {
         // Update meta description based on language
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc && contentData.meta.lang === 'en') {
-            metaDesc.content = "Petroleum Engineer with 5× improvement in RMSE accuracy applying AI & Machine Learning. Expert in Python, TensorFlow and subsurface data analysis in New York.";
+            metaDesc.content = "Petroleum Engineer specialized in AI & Machine Learning. Expert in wireline operations, well testing, and advanced data analysis with Python, MATLAB, and deep learning frameworks.";
         } else if (metaDesc) {
-            metaDesc.content = "Ingeniero de petróleos con 5× mejora en precisión RMSE aplicando IA y Machine Learning. Experto en Python, TensorFlow y análisis de datos del subsuelo en Nueva York.";
+            metaDesc.content = "Ingeniero de petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.";
         }
 
         // Update Open Graph and Twitter meta tags
@@ -227,14 +228,18 @@ function updateEducation() {
     });
 
     // Actualizar idiomas
-    const languagesTitle = document.querySelector('.languages h3');
-    if (languagesTitle) languagesTitle.textContent = education.languages.title;
+    // Actualizar título de idiomas en sidebar
+    const sidebarLanguagesTitle = document.querySelector('.sidebar-languages h3');
+    if (sidebarLanguagesTitle) {
+        sidebarLanguagesTitle.innerHTML = `<i class="fas fa-globe"></i> ${education.languages.title}`;
+    }
 
-    const languageItems = document.querySelectorAll('.language-item');
+    // Actualizar idiomas en sidebar
+    const sidebarLanguageItems = document.querySelectorAll('.sidebar-languages .language-item');
     education.languages.items.forEach((lang, index) => {
-        if (languageItems[index]) {
-            const langName = languageItems[index].querySelector('span:first-child');
-            const level = languageItems[index].querySelector('.level');
+        if (sidebarLanguageItems[index]) {
+            const langName = sidebarLanguageItems[index].querySelector('.language-name span');
+            const level = sidebarLanguageItems[index].querySelector('.level');
 
             if (langName) langName.textContent = lang.language;
             if (level) level.textContent = lang.level;
@@ -565,4 +570,45 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.timeline-item').forEach(item => {
     observer.observe(item);
-}); 
+});
+
+/**
+ * Inicializa el toggle de tema oscuro/claro
+ */
+function initializeThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    // Aplicar tema guardado
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    }
+}
+
+/**
+ * Actualiza el icono del botón de tema
+ * @param {string} theme - 'light' o 'dark'
+ */
+function updateThemeIcon(theme) {
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        const icon = themeToggle.querySelector('i');
+        if (icon) {
+            if (theme === 'dark') {
+                icon.className = 'fas fa-sun';
+            } else {
+                icon.className = 'fas fa-moon';
+            }
+        }
+    }
+} 
