@@ -14,6 +14,7 @@ let isLoaded = false;
 document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM loaded, initializing site...');
     initializeLanguage();
+    initializeThemeToggle();
     loadContent(currentLanguage);
     initializeLanguageSelector();
     initializeMobileMenu();
@@ -43,7 +44,7 @@ function initializeLanguage() {
 async function loadContent(language) {
     try {
         console.log('Loading content for language:', language);
-        const response = await fetch(`assets/data/content-${language}.json?v=2.0.0`);
+        const response = await fetch(`assets/data/content-${language}.json?v=2.2.0`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -110,8 +111,23 @@ function updateMeta() {
         if (metaDesc && contentData.meta.lang === 'en') {
             metaDesc.content = "Petroleum Engineer specialized in AI & Machine Learning. Expert in wireline operations, well testing, and advanced data analysis with Python, MATLAB, and deep learning frameworks.";
         } else if (metaDesc) {
-            metaDesc.content = "Ingeniero de Petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.";
+            metaDesc.content = "Ingeniero de petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.";
         }
+
+        // Update Open Graph and Twitter meta tags
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        const ogDescription = document.querySelector('meta[property="og:description"]');
+        const ogLocale = document.querySelector('meta[property="og:locale"]');
+        const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+        const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+
+        if (ogTitle) ogTitle.setAttribute('content', contentData.meta.title);
+        if (ogDescription) ogDescription.setAttribute('content', metaDesc.content);
+        if (ogLocale) {
+            ogLocale.setAttribute('content', contentData.meta.lang === 'es' ? 'es_ES' : 'en_US');
+        }
+        if (twitterTitle) twitterTitle.setAttribute('content', contentData.meta.title);
+        if (twitterDescription) twitterDescription.setAttribute('content', metaDesc.content);
     }
 }
 
@@ -135,6 +151,15 @@ function updateNavigation() {
     if (projectsLink) projectsLink.textContent = nav.projects;
     if (skillsLink) skillsLink.textContent = nav.skills;
     if (contactLink) contactLink.textContent = nav.contact;
+
+    // Update CV download button in navigation
+    const navCvButton = document.querySelector('.btn-nav-cv');
+    if (navCvButton) {
+        navCvButton.innerHTML = `<i class="fas fa-download"></i> CV`;
+        // Update CV link based on language
+        const cvFile = currentLanguage === 'es' ? 'cv/CV_Español.pdf' : 'cv/CV_English.pdf';
+        navCvButton.href = cvFile;
+    }
 }
 
 /**
@@ -203,14 +228,18 @@ function updateEducation() {
     });
 
     // Actualizar idiomas
-    const languagesTitle = document.querySelector('.languages h3');
-    if (languagesTitle) languagesTitle.textContent = education.languages.title;
+    // Actualizar título de idiomas en sidebar
+    const sidebarLanguagesTitle = document.querySelector('.sidebar-languages h3');
+    if (sidebarLanguagesTitle) {
+        sidebarLanguagesTitle.innerHTML = `<i class="fas fa-globe"></i> ${education.languages.title}`;
+    }
 
-    const languageItems = document.querySelectorAll('.language-item');
+    // Actualizar idiomas en sidebar
+    const sidebarLanguageItems = document.querySelectorAll('.sidebar-languages .language-item');
     education.languages.items.forEach((lang, index) => {
-        if (languageItems[index]) {
-            const langName = languageItems[index].querySelector('span:first-child');
-            const level = languageItems[index].querySelector('.level');
+        if (sidebarLanguageItems[index]) {
+            const langName = sidebarLanguageItems[index].querySelector('.language-name span');
+            const level = sidebarLanguageItems[index].querySelector('.level');
 
             if (langName) langName.textContent = lang.language;
             if (level) level.textContent = lang.level;
@@ -292,6 +321,24 @@ function updateProjects() {
                     span.textContent = tech;
                     techContainer.appendChild(span);
                 });
+            }
+
+            // Update project links
+            const githubLink = projectCards[index].querySelector('.github-link');
+            const demoLink = projectCards[index].querySelector('.demo-link');
+
+            if (githubLink && project.github) {
+                githubLink.href = project.github;
+                githubLink.style.display = 'flex';
+            } else if (githubLink) {
+                githubLink.style.display = 'none';
+            }
+
+            if (demoLink && project.demo && project.demo !== '#') {
+                demoLink.href = project.demo;
+                demoLink.style.display = 'flex';
+            } else if (demoLink) {
+                demoLink.style.display = 'none';
             }
         }
     });
@@ -523,4 +570,45 @@ const observer = new IntersectionObserver((entries, observer) => {
 
 document.querySelectorAll('.timeline-item').forEach(item => {
     observer.observe(item);
-}); 
+});
+
+/**
+ * Inicializa el toggle de tema oscuro/claro
+ */
+function initializeThemeToggle() {
+    const themeToggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+
+    // Aplicar tema guardado
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+        });
+    }
+}
+
+/**
+ * Actualiza el icono del botón de tema
+ * @param {string} theme - 'light' o 'dark'
+ */
+function updateThemeIcon(theme) {
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        const icon = themeToggle.querySelector('i');
+        if (icon) {
+            if (theme === 'dark') {
+                icon.className = 'fas fa-sun';
+            } else {
+                icon.className = 'fas fa-moon';
+            }
+        }
+    }
+} 

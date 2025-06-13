@@ -189,7 +189,7 @@
                     "Teamwork",
                     "Critical Thinking",
                     "Problem Solving",
-                    "Decision Making"
+                    "Decision Making Ability"
                 ]
             },
             {
@@ -203,7 +203,7 @@
             },
             {
                 "icon": "fas fa-robot",
-                "title": "AI Frameworks and Data Analysis",
+                "title": "AI and Data Analysis Frameworks",
                 "items": [
                     "TensorFlow",
                     "Keras",

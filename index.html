@@ -9,26 +9,30 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Petroleum Engineer specialized in AI & Machine Learning. Expert in wireline operations, well testing, and advanced data analysis with Python, MATLAB, and deep learning frameworks.">
+        content="Ingeniero de petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.">
     <meta name="keywords"
-        content="petroleum engineer, AI, machine learning, data science, wireline, well testing, Python, MATLAB, deep learning">
+        content="ingeniero petroleos, machine learning, inteligencia artificial, python, matlab, wireline, analisis datos, nueva york, carlos esquivel">
     <meta name="author" content="Carlos Andrés Esquivel Plazas">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oilcoder.github.io/">
 
     <!-- OpenGraph Meta Tags -->
-    <meta property="og:title" content="Carlos Andrés Esquivel – Petroleum Engineer · AI & ML">
+    <meta property="og:title" content="Carlos Andrés Esquivel – Ingeniero de Petróleos | IA & Machine Learning">
     <meta property="og:description"
-        content="Portfolio & CV - Petroleum Engineer with expertise in AI, Machine Learning, and advanced data analysis">
+        content="Ingeniero de petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.">
     <meta property="og:image" content="https://oilcoder.github.io/assets/images/banner_share.png">
     <meta property="og:url" content="https://oilcoder.github.io">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Carlos Andrés Esquivel - Portfolio">
+    <meta property="og:locale" content="es_ES">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Carlos Andrés Esquivel – Petroleum Engineer · AI & ML">
+    <meta name="twitter:title" content="Carlos Andrés Esquivel – Ingeniero de Petróleos | IA & Machine Learning">
     <meta name="twitter:description"
-        content="Portfolio & CV - Petroleum Engineer with expertise in AI, Machine Learning, and advanced data analysis">
+        content="Ingeniero de petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.">
     <meta name="twitter:image" content="https://oilcoder.github.io/assets/images/banner_share.png">
+    <meta name="twitter:creator" content="@OilCoder">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -40,7 +44,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </noscript>
 
-    <link rel="stylesheet" href="assets/css/style.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.3.0">
 </head>
 
 <body>
@@ -56,24 +60,31 @@
                     <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#contact">Contacto</a></li>
                 </ul>
-                <div class="language-selector">
-                    <div class="dropdown">
-                        <button class="dropdown-btn" id="languageDropdown">
-                            <img src="https://flagcdn.com/w20/es.png" alt="España" class="flag-img">
-                            <span class="lang-text">Español</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#" class="lang-option" data-lang="es">
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="cv/CV_Español.pdf" target="_blank" class="btn-nav-cv" download>
+                        <i class="fas fa-download"></i> CV
+                    </a>
+                    <div class="language-selector">
+                        <div class="dropdown">
+                            <button class="dropdown-btn" id="languageDropdown">
                                 <img src="https://flagcdn.com/w20/es.png" alt="España" class="flag-img">
-                                <span>Español</span>
-                            </a>
-                            <a href="#" class="lang-option" data-lang="en">
-                                <img src="https://flagcdn.com/w20/gb-eng.png" alt="Inglaterra" class="flag-img">
-                                <span>English</span>
-                            </a>
+                                <span class="lang-text">Español</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" class="lang-option" data-lang="es">
+                                    <img src="https://flagcdn.com/w20/es.png" alt="España" class="flag-img">
+                                    <span>Español</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="en">
+                                    <img src="https://flagcdn.com/w20/gb-eng.png" alt="Inglaterra" class="flag-img">
+                                    <span>English</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,246 +92,265 @@
         </nav>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Carlos Andrés Esquivel Plazas</h1>
-                        <h2>Ingeniero de Petróleos | IA & Machine Learning</h2>
-                        <p class="objective">Cargando...</p>
-                        <div class="contact-info">
-                            <p><i class="fas fa-phone"></i> +1 (929) 340 8548</p>
-                            <p><i class="fas fa-envelope"></i> carlos.esquivel000@gmail.com</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Nueva York, USA</p>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/andresesquivel" target="_blank"><i
-                                    class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/OilCoder" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
-                        <div class="cv-download">
-                            <a href="cv/CV_Español.pdf" target="_blank" class="btn-download" download>
-                                <i class="fas fa-download"></i> Descargar CV
-                            </a>
-                            <a href="mailto:carlos.esquivel000@gmail.com" class="btn-contact">
-                                <i class="fas fa-envelope"></i> Let's Talk
-                            </a>
-                        </div>
-                    </div>
+    <main class="main-layout">
+        <!-- Sidebar izquierda -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <!-- Foto de perfil -->
+                <div class="profile-photo">
+                    <img src="assets/images/me.png" alt="Carlos Andrés Esquivel Plazas" class="profile-img">
                 </div>
-            </div>
-        </section>
 
-        <section id="about">
-            <div class="container">
-                <h2>Perfil Profesional</h2>
-                <p>Cargando...</p>
-
-                <div class="about-highlights">
-                    <div class="highlight-item">
-                        <i class="fas fa-brain"></i>
-                        <h3>Cargando...</h3>
-                        <p>Cargando...</p>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-tools"></i>
-                        <h3>Cargando...</h3>
-                        <p>Cargando...</p>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-project-diagram"></i>
-                        <h3>Cargando...</h3>
-                        <p>Cargando...</p>
-                    </div>
+                <!-- Información básica -->
+                <div class="profile-info">
+                    <h1>Carlos Andrés Esquivel Plazas</h1>
+                    <h2>Ingeniero de Petróleos | IA & Machine Learning</h2>
+                    <p class="objective">Cargando...</p>
                 </div>
-            </div>
-        </section>
 
-        <section id="education">
-            <div class="container">
-                <h2>Educación</h2>
-                <div class="education-grid">
-                    <div class="education-item">
-                        <h3>Cargando...</h3>
-                        <h4>Cargando...</h4>
-                        <p>Cargando...</p>
+                <!-- Información de contacto -->
+                <div class="sidebar-contact">
+                    <h3><i class="fas fa-address-book"></i> Contacto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>carlos.esquivel000@gmail.com</span>
                     </div>
-                    <div class="education-item">
-                        <h3>Cargando...</h3>
-                        <h4>Cargando...</h4>
-                        <p>Cargando...</p>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (929) 340 8548</span>
                     </div>
-                    <div class="education-item">
-                        <h3>Cargando...</h3>
-                        <h4>Cargando...</h4>
-                        <p>Cargando...</p>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/andresesquivel" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/OilCoder" target="_blank">GitHub</a>
                     </div>
                 </div>
 
-                <div class="languages">
-                    <h3>Idiomas</h3>
+                <!-- Idiomas en sidebar -->
+                <div class="sidebar-languages">
+                    <h3><i class="fas fa-globe"></i> Idiomas</h3>
                     <div class="language-item">
-                        <span>Cargando...</span>
+                        <div class="language-name">
+                            <img src="https://flagcdn.com/w40/es.png" alt="Español" class="language-flag">
+                            <span>Cargando...</span>
+                        </div>
                         <span class="level">Cargando...</span>
                     </div>
                     <div class="language-item">
-                        <span>Cargando...</span>
+                        <div class="language-name">
+                            <img src="https://flagcdn.com/w40/us.png" alt="English" class="language-flag">
+                            <span>Cargando...</span>
+                        </div>
                         <span class="level">Cargando...</span>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="experience">
-            <div class="container">
-                <h2>Experiencia Profesional</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">Cargando...</div>
-                        <div class="timeline-content">
+
+            </div>
+        </aside>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+
+            <section id="about">
+                <div class="container">
+                    <h2>Perfil Profesional</h2>
+                    <p>Cargando...</p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-brain"></i>
                             <h3>Cargando...</h3>
-                            <h4>Cargando...</h4>
-                            <ul>
-                                <li>Cargando...</li>
-                            </ul>
+                            <p>Cargando...</p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Cargando...</div>
-                        <div class="timeline-content">
+                        <div class="highlight-item">
+                            <i class="fas fa-tools"></i>
                             <h3>Cargando...</h3>
-                            <h4>Cargando...</h4>
-                            <ul>
-                                <li>Cargando...</li>
-                            </ul>
+                            <p>Cargando...</p>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Cargando...</div>
-                        <div class="timeline-content">
+                        <div class="highlight-item">
+                            <i class="fas fa-project-diagram"></i>
                             <h3>Cargando...</h3>
-                            <h4>Cargando...</h4>
-                            <ul>
-                                <li>Cargando...</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Cargando...</div>
-                        <div class="timeline-content">
-                            <h3>Cargando...</h3>
-                            <h4>Cargando...</h4>
-                            <ul>
-                                <li>Cargando...</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Cargando...</div>
-                        <div class="timeline-content">
-                            <h3>Cargando...</h3>
-                            <h4>Cargando...</h4>
-                            <ul>
-                                <li>Cargando...</li>
-                            </ul>
+                            <p>Cargando...</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="projects">
-            <div class="container">
-                <h2>Proyectos Destacados</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-line"></i>
+            <section id="education">
+                <div class="container">
+                    <h2>Educación</h2>
+                    <div class="education-grid">
+                        <div class="education-item">
+                            <h3>Cargando...</h3>
+                            <h4>Cargando...</h4>
+                            <p>Cargando...</p>
                         </div>
-                        <h3>Cargando...</h3>
-                        <p class="project-date">Cargando...</p>
-                        <p>Cargando...</p>
-                        <div class="project-achievements">
-                            <span class="achievement">Cargando...</span>
+                        <div class="education-item">
+                            <h3>Cargando...</h3>
+                            <h4>Cargando...</h4>
+                            <p>Cargando...</p>
                         </div>
-                        <div class="tech-stack">
-                            <span>Cargando...</span>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-icon">
-                            <i class="fas fa-tint"></i>
-                        </div>
-                        <h3>Cargando...</h3>
-                        <p class="project-date">Cargando...</p>
-                        <p>Cargando...</p>
-                        <div class="project-achievements">
-                            <span class="achievement">Cargando...</span>
-                        </div>
-                        <div class="tech-stack">
-                            <span>Cargando...</span>
+                        <div class="education-item">
+                            <h3>Cargando...</h3>
+                            <h4>Cargando...</h4>
+                            <p>Cargando...</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="skills">
-            <div class="container">
-                <h2>Habilidades y Tecnologías</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-heart"></i> Cargando...</h3>
-                        <div class="skill-list">
-                            <span>Cargando...</span>
+            <section id="experience">
+                <div class="container">
+                    <h2>Experiencia Profesional</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">Cargando...</div>
+                            <div class="timeline-content">
+                                <h3>Cargando...</h3>
+                                <h4>Cargando...</h4>
+                                <ul>
+                                    <li>Cargando...</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Cargando...</h3>
-                        <div class="skill-list">
-                            <span>Cargando...</span>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Cargando...</div>
+                            <div class="timeline-content">
+                                <h3>Cargando...</h3>
+                                <h4>Cargando...</h4>
+                                <ul>
+                                    <li>Cargando...</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><i class="fas fa-robot"></i> Cargando...</h3>
-                        <div class="skill-list">
-                            <span>Cargando...</span>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Cargando...</div>
+                            <div class="timeline-content">
+                                <h3>Cargando...</h3>
+                                <h4>Cargando...</h4>
+                                <ul>
+                                    <li>Cargando...</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3><i class="fas fa-tools"></i> Cargando...</h3>
-                        <div class="skill-list">
-                            <span>Cargando...</span>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Cargando...</div>
+                            <div class="timeline-content">
+                                <h3>Cargando...</h3>
+                                <h4>Cargando...</h4>
+                                <ul>
+                                    <li>Cargando...</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Cargando...</div>
+                            <div class="timeline-content">
+                                <h3>Cargando...</h3>
+                                <h4>Cargando...</h4>
+                                <ul>
+                                    <li>Cargando...</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>Contacto</h2>
-                <div class="contact-grid">
-                    <div class="contact-info">
-                        <h3>Información de Contacto</h3>
-                        <p><i class="fas fa-phone"></i> +1 (929) 340 8548</p>
-                        <p><i class="fas fa-envelope"></i> carlos.esquivel000@gmail.com</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Nueva York, USA</p>
-                    </div>
-                    <div class="social-links">
-                        <h3>Redes Sociales</h3>
-                        <a href="https://www.linkedin.com/in/andresesquivel" target="_blank"><i
-                                class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/OilCoder" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <section id="projects">
+                <div class="container">
+                    <h2>Proyectos Destacados</h2>
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Cargando...</h3>
+                            <p class="project-date">Cargando...</p>
+                            <p>Cargando...</p>
+                            <div class="project-achievements">
+                                <span class="achievement">Cargando...</span>
+                            </div>
+                            <div class="tech-stack">
+                                <span>Cargando...</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link github-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link demo-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <h3>Cargando...</h3>
+                            <p class="project-date">Cargando...</p>
+                            <p>Cargando...</p>
+                            <div class="project-achievements">
+                                <span class="achievement">Cargando...</span>
+                            </div>
+                            <div class="tech-stack">
+                                <span>Cargando...</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link github-link" target="_blank">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                                <a href="#" class="project-link demo-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Demo
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <section id="skills">
+                <div class="container">
+                    <h2>Habilidades y Tecnologías</h2>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3><i class="fas fa-heart"></i> Cargando...</h3>
+                            <div class="skill-list">
+                                <span>Cargando...</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3><i class="fas fa-code"></i> Cargando...</h3>
+                            <div class="skill-list">
+                                <span>Cargando...</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3><i class="fas fa-robot"></i> Cargando...</h3>
+                            <div class="skill-list">
+                                <span>Cargando...</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3><i class="fas fa-tools"></i> Cargando...</h3>
+                            <div class="skill-list">
+                                <span>Cargando...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div> <!-- Cierre main-content -->
     </main>
 
     <footer>
@@ -329,7 +359,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js?v=2.0.0"></script>
+    <script src="assets/js/main.js?v=2.3.0"></script>
 </body>
 
 </html>
