@@ -9,26 +9,30 @@
 
     <!-- SEO Meta Tags -->
     <meta name="description"
-        content="Petroleum Engineer specialized in AI & Machine Learning. Expert in wireline operations, well testing, and advanced data analysis with Python, MATLAB, and deep learning frameworks.">
+        content="Ingeniero de petróleos con 5× mejora en precisión RMSE aplicando IA y Machine Learning. Experto en Python, TensorFlow y análisis de datos del subsuelo en Nueva York.">
     <meta name="keywords"
-        content="petroleum engineer, AI, machine learning, data science, wireline, well testing, Python, MATLAB, deep learning">
+        content="ingeniero petroleos, machine learning, inteligencia artificial, python, tensorflow, wireline, analisis datos, nueva york, carlos esquivel">
     <meta name="author" content="Carlos Andrés Esquivel Plazas">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oilcoder.github.io/">
 
     <!-- OpenGraph Meta Tags -->
-    <meta property="og:title" content="Carlos Andrés Esquivel – Petroleum Engineer · AI & ML">
+    <meta property="og:title" content="Carlos Andrés Esquivel – Ingeniero de Petróleos | IA & Machine Learning">
     <meta property="og:description"
-        content="Portfolio & CV - Petroleum Engineer with expertise in AI, Machine Learning, and advanced data analysis">
+        content="Ingeniero de petróleos con 5× mejora en precisión RMSE aplicando IA y Machine Learning. Experto en Python, TensorFlow y análisis de datos del subsuelo.">
     <meta property="og:image" content="https://oilcoder.github.io/assets/images/banner_share.png">
     <meta property="og:url" content="https://oilcoder.github.io">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Carlos Andrés Esquivel - Portfolio">
+    <meta property="og:locale" content="es_ES">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Carlos Andrés Esquivel – Petroleum Engineer · AI & ML">
+    <meta name="twitter:title" content="Carlos Andrés Esquivel – Ingeniero de Petróleos | IA & Machine Learning">
     <meta name="twitter:description"
-        content="Portfolio & CV - Petroleum Engineer with expertise in AI, Machine Learning, and advanced data analysis">
+        content="Ingeniero de petróleos con 5× mejora en precisión RMSE aplicando IA y Machine Learning. Experto en Python, TensorFlow y análisis de datos del subsuelo.">
     <meta name="twitter:image" content="https://oilcoder.github.io/assets/images/banner_share.png">
+    <meta name="twitter:creator" content="@OilCoder">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -40,7 +44,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </noscript>
 
-    <link rel="stylesheet" href="assets/css/style.css?v=2.0.0">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.1.0">
 </head>
 
 <body>
@@ -58,22 +62,27 @@
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
-                <div class="language-selector">
-                    <div class="dropdown">
-                        <button class="dropdown-btn" id="languageDropdown">
-                            <img src="https://flagcdn.com/w20/es.png" alt="España" class="flag-img">
-                            <span class="lang-text">Español</span>
-                            <i class="fas fa-chevron-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="#" class="lang-option" data-lang="es">
+                <div class="nav-actions">
+                    <a href="cv/CV_Español.pdf" target="_blank" class="btn-nav-cv" download>
+                        <i class="fas fa-download"></i> CV
+                    </a>
+                    <div class="language-selector">
+                        <div class="dropdown">
+                            <button class="dropdown-btn" id="languageDropdown">
                                 <img src="https://flagcdn.com/w20/es.png" alt="España" class="flag-img">
-                                <span>Español</span>
-                            </a>
-                            <a href="#" class="lang-option" data-lang="en">
-                                <img src="https://flagcdn.com/w20/gb-eng.png" alt="Inglaterra" class="flag-img">
-                                <span>English</span>
-                            </a>
+                                <span class="lang-text">Español</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#" class="lang-option" data-lang="es">
+                                    <img src="https://flagcdn.com/w20/es.png" alt="España" class="flag-img">
+                                    <span>Español</span>
+                                </a>
+                                <a href="#" class="lang-option" data-lang="en">
+                                    <img src="https://flagcdn.com/w20/gb-eng.png" alt="Inglaterra" class="flag-img">
+                                    <span>English</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -89,15 +98,23 @@
                         <h1>Carlos Andrés Esquivel Plazas</h1>
                         <h2>Ingeniero de Petróleos | IA & Machine Learning</h2>
                         <p class="objective">Cargando...</p>
-                        <div class="contact-info">
-                            <p><i class="fas fa-phone"></i> +1 (929) 340 8548</p>
-                            <p><i class="fas fa-envelope"></i> carlos.esquivel000@gmail.com</p>
-                            <p><i class="fas fa-map-marker-alt"></i> Nueva York, USA</p>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/andresesquivel" target="_blank"><i
-                                    class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/OilCoder" target="_blank"><i class="fab fa-github"></i></a>
+
+                        <!-- Contacto discreto en línea -->
+                        <div class="contact-inline">
+                            <span class="contact-item">
+                                <i class="fas fa-map-marker-alt" aria-label="Location"></i> Nueva York, USA
+                            </span>
+                            <span class="contact-item">
+                                <i class="fas fa-envelope" aria-label="Email"></i> carlos.esquivel000@gmail.com
+                            </span>
+                            <span class="contact-item">
+                                <i class="fab fa-linkedin" aria-label="LinkedIn"></i>
+                                <a href="https://www.linkedin.com/in/andresesquivel" target="_blank">LinkedIn</a>
+                            </span>
+                            <span class="contact-item">
+                                <i class="fab fa-github" aria-label="GitHub"></i>
+                                <a href="https://github.com/OilCoder" target="_blank">GitHub</a>
+                            </span>
                         </div>
                         <div class="cv-download">
                             <a href="cv/CV_Español.pdf" target="_blank" class="btn-download" download>
@@ -247,6 +264,14 @@
                         <div class="tech-stack">
                             <span>Cargando...</span>
                         </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link github-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link demo-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
+                        </div>
                     </div>
 
                     <div class="project-card">
@@ -261,6 +286,14 @@
                         </div>
                         <div class="tech-stack">
                             <span>Cargando...</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link github-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" class="project-link demo-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Demo
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -329,7 +362,7 @@
         </div>
     </footer>
 
-    <script src="assets/js/main.js?v=2.0.0"></script>
+    <script src="assets/js/main.js?v=2.1.0"></script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@
     },
     "about": {
         "title": "Professional Profile",
-        "description": "Petroleum engineer with experience in wireline, well testing and subsurface data analysis, complemented with advanced skills in data science, machine learning and deep learning. I have led innovative projects that apply artificial intelligence, such as deep neural networks and generative models, for the prediction of synthetic curves in well logs, exceeding expectations with precise and efficient analysis. Expert in Python, MATLAB and AI frameworks, I provide technological solutions that optimize operations in the oil and gas industry.",
+        "description": "Petroleum engineer with experience in wireline, well testing and subsurface data analysis, complemented with advanced skills in data science, machine learning and deep learning. I have led innovative projects applying artificial intelligence, achieving 5× improvement in RMSE accuracy and reducing report processing time by +40%. Expert in Python, MATLAB and AI frameworks, I provide technological solutions that optimize operations in the oil and gas industry.",
         "highlights": [
             {
                 "icon": "fas fa-brain",

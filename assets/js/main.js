@@ -43,7 +43,7 @@ function initializeLanguage() {
 async function loadContent(language) {
     try {
         console.log('Loading content for language:', language);
-        const response = await fetch(`assets/data/content-${language}.json?v=2.0.0`);
+        const response = await fetch(`assets/data/content-${language}.json?v=2.1.0`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -108,10 +108,25 @@ function updateMeta() {
         // Update meta description based on language
         const metaDesc = document.querySelector('meta[name="description"]');
         if (metaDesc && contentData.meta.lang === 'en') {
-            metaDesc.content = "Petroleum Engineer specialized in AI & Machine Learning. Expert in wireline operations, well testing, and advanced data analysis with Python, MATLAB, and deep learning frameworks.";
+            metaDesc.content = "Petroleum Engineer with 5× improvement in RMSE accuracy applying AI & Machine Learning. Expert in Python, TensorFlow and subsurface data analysis in New York.";
         } else if (metaDesc) {
-            metaDesc.content = "Ingeniero de Petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.";
+            metaDesc.content = "Ingeniero de petróleos con 5× mejora en precisión RMSE aplicando IA y Machine Learning. Experto en Python, TensorFlow y análisis de datos del subsuelo en Nueva York.";
         }
+
+        // Update Open Graph and Twitter meta tags
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        const ogDescription = document.querySelector('meta[property="og:description"]');
+        const ogLocale = document.querySelector('meta[property="og:locale"]');
+        const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+        const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+
+        if (ogTitle) ogTitle.setAttribute('content', contentData.meta.title);
+        if (ogDescription) ogDescription.setAttribute('content', metaDesc.content);
+        if (ogLocale) {
+            ogLocale.setAttribute('content', contentData.meta.lang === 'es' ? 'es_ES' : 'en_US');
+        }
+        if (twitterTitle) twitterTitle.setAttribute('content', contentData.meta.title);
+        if (twitterDescription) twitterDescription.setAttribute('content', metaDesc.content);
     }
 }
 
@@ -135,6 +150,15 @@ function updateNavigation() {
     if (projectsLink) projectsLink.textContent = nav.projects;
     if (skillsLink) skillsLink.textContent = nav.skills;
     if (contactLink) contactLink.textContent = nav.contact;
+
+    // Update CV download button in navigation
+    const navCvButton = document.querySelector('.btn-nav-cv');
+    if (navCvButton) {
+        navCvButton.innerHTML = `<i class="fas fa-download"></i> CV`;
+        // Update CV link based on language
+        const cvFile = currentLanguage === 'es' ? 'cv/CV_Español.pdf' : 'cv/CV_English.pdf';
+        navCvButton.href = cvFile;
+    }
 }
 
 /**
@@ -292,6 +316,24 @@ function updateProjects() {
                     span.textContent = tech;
                     techContainer.appendChild(span);
                 });
+            }
+
+            // Update project links
+            const githubLink = projectCards[index].querySelector('.github-link');
+            const demoLink = projectCards[index].querySelector('.demo-link');
+
+            if (githubLink && project.github) {
+                githubLink.href = project.github;
+                githubLink.style.display = 'flex';
+            } else if (githubLink) {
+                githubLink.style.display = 'none';
+            }
+
+            if (demoLink && project.demo && project.demo !== '#') {
+                demoLink.href = project.demo;
+                demoLink.style.display = 'flex';
+            } else if (demoLink) {
+                demoLink.style.display = 'none';
             }
         }
     });

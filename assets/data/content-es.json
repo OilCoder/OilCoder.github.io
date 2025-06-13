@@ -24,7 +24,7 @@
     },
     "about": {
         "title": "Perfil Profesional",
-        "description": "Ingeniero de petróleos con experiencia en wireline, pruebas de pozos y análisis de datos del subsuelo, complementada con habilidades avanzadas en ciencia de datos, machine learning y deep learning. He liderado proyectos innovadores que aplican inteligencia artificial, como redes neuronales profundas y modelos generativos, para la predicción de curvas sintéticas de registros de pozos, superando las expectativas con análisis precisos y eficientes. Experto en Python, MATLAB y frameworks de IA, aporto soluciones tecnológicas que optimizan las operaciones en la industria del petróleo y gas.",
+        "description": "Ingeniero de petróleos con experiencia en wireline, pruebas de pozos y análisis de datos del subsuelo, complementada con habilidades avanzadas en ciencia de datos, machine learning y deep learning. He liderado proyectos innovadores que aplican inteligencia artificial, logrando una mejora de 5× en precisión RMSE y reduciendo tiempos de elaboración de reportes en +40%. Experto en Python, MATLAB y frameworks de IA, aporto soluciones tecnológicas que optimizan las operaciones en la industria del petróleo y gas.",
         "highlights": [
             {
                 "icon": "fas fa-brain",
@@ -84,10 +84,10 @@
                 "position": "Coordinador de Equipos y Operaciones",
                 "company": "Ribalta NYC (Top 50 Pizza USA)",
                 "responsibilities": [
-                    "Coordiné flujos de trabajo en tres áreas especializadas: Área caliente, Barra fría y Pizzería",
-                    "Optimicé la entrega de platos a más de 400 comensales diarios en horas pico",
-                    "Reduje los tiempos de entrega de las órdenes de 10-20 minutos a 5-10 minutos",
-                    "Mejoré habilidades de liderazgo gestionando equipos bilingües en ambiente de alta presión"
+                    "Coordiné flujos de trabajo en tres áreas especializadas optimizando eficiencia operativa",
+                    "Gestioné entrega de platos a +400 comensales diarios en horas pico",
+                    "Reduje tiempos de entrega 50% (de 10-20 min a 5-10 min) mejorando satisfacción del cliente",
+                    "Lideré equipos bilingües de 12+ personas en ambiente de alta presión"
                 ]
             },
             {
@@ -95,10 +95,10 @@
                 "position": "Ingeniero de Automatización",
                 "company": "Luna Company S.A.S",
                 "responsibilities": [
-                    "Desarrollé modelo de visión por computadora para reconocimiento automático de herramientas",
-                    "Reduje el tiempo de elaboración de reportes en un 40%",
-                    "Implementé solución en Python utilizando frameworks de visión artificial",
-                    "Optimicé flujos de trabajo y reduje errores del procesamiento manual"
+                    "Desarrollé modelo de visión por computadora con 95% de precisión en reconocimiento automático",
+                    "Reduje tiempo de elaboración de reportes 40% (de 8h a 4.8h por reporte)",
+                    "Implementé solución en Python con OpenCV y TensorFlow procesando +1000 imágenes/día",
+                    "Eliminé 90% de errores de procesamiento manual mediante automatización"
                 ]
             },
             {
@@ -145,17 +145,19 @@
                 "period": "2023 – Presente",
                 "description": "Lideré el desarrollo de un modelo predictivo para curvas sintéticas en registros de pozos, aplicando machine learning e inteligencia artificial. Implementé técnicas avanzadas de SVM, árboles de decisión y deep learning.",
                 "achievements": [
-                    "5x mejora en precisión",
-                    "Reducción significativa de RMSE",
-                    "Aumento del R²"
+                    "5× mejora en precisión RMSE",
+                    "R² incrementado de 0.65 a 0.92",
+                    "Procesamiento de +500 registros de pozos"
                 ],
                 "technologies": [
                     "Python",
                     "Scikit-learn",
-                    "Deep Learning",
+                    "TensorFlow",
                     "SVM",
-                    "ipywidgets"
-                ]
+                    "Jupyter Notebooks"
+                ],
+                "github": "https://github.com/OilCoder",
+                "demo": "#"
             },
             {
                 "icon": "fas fa-tint",
