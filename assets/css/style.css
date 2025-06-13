@@ -492,10 +492,10 @@ h2::after {
     line-height: 1.6;
 }
 
-/* Experience Timeline - Wide Alternating Cards */
+/* Experience Timeline - Balanced Alternating Cards */
 .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 2rem 0;
 }
@@ -552,7 +552,8 @@ h2::after {
     box-shadow: var(--shadow);
     transition: var(--transition);
     border-left: 4px solid var(--accent);
-    max-width: 550px;
+    max-width: 420px;
+    min-height: 200px;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
