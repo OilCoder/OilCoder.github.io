@@ -492,31 +492,31 @@ h2::after {
     line-height: 1.6;
 }
 
-/* Experience Timeline - Compact Alternating Cards */
+/* Experience Timeline - Wide Alternating Cards */
 .timeline {
     position: relative;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    width: 3px;
+    width: 4px;
     background: linear-gradient(180deg, var(--accent), var(--secondary));
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -1.5px;
+    margin-left: -2px;
     border-radius: 2px;
 }
 
 .timeline-item {
     display: flex;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
     position: relative;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .timeline-item:nth-child(odd) {
@@ -528,15 +528,15 @@ h2::after {
 }
 
 .timeline-date {
-    flex: 0 0 120px;
+    flex: 0 0 140px;
     background: var(--accent);
     color: var(--bg);
-    padding: 0.6rem 0.8rem;
-    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    border-radius: 25px;
     text-align: center;
     font-weight: 600;
-    font-size: 0.85rem;
-    margin: 0 1.5rem;
+    font-size: 0.9rem;
+    margin: 0 2rem;
     height: fit-content;
     box-shadow: var(--shadow);
     position: relative;
@@ -547,50 +547,49 @@ h2::after {
     flex: 1;
     background: var(--bg);
     border: 1px solid var(--border);
-    padding: 2rem;
-    border-radius: 12px;
+    padding: 2.5rem;
+    border-radius: 15px;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    border-left: 3px solid var(--accent);
-    max-width: 420px;
+    border-left: 4px solid var(--accent);
+    max-width: 550px;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
     border-left: none;
-    border-right: 3px solid var(--accent);
+    border-right: 4px solid var(--accent);
 }
 
 .timeline-content:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-content h3 {
     color: var(--text);
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
     font-weight: 700;
 }
 
 .timeline-content h4 {
     color: var(--accent);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .timeline-content ul {
     list-style: none;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .timeline-content li {
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.8rem;
     color: var(--text-muted);
     position: relative;
     padding-left: 1.5rem;
-    line-height: 1.5;
-    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .timeline-content li::before {
@@ -843,9 +842,8 @@ footer {
 
     .timeline-content {
         max-width: none;
-        border-left: 3px solid var(--accent) !important;
+        border-left: 4px solid var(--accent) !important;
         border-right: none !important;
-        padding: 1.5rem;
     }
 
     .project-grid,
