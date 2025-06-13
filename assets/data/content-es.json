@@ -143,21 +143,21 @@
                 "icon": "fas fa-chart-line",
                 "title": "Análisis Petrofísico y Predicción de Registros Sintéticos",
                 "period": "2023 – Presente",
-                "description": "Lideré el desarrollo de un modelo predictivo para curvas sintéticas en registros de pozos, aplicando machine learning e inteligencia artificial. Implementé técnicas avanzadas de SVM, árboles de decisión y deep learning.",
+                "description": "Pipeline completo de Machine Learning para análisis y predicción de propiedades petrofísicas a partir de registros de pozos. Implementé redes neuronales optimizadas, validación rigurosa y procesamiento GPU acelerado.",
                 "achievements": [
-                    "Mejora de 5x en la precisión del modelo",
-                    "Reducción significativa del RMSE",
-                    "Aumento del coeficiente de determinación (R²)"
+                    "Pipeline automatizado de 8 pasos",
+                    "Optimización bayesiana con Optuna",
+                    "Validación cruzada K-fold rigurosa"
                 ],
                 "technologies": [
                     "Python",
-                    "Scikit-learn",
-                    "Deep Learning",
-                    "SVM",
-                    "ipywidgets"
+                    "TensorFlow",
+                    "RAPIDS",
+                    "Docker",
+                    "Optuna"
                 ],
-                "github": "https://github.com/OilCoder",
-                "demo": "#"
+                "github": "https://github.com/OilCoder/Kansas",
+                "demo": "projects/petrophysical-analysis.html"
             },
             {
                 "icon": "fas fa-tint",
