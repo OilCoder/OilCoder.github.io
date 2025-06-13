@@ -1,0 +1,250 @@
+{
+    "meta": {
+        "title": "Carlos Andrés Esquivel - Petroleum Engineer | AI & ML",
+        "lang": "en"
+    },
+    "navigation": {
+        "about": "About Me",
+        "education": "Education",
+        "experience": "Experience",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "hero": {
+        "name": "Carlos Andrés Esquivel Plazas",
+        "title": "Petroleum Engineer | AI & Machine Learning",
+        "objective": "Petroleum engineer with solid experience in field operations and the use of artificial intelligence for reservoir characterization, seeking opportunities to apply advanced technological solutions in the area of petrophysics.",
+        "contact": {
+            "phone": "+1 (929) 340 8548",
+            "email": "carlos.esquivel000@gmail.com",
+            "location": "New York, USA"
+        },
+        "downloadCV": "Download CV"
+    },
+    "about": {
+        "title": "Professional Profile",
+        "description": "Petroleum engineer with experience in wireline, well testing and subsurface data analysis, complemented with advanced skills in data science, machine learning and deep learning. I have led innovative projects that apply artificial intelligence, such as deep neural networks and generative models, for the prediction of synthetic curves in well logs, exceeding expectations with precise and efficient analysis. Expert in Python, MATLAB and AI frameworks, I provide technological solutions that optimize operations in the oil and gas industry.",
+        "highlights": [
+            {
+                "icon": "fas fa-brain",
+                "title": "Fast Learning",
+                "description": "Software and procedures"
+            },
+            {
+                "icon": "fas fa-tools",
+                "title": "Problem Solving",
+                "description": "Technical and complex"
+            },
+            {
+                "icon": "fas fa-project-diagram",
+                "title": "Project Management",
+                "description": "Technical and innovative"
+            }
+        ]
+    },
+    "education": {
+        "title": "Education",
+        "items": [
+            {
+                "institution": "Universidad Surcolombiana",
+                "degree": "Petroleum Engineer",
+                "details": "Professional license 6677"
+            },
+            {
+                "institution": "Artificial Intelligence and Machine Learning Career",
+                "degree": "Platzi | June 2020",
+                "details": "Advanced ML and AI techniques, Deep Learning, neural networks and clustering algorithms applied to the petroleum industry."
+            },
+            {
+                "institution": "Platzi English Academy",
+                "degree": "Platzi | July 2020",
+                "details": "Advanced English usage for effective communication in multicultural and professional environments."
+            }
+        ],
+        "languages": {
+            "title": "Languages",
+            "items": [
+                {
+                    "language": "Spanish",
+                    "level": "Native"
+                },
+                {
+                    "language": "English",
+                    "level": "Intermediate / Advanced"
+                }
+            ]
+        }
+    },
+    "experience": {
+        "title": "Professional Experience",
+        "items": [
+            {
+                "period": "2020 - 2023",
+                "position": "Team and Operations Coordinator",
+                "company": "Ribalta NYC (Top 50 Pizza USA)",
+                "responsibilities": [
+                    "Coordinated workflows in three specialized areas: Hot area, Cold bar and Pizzeria",
+                    "Optimized dish delivery to more than 400 daily diners during peak hours",
+                    "Reduced order delivery times from 10-20 minutes to 5-10 minutes",
+                    "Improved leadership skills managing bilingual teams in high-pressure environment"
+                ]
+            },
+            {
+                "period": "2018 - 2020",
+                "position": "Automation Engineer",
+                "company": "Luna Company S.A.S",
+                "responsibilities": [
+                    "Developed computer vision model for automatic tool recognition",
+                    "Reduced report preparation time by 40%",
+                    "Implemented solution in Python using computer vision frameworks",
+                    "Optimized workflows and reduced manual processing errors"
+                ]
+            },
+            {
+                "period": "2015 - 2016",
+                "position": "Data Analyst and Database Administrator",
+                "company": "Maxim & Fishing S.A.S.",
+                "responsibilities": [
+                    "Prepared and compiled data for strategic business development reports",
+                    "Designed databases in Excel and SQL, modeled data using MATLAB",
+                    "Automated data storage and retrieval processes",
+                    "Optimized document management of physical and electronic files"
+                ]
+            },
+            {
+                "period": "2014 - 2015",
+                "position": "Wireline Operations Engineer",
+                "company": "Maxim & Fishing S.A.S.",
+                "responsibilities": [
+                    "Performed wireline and well testing operations",
+                    "Managed pressure and temperature tests (decline/restoration, injection and interference)",
+                    "Supervised field tests to ensure data integrity and quality",
+                    "Improved reliability of memory logs ensuring accurate results"
+                ]
+            },
+            {
+                "period": "2013 - 2014",
+                "position": "Operations Analyst",
+                "company": "Maxim & Fishing S.A.S.",
+                "responsibilities": [
+                    "Provided operational and analytical support ensuring QHSE compliance",
+                    "Evaluated operational processes to implement integrated management system",
+                    "Applied improvements in procedures to optimize execution times",
+                    "Ensured compliance with quality standards"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Featured Projects",
+        "items": [
+            {
+                "icon": "fas fa-chart-line",
+                "title": "Petrophysical Analysis and Synthetic Log Prediction",
+                "period": "2023 – Present",
+                "description": "Led the development of a predictive model for synthetic curves in well logs, applying machine learning and artificial intelligence. Implemented advanced techniques of SVM, decision trees and deep learning.",
+                "achievements": [
+                    "5x accuracy improvement",
+                    "Significant RMSE reduction",
+                    "R² increase"
+                ],
+                "technologies": [
+                    "Python",
+                    "Scikit-learn",
+                    "Deep Learning",
+                    "SVM",
+                    "ipywidgets"
+                ]
+            },
+            {
+                "icon": "fas fa-tint",
+                "title": "Water Drive Effect in Reservoir Boundary",
+                "period": "2016 – 2018",
+                "description": "Developed software to detect water intrusion in reservoirs with hydraulic activity, improving the accuracy of OOIP calculations and well drainage area.",
+                "achievements": [
+                    "Custom algorithms",
+                    "Precise flow analysis",
+                    "OOIP calculation improvement"
+                ],
+                "technologies": [
+                    "MATLAB",
+                    "Custom Algorithms",
+                    "Well Testing",
+                    "Flow Analysis"
+                ]
+            }
+        ]
+    },
+    "skills": {
+        "title": "Skills and Technologies",
+        "categories": [
+            {
+                "icon": "fas fa-heart",
+                "title": "Soft Skills",
+                "items": [
+                    "Leadership",
+                    "Effective Communication",
+                    "Adaptability",
+                    "Teamwork",
+                    "Critical Thinking",
+                    "Problem Solving",
+                    "Decision Making"
+                ]
+            },
+            {
+                "icon": "fas fa-code",
+                "title": "Programming Languages",
+                "items": [
+                    "Python",
+                    "MATLAB",
+                    "SQL"
+                ]
+            },
+            {
+                "icon": "fas fa-robot",
+                "title": "AI Frameworks and Data Analysis",
+                "items": [
+                    "TensorFlow",
+                    "Keras",
+                    "Scikit-learn",
+                    "Pandas",
+                    "NumPy",
+                    "Matplotlib",
+                    "Seaborn",
+                    "PyTorch",
+                    "Plotly"
+                ]
+            },
+            {
+                "icon": "fas fa-tools",
+                "title": "Software and Technical Tools",
+                "items": [
+                    "F.A.S.T. WellTest™",
+                    "LogView++",
+                    "OpenWells",
+                    "Git",
+                    "Microsoft Power BI",
+                    "Jupyter Notebooks"
+                ]
+            }
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "info": {
+            "title": "Contact Information",
+            "phone": "+1 (929) 340 8548",
+            "email": "carlos.esquivel000@gmail.com",
+            "location": "New York, USA"
+        },
+        "social": {
+            "title": "Social Networks",
+            "linkedin": "LinkedIn",
+            "github": "GitHub"
+        }
+    },
+    "footer": {
+        "copyright": "© 2024 Carlos Andrés Esquivel Plazas. All rights reserved."
+    }
+}
