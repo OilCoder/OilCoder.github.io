@@ -128,7 +128,13 @@
                         </div>
                     </label>
                     <a href="cv/carlos_esquivel_cv_es.pdf" target="_blank" class="btn-nav-cv" download>
-                        <i class="fas fa-download"></i> CV
+                        <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
+                            </path>
+                        </svg>
+                        <span class="cv-text">HV</span>
+                        <span class="tooltip">HV PDF</span>
                     </a>
                     <div class="language-selector">
                         <div class="dropdown">
@@ -156,7 +162,10 @@
 
     <main class="main-layout">
         <!-- Sidebar izquierda -->
-        <aside class="sidebar">
+        <aside class="sidebar" id="sidebar">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+                <i class="fas fa-chevron-left toggle-arrow"></i>
+            </button>
             <div class="sidebar-content">
                 <!-- Foto de perfil -->
                 <div class="profile-photo">

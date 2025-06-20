@@ -1,34 +1,24 @@
 /* ===== VARIABLES CSS GLOBALES ===== */
 /* Definición de colores, espaciados y transiciones para todo el sitio */
 :root {
-    /* Light Mode - Tania Rascia inspired professional palette */
+    /* Light Mode - Minimal flat design palette */
     --primary: #2d3748;
-    --secondary: #4a5568;
     --accent: #38b2ac;
-    --success: #48bb78;
-    --warning: #ed8936;
     --text: #1a202c;
-    --text-muted: #718096;
     --bg: #ffffff;
     --bg-alt: #f7fafc;
     --border: #e2e8f0;
-    --shadow: 0 2px 10px rgba(45, 55, 72, 0.1);
     --transition: all 0.3s ease;
 }
 
 [data-theme="dark"] {
-    /* Dark Mode - Tania Rascia inspired dark palette */
+    /* Dark Mode - Minimal flat design palette */
     --primary: #e2e8f0;
-    --secondary: #cbd5e0;
     --accent: #4fd1c7;
-    --success: #68d391;
-    --warning: #f6ad55;
     --text: #f7fafc;
-    --text-muted: #a0aec0;
     --bg: #1a202c;
     --bg-alt: #2d3748;
     --border: #4a5568;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 /* ===== RESET Y ESTILOS BASE ===== */
@@ -62,7 +52,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: var(--shadow);
+    border-bottom: 1px solid var(--border);
 }
 
 .nav-container {
@@ -412,22 +402,119 @@ header {
     }
 }
 
+/* CV Download Button - Uiverse.io Style */
 .btn-nav-cv {
-    background: var(--accent);
-    color: var(--bg);
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
+    width: 70px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--text);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.3s;
     text-decoration: none;
-    font-weight: 600;
+    padding: 0 0.5rem;
+}
+
+.btn-nav-cv .svgIcon {
+    fill: var(--accent);
+    width: 1em;
+    height: 1em;
+}
+
+.btn-nav-cv .cv-text {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+
+.btn-nav-cv .tooltip {
+    position: absolute;
+    right: -90px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    background-color: var(--text);
+    color: var(--bg);
+    padding: 5px 10px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: var(--transition);
+    justify-content: center;
+    transition-duration: 0.2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.btn-nav-cv .tooltip::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: var(--text);
+    transform: rotate(45deg);
+    left: -5px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition-duration: 0.3s;
+}
+
+.btn-nav-cv:hover .tooltip {
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .btn-nav-cv:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
+    background-color: var(--accent);
+    transition-duration: 0.3s;
+}
+
+
+
+.btn-nav-cv:hover .svgIcon {
+    fill: var(--bg);
+    animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.btn-nav-cv:hover .cv-text {
+    color: var(--bg);
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes arrow-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* Language Selector */
@@ -472,7 +559,7 @@ header {
     margin-top: 0.5rem;
     background: var(--bg);
     min-width: 150px;
-    box-shadow: var(--shadow);
+
     border-radius: 10px;
     z-index: 1001;
     overflow: hidden;
@@ -524,6 +611,61 @@ header {
     overflow-y: auto;
     z-index: 100;
     border-right: 3px solid var(--accent);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.sidebar.collapsed {
+    width: 60px;
+    transform: translateX(0);
+}
+
+.sidebar.collapsed .sidebar-content {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-20px);
+}
+
+.sidebar-content {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.sidebar-toggle {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    z-index: 101;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-toggle:hover {
+    background: var(--primary);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-toggle:hover .toggle-arrow {
+    animation: arrow-pulse 0.6s ease-in-out;
+}
+
+.toggle-arrow {
+    transition: transform 0.3s ease;
+}
+
+.sidebar.collapsed .toggle-arrow {
+    transform: rotate(180deg);
 }
 
 .sidebar-content {
@@ -541,7 +683,7 @@ header {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid var(--accent);
-    box-shadow: var(--shadow);
+
 }
 
 .profile-info {
@@ -676,6 +818,11 @@ header {
     margin-left: 350px;
     flex: 1;
     padding-top: 0;
+    transition: margin-left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.sidebar.collapsed~.main-content {
+    margin-left: 60px;
 }
 
 section {
@@ -721,7 +868,7 @@ h2::after {
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 15px;
-    box-shadow: var(--shadow);
+
     transition: var(--transition);
     border-top: 4px solid var(--accent);
 }
@@ -764,7 +911,7 @@ h2::after {
     border: 1px solid var(--border);
     padding: 2.5rem;
     border-radius: 15px;
-    box-shadow: var(--shadow);
+
     border-left: 4px solid var(--accent);
     transition: var(--transition);
 }
@@ -808,7 +955,7 @@ h2::after {
     content: '';
     position: absolute;
     width: 4px;
-    background: linear-gradient(180deg, var(--accent), var(--secondary));
+    background: var(--accent);
     top: 0;
     bottom: 0;
     left: 50%;
@@ -842,7 +989,7 @@ h2::after {
     font-size: 0.9rem;
     margin: 0 2rem;
     height: fit-content;
-    box-shadow: var(--shadow);
+
     position: relative;
     z-index: 2;
 }
@@ -853,7 +1000,7 @@ h2::after {
     border: 1px solid var(--border);
     padding: 2.5rem;
     border-radius: 8px;
-    box-shadow: var(--shadow);
+
     transition: var(--transition);
     border-left: 4px solid var(--accent);
     max-width: 650px;
@@ -920,7 +1067,7 @@ h2::after {
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 2rem;
-    box-shadow: var(--shadow);
+
     transition: var(--transition);
 }
 
@@ -1025,7 +1172,7 @@ h2::after {
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 3rem;
-    box-shadow: var(--shadow);
+
     transition: var(--transition);
 }
 
@@ -1099,6 +1246,19 @@ h2::after {
     color: var(--text);
 }
 
+/* SVG skill icons */
+.skill-icon-svg {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    object-fit: contain;
+    transition: var(--transition);
+}
+
+.skill-item:hover .skill-icon-svg {
+    filter: brightness(0) invert(1);
+}
+
 /* Carousel Controls */
 .carousel-btn {
     position: absolute;
@@ -1114,11 +1274,11 @@ h2::after {
     cursor: pointer;
     transition: var(--transition);
     z-index: 10;
-    box-shadow: var(--shadow);
+
 }
 
 .carousel-btn:hover {
-    background: var(--secondary);
+    background: var(--accent);
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -1159,7 +1319,7 @@ h2::after {
 
 /* --- Hero Section de Proyectos --- */
 .project-hero {
-    background: linear-gradient(135deg, var(--accent), var(--secondary));
+    background: var(--accent);
     color: var(--bg);
     padding: 8rem 0 6rem;
     position: relative;
@@ -1316,7 +1476,7 @@ h2::after {
     left: 0;
     width: 60px;
     height: 4px;
-    background: linear-gradient(135deg, var(--accent), var(--secondary));
+    background: var(--accent);
     border-radius: 2px;
 }
 
@@ -1342,7 +1502,7 @@ h2::after {
     border: 1px solid var(--border);
     border-radius: 15px;
     padding: 2.5rem;
-    box-shadow: var(--shadow);
+
     transition: var(--transition);
     position: relative;
     overflow: hidden;
@@ -1404,7 +1564,7 @@ h2::after {
 .pipeline-step:hover {
     border-color: var(--accent);
     transform: translateY(-3px);
-    box-shadow: var(--shadow);
+
 }
 
 /* Número del paso (círculo flotante) */
@@ -1413,7 +1573,7 @@ h2::after {
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: linear-gradient(135deg, var(--accent), var(--secondary));
+    background: var(--accent);
     color: var(--bg);
     width: 30px;
     height: 30px;
@@ -1462,7 +1622,7 @@ h2::after {
 .tech-item:hover {
     border-color: var(--accent);
     transform: translateY(-2px);
-    box-shadow: var(--shadow);
+
 }
 
 .tech-item-icon {
@@ -1507,7 +1667,7 @@ h2::after {
 
 .result-card:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow);
+
 }
 
 /* Número destacado del resultado */
@@ -1559,7 +1719,7 @@ h2::after {
 .doc-link:hover {
     border-color: var(--accent);
     transform: translateY(-2px);
-    box-shadow: var(--shadow);
+
 }
 
 .doc-icon {
@@ -1682,7 +1842,7 @@ footer {
         text-align: center;
         gap: 0.5rem;
         padding: 2rem 0;
-        box-shadow: var(--shadow);
+
         z-index: 999;
     }
 
@@ -1705,6 +1865,14 @@ footer {
         top: 0;
         border-right: none;
         border-bottom: 3px solid var(--accent);
+    }
+
+    .sidebar.collapsed {
+        width: 100%;
+    }
+
+    .sidebar-toggle {
+        display: none;
     }
 
     .sidebar-content {

@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeLanguageSelector();
     initializeMobileMenu();
     initializeSkillsCarousel();
+    initializeSidebarToggle();
 });
 
 /**
@@ -162,11 +163,23 @@ function updateNavigation() {
 
     // Update CV download button in navigation
     const navCvButton = document.querySelector('.btn-nav-cv');
-    if (navCvButton) {
-        navCvButton.innerHTML = `<i class="fas fa-download"></i> CV`;
+    if (navCvButton && contentData.hero) {
         // Update CV link based on language
         const cvFile = currentLanguage === 'es' ? 'cv/carlos_esquivel_cv_es.pdf' : 'cv/carlos_esquivel_cv_en.pdf';
         navCvButton.href = cvFile;
+
+        // Update button text based on language
+        const cvText = navCvButton.querySelector('.cv-text');
+        if (cvText && contentData.hero.cvButtonText) {
+            cvText.textContent = contentData.hero.cvButtonText;
+        }
+
+        // Update tooltip text based on language
+        const tooltip = navCvButton.querySelector('.tooltip');
+        if (tooltip) {
+            const tooltipText = currentLanguage === 'es' ? 'HV PDF' : 'CV PDF';
+            tooltip.textContent = tooltipText;
+        }
     }
 }
 
@@ -396,7 +409,20 @@ function updateSkills() {
                 skillList.innerHTML = '';
                 category.items.forEach(skill => {
                     const span = document.createElement('span');
-                    span.textContent = skill;
+
+                    // Verificar si el skill tiene icono específico
+                    if (typeof skill === 'object' && skill.name && skill.icon) {
+                        // Verificar si es un archivo SVG o un icono de Font Awesome
+                        if (skill.icon.endsWith('.svg')) {
+                            span.innerHTML = `<img src="${skill.icon}" alt="${skill.name}" class="skill-icon-svg"> ${skill.name}`;
+                        } else {
+                            span.innerHTML = `<i class="${skill.icon}"></i> ${skill.name}`;
+                        }
+                    } else {
+                        // Mantener compatibilidad con strings simples
+                        span.textContent = typeof skill === 'string' ? skill : skill.name || skill;
+                    }
+
                     skillList.appendChild(span);
                 });
             }
@@ -488,6 +514,12 @@ function initializeLanguageSelector() {
             e.preventDefault();
             const selectedLang = this.getAttribute('data-lang');
             changeLanguage(selectedLang);
+
+            // Cerrar el dropdown después de seleccionar idioma
+            const dropdownContent = document.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.classList.remove('show');
+            }
         });
     });
 
@@ -1176,4 +1208,28 @@ function updateProjectFeatures(project, language) {
             if (descElement) descElement.textContent = feature.description;
         });
     }
-} 
+}
+
+/**
+ * Inicializa el toggle del sidebar
+ */
+function initializeSidebarToggle() {
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    if (sidebarToggle && sidebar) {
+        // Cargar estado guardado del sidebar
+        const isCollapsed = localStorage.getItem('sidebarCollapsed') === 'true';
+        if (isCollapsed) {
+            sidebar.classList.add('collapsed');
+        }
+
+        sidebarToggle.addEventListener('click', function () {
+            sidebar.classList.toggle('collapsed');
+
+            // Guardar estado en localStorage
+            const collapsed = sidebar.classList.contains('collapsed');
+            localStorage.setItem('sidebarCollapsed', collapsed);
+        });
+    }
+}

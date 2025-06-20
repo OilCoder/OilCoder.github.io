@@ -20,7 +20,8 @@
             "email": "carlos.esquivel000@gmail.com",
             "location": "New York, USA"
         },
-        "downloadCV": "Download CV"
+        "downloadCV": "Download CV",
+        "cvButtonText": "CV"
     },
     "about": {
         "title": "Professional Profile",
@@ -214,50 +215,128 @@
                 "icon": "fas fa-heart",
                 "title": "Soft Skills",
                 "items": [
-                    "Leadership",
-                    "Effective communication",
-                    "Adaptability",
-                    "Teamwork",
-                    "Critical thinking",
-                    "Problem solving",
-                    "Decision-making"
+                    {
+                        "name": "Leadership",
+                        "icon": "fas fa-crown"
+                    },
+                    {
+                        "name": "Effective communication",
+                        "icon": "fas fa-comments"
+                    },
+                    {
+                        "name": "Adaptability",
+                        "icon": "fas fa-exchange-alt"
+                    },
+                    {
+                        "name": "Teamwork",
+                        "icon": "fas fa-users"
+                    },
+                    {
+                        "name": "Critical thinking",
+                        "icon": "fas fa-lightbulb"
+                    },
+                    {
+                        "name": "Problem solving",
+                        "icon": "fas fa-puzzle-piece"
+                    },
+                    {
+                        "name": "Decision-making",
+                        "icon": "fas fa-balance-scale"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-code",
                 "title": "Programming Languages",
                 "items": [
-                    "Python",
-                    "MATLAB",
-                    "SQL"
+                    {
+                        "name": "Python",
+                        "icon": "assets/icons/python.svg"
+                    },
+                    {
+                        "name": "MATLAB",
+                        "icon": "assets/icons/matlab.svg"
+                    },
+                    {
+                        "name": "SQL",
+                        "icon": "assets/icons/postgresql.svg"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-robot",
                 "title": "ML / Data Analysis Frameworks",
                 "items": [
-                    "TensorFlow",
-                    "Keras",
-                    "Scikit-learn",
-                    "Pandas",
-                    "NumPy",
-                    "Matplotlib",
-                    "Seaborn",
-                    "PyTorch",
-                    "Plotly",
-                    "Optuna"
+                    {
+                        "name": "TensorFlow",
+                        "icon": "assets/icons/tensorflow.svg"
+                    },
+                    {
+                        "name": "Keras",
+                        "icon": "assets/icons/keras.svg"
+                    },
+                    {
+                        "name": "Scikit-learn",
+                        "icon": "assets/icons/scikit-learn.svg"
+                    },
+                    {
+                        "name": "Pandas",
+                        "icon": "assets/icons/pandas.svg"
+                    },
+                    {
+                        "name": "NumPy",
+                        "icon": "assets/icons/numpy.svg"
+                    },
+                    {
+                        "name": "Matplotlib",
+                        "icon": "assets/icons/matplotlib.svg"
+                    },
+                    {
+                        "name": "Seaborn",
+                        "icon": "assets/icons/seaborn.svg"
+                    },
+                    {
+                        "name": "PyTorch",
+                        "icon": "assets/icons/pytorch.svg"
+                    },
+                    {
+                        "name": "Plotly",
+                        "icon": "assets/icons/plotly.svg"
+                    },
+                    {
+                        "name": "Optuna",
+                        "icon": "assets/icons/optuna.svg"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-tools",
                 "title": "Technical Tools",
                 "items": [
-                    "F.A.S.T. WellTest™",
-                    "LogView++",
-                    "OpenWells",
-                    "Git (version control)",
-                    "Microsoft Power BI",
-                    "Jupyter Notebooks"
+                    {
+                        "name": "F.A.S.T. WellTest™",
+                        "icon": "fas fa-oil-well"
+                    },
+                    {
+                        "name": "LogView++",
+                        "icon": "fas fa-chart-line"
+                    },
+                    {
+                        "name": "OpenWells",
+                        "icon": "fas fa-industry"
+                    },
+                    {
+                        "name": "Git",
+                        "icon": "assets/icons/git.svg"
+                    },
+                    {
+                        "name": "Microsoft Power BI",
+                        "icon": "assets/icons/power-bi.svg"
+                    },
+                    {
+                        "name": "Jupyter Notebooks",
+                        "icon": "assets/icons/jupyter.svg"
+                    }
                 ]
             }
         ]
