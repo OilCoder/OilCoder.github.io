@@ -605,9 +605,9 @@ header {
     background: var(--primary);
     color: var(--bg);
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
-    height: calc(100vh - 70px);
+    height: 100vh;
     overflow-y: auto;
     z-index: 100;
     border-right: 3px solid var(--accent);
@@ -670,6 +670,7 @@ header {
 
 .sidebar-content {
     padding: 2rem;
+    padding-top: 90px;
 }
 
 .profile-photo {
@@ -1877,6 +1878,7 @@ footer {
 
     .sidebar-content {
         padding: 1.5rem;
+        padding-top: 90px;
     }
 
     .profile-img {
