@@ -165,7 +165,7 @@ function updateNavigation() {
     if (navCvButton) {
         navCvButton.innerHTML = `<i class="fas fa-download"></i> CV`;
         // Update CV link based on language
-        const cvFile = currentLanguage === 'es' ? 'cv/CV_Español.pdf' : 'cv/CV_English.pdf';
+        const cvFile = currentLanguage === 'es' ? 'cv/carlos_esquivel_cv_es.pdf' : 'cv/carlos_esquivel_cv_en.pdf';
         navCvButton.href = cvFile;
     }
 }
@@ -916,7 +916,7 @@ function updateProjectNavigation(language) {
     // Actualizar botón de CV
     const navCvButton = document.querySelector('.btn-nav-cv');
     if (navCvButton) {
-        const cvFile = language === 'es' ? '../cv/CV_Español.pdf' : '../cv/CV_English.pdf';
+        const cvFile = language === 'es' ? '../cv/carlos_esquivel_cv_es.pdf' : '../cv/carlos_esquivel_cv_en.pdf';
         navCvButton.href = cvFile;
     }
 
