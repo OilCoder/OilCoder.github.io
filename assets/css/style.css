@@ -99,8 +99,8 @@ header {
 .theme-toggle {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 70px;
+    height: 35px;
 }
 
 .theme-toggle input {
@@ -405,7 +405,7 @@ header {
 /* CV Download Button - Uiverse.io Style */
 .btn-nav-cv {
     width: 70px;
-    height: 50px;
+    height: 35px;
     border: none;
     border-radius: 25px;
     background-color: var(--text);
@@ -601,21 +601,21 @@ header {
 }
 
 .sidebar {
-    width: 350px;
+    width: 380px;
     background: var(--primary);
     color: var(--bg);
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: visible;
     z-index: 1001;
     border-right: 3px solid var(--accent);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .sidebar.collapsed {
-    width: 60px;
+    width: 30px;
     transform: translateX(0);
 }
 
