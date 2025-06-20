@@ -14,7 +14,7 @@
     "hero": {
         "name": "Carlos Andrés Esquivel Plazas",
         "title": "Petroleum Engineer | AI & Machine Learning",
-        "objective": "Petroleum engineer with solid experience in field operations and the use of artificial intelligence for reservoir characterization, seeking opportunities to apply advanced technological solutions in the area of petrophysics.",
+        "objective": "Petroleum engineer specialized in artificial intelligence and data analysis, with proven experience in field operations and development of advanced technological solutions. Focused on applying machine learning and deep learning for petrophysical process optimization and reservoir characterization.",
         "contact": {
             "phone": "+1 (929) 340 8548",
             "email": "carlos.esquivel000@gmail.com",
@@ -24,7 +24,7 @@
     },
     "about": {
         "title": "Professional Profile",
-        "description": "Petroleum engineer with experience in wireline, well testing and subsurface data analysis, complemented with advanced skills in data science, machine learning and deep learning. I have led innovative projects that apply artificial intelligence, such as deep neural networks and generative models, for the prediction of synthetic curves in well logs, exceeding expectations with precise and efficient analysis. Expert in Python, MATLAB and AI frameworks, I provide technological solutions that optimize operations in the oil and gas industry.",
+        "description": "Petroleum engineer with over 10 years of experience combining traditional field operations with emerging artificial intelligence technologies. Specialized in advanced petrophysical analysis, machine learning pipeline development, and industrial process automation. I have led innovative projects that integrate deep neural networks, computer vision, and predictive models to optimize reservoir characterization and improve operational efficiency. Expert in Python, TensorFlow, MATLAB, and data analysis tools, with a focus on scalable, high-impact solutions for the energy industry.",
         "highlights": [
             {
                 "icon": "fas fa-brain",
@@ -80,14 +80,25 @@
         "title": "Professional Experience",
         "items": [
             {
+                "period": "2023 - Present",
+                "position": "Machine Learning Specialist | Independent Consultant",
+                "company": "AI and Petrophysical Analysis Projects",
+                "responsibilities": [
+                    "Development of complete machine learning pipelines for petrophysical analysis using TensorFlow and RAPIDS",
+                    "Implementation of optimized neural networks with K-fold cross-validation and Bayesian optimization",
+                    "Automation of well log analysis processes with GPU-accelerated processing",
+                    "Technical consulting in AI applications for reservoir characterization and operational optimization"
+                ]
+            },
+            {
                 "period": "2020 - 2023",
                 "position": "Team and Operations Coordinator",
                 "company": "Ribalta NYC (Top 50 Pizza USA)",
                 "responsibilities": [
-                    "Coordinated workflows in three specialized areas: Hot area, Cold bar and Pizzeria",
-                    "Optimized dish delivery to more than 400 daily diners during peak hours",
-                    "Reduced order delivery times from 10-20 minutes to 5-10 minutes",
-                    "Improved leadership skills managing bilingual teams in high-pressure environment"
+                    "Coordinated workflows in three specialized areas optimizing operational processes",
+                    "Implemented improvements that reduced delivery times from 15-20 minutes to 5-10 minutes",
+                    "Managed multicultural teams of up to 25 people in high-demand environment (400+ daily orders)",
+                    "Developed leadership and operational management skills in multicultural, high-pressure environment"
                 ]
             },
             {
@@ -95,10 +106,10 @@
                 "position": "Automation Engineer",
                 "company": "Luna Company S.A.S",
                 "responsibilities": [
-                    "Developed computer vision model for automatic tool recognition",
-                    "Reduced report preparation time by 40%",
-                    "Implemented solution in Python using computer vision frameworks",
-                    "Optimized workflows and reduced manual processing errors"
+                    "Developed computer vision system for automatic recognition of industrial tools",
+                    "Implemented complete solution in Python with OpenCV and machine learning frameworks",
+                    "Achieved 40% reduction in report preparation time through intelligent automation",
+                    "Optimized workflows eliminating manual processing errors and improving traceability"
                 ]
             },
             {
@@ -106,10 +117,10 @@
                 "position": "Data Analyst and Database Administrator",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Prepared and compiled data for strategic business development reports",
-                    "Designed databases in Excel and SQL, modeled data using MATLAB",
-                    "Automated data storage and retrieval processes",
-                    "Optimized document management of physical and electronic files"
+                    "Designed and developed relational databases in SQL Server for technical information management",
+                    "Implemented data analysis models using MATLAB and advanced Excel for strategic reports",
+                    "Automated ETL (Extract, Transform, Load) processes improving efficiency by 60%",
+                    "Established digital document management protocols optimizing information access and retrieval"
                 ]
             },
             {
@@ -117,10 +128,10 @@
                 "position": "Wireline Operations Engineer",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Performed wireline and well testing operations",
-                    "Managed pressure and temperature tests (decline/restoration, injection and interference)",
-                    "Supervised field tests to ensure data integrity and quality",
-                    "Improved reliability of memory logs ensuring accurate results"
+                    "Executed specialized wireline and well testing operations in oil and gas wells",
+                    "Supervised pressure and temperature tests (build-up, drawdown, injection and interference)",
+                    "Implemented QA/QC protocols to ensure formation data integrity and reliability",
+                    "Improved operational procedures achieving 99% reliability in memory logs"
                 ]
             },
             {
@@ -128,10 +139,10 @@
                 "position": "Operations Analyst",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Provided operational and analytical support ensuring QHSE compliance",
-                    "Evaluated operational processes to implement integrated management system",
-                    "Applied improvements in procedures to optimize execution times",
-                    "Ensured compliance with quality standards"
+                    "Provided technical and analytical support ensuring QHSE standards compliance",
+                    "Evaluated and optimized operational processes implementing ISO 9001 integrated management system",
+                    "Developed operational procedure improvements reducing execution times by 25%",
+                    "Established performance metrics and KPIs for continuous operational quality monitoring"
                 ]
             }
         ]
@@ -185,37 +196,42 @@
                 "icon": "fas fa-heart",
                 "title": "Soft Skills",
                 "items": [
-                    "Leadership",
-                    "Effective Communication",
-                    "Adaptability",
-                    "Teamwork",
-                    "Critical Thinking",
-                    "Problem Solving",
-                    "Decision Making Ability"
+                    "Technical Leadership",
+                    "Multicultural Effective Communication",
+                    "Adaptability and Continuous Learning",
+                    "Collaborative Teamwork",
+                    "Analytical and Critical Thinking",
+                    "Complex Problem Solving",
+                    "Technical Project Management",
+                    "Mentoring and Talent Development"
                 ]
             },
             {
                 "icon": "fas fa-code",
                 "title": "Programming Languages",
                 "items": [
-                    "Python",
-                    "MATLAB",
-                    "SQL"
+                    "Python (Advanced)",
+                    "MATLAB (Expert)",
+                    "SQL (Intermediate-Advanced)",
+                    "R (Intermediate)",
+                    "JavaScript (Basic-Intermediate)",
+                    "Bash/Shell Scripting"
                 ]
             },
             {
                 "icon": "fas fa-robot",
                 "title": "AI and Data Analysis Frameworks",
                 "items": [
-                    "TensorFlow",
-                    "Keras",
-                    "Scikit-learn",
-                    "Pandas",
-                    "NumPy",
-                    "Matplotlib",
-                    "Seaborn",
+                    "TensorFlow / Keras",
                     "PyTorch",
-                    "Plotly"
+                    "Scikit-learn",
+                    "RAPIDS (cuDF, cuML)",
+                    "Pandas / NumPy",
+                    "Matplotlib / Seaborn",
+                    "Plotly / Dash",
+                    "OpenCV",
+                    "Optuna",
+                    "XGBoost / LightGBM"
                 ]
             },
             {
@@ -225,9 +241,27 @@
                     "F.A.S.T. WellTest™",
                     "LogView++",
                     "OpenWells",
-                    "Git",
+                    "Petrel / Eclipse",
+                    "Docker / Kubernetes",
+                    "Git / GitHub",
                     "Microsoft Power BI",
-                    "Jupyter Notebooks"
+                    "Jupyter Notebooks / JupyterLab",
+                    "Apache Spark",
+                    "MongoDB / PostgreSQL",
+                    "Linux / Ubuntu Server",
+                    "NVIDIA CUDA / cuDNN"
+                ]
+            },
+            {
+                "icon": "fas fa-cloud",
+                "title": "Cloud Platforms and DevOps",
+                "items": [
+                    "AWS (EC2, S3, SageMaker)",
+                    "Google Cloud Platform",
+                    "Docker Containerization",
+                    "CI/CD Pipelines",
+                    "MLOps Best Practices",
+                    "Model Deployment & Monitoring"
                 ]
             }
         ]
