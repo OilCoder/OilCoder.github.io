@@ -583,8 +583,8 @@ function updateLanguageSelector() {
             flagImg.alt = 'España';
             langText.textContent = 'Español';
         } else {
-            flagImg.src = 'https://flagcdn.com/w20/gb-eng.png';
-            flagImg.alt = 'Inglaterra';
+            flagImg.src = 'https://flagcdn.com/w20/us.png';
+            flagImg.alt = 'Estados Unidos';
             langText.textContent = 'English';
         }
     } else if (flagImg) {
@@ -593,8 +593,8 @@ function updateLanguageSelector() {
             flagImg.src = 'https://flagcdn.com/w20/es.png';
             flagImg.alt = 'España';
         } else {
-            flagImg.src = 'https://flagcdn.com/w20/gb-eng.png';
-            flagImg.alt = 'Inglaterra';
+            flagImg.src = 'https://flagcdn.com/w20/us.png';
+            flagImg.alt = 'Estados Unidos';
         }
     }
 }
