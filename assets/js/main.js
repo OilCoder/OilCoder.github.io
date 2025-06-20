@@ -394,6 +394,8 @@ function updateProjects() {
 function updateSkills() {
     if (!contentData.skills) return;
 
+    console.log('Updating skills with data:', contentData.skills);
+
     const skills = contentData.skills;
     const title = document.querySelector('#skills h2');
     if (title) title.textContent = skills.title;
@@ -415,6 +417,7 @@ function updateSkills() {
                     if (typeof skill === 'object' && skill.name && skill.icon) {
                         // Verificar si es un archivo SVG o un icono de Font Awesome
                         if (skill.icon.endsWith('.svg')) {
+                            console.log('Creating SVG icon for:', skill.name, 'with path:', skill.icon);
                             skillItem.innerHTML = `<img src="${skill.icon}" alt="${skill.name}" class="skill-icon-svg"><span>${skill.name}</span>`;
                         } else {
                             skillItem.innerHTML = `<i class="${skill.icon}"></i><span>${skill.name}</span>`;

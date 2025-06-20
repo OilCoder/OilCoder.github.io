@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug - Iconos SVG</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .icon-test {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .icon-test img {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #ddd;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Prueba de Iconos SVG</h1>
+    <div id="icon-tests"></div>
+
+    <script>
+        const icons = [
+            { name: 'Python', path: 'assets/icons/python.svg' },
+            { name: 'MATLAB', path: 'assets/icons/matlab.svg' },
+            { name: 'TensorFlow', path: 'assets/icons/tensorflow.svg' },
+            { name: 'Pandas', path: 'assets/icons/pandas.svg' },
+            { name: 'NumPy', path: 'assets/icons/numpy.svg' },
+            { name: 'Matplotlib', path: 'assets/icons/matplotlib.svg' }
+        ];
+
+        const container = document.getElementById('icon-tests');
+
+        icons.forEach(icon => {
+            const div = document.createElement('div');
+            div.className = 'icon-test';
+
+            const img = document.createElement('img');
+            img.src = icon.path;
+            img.alt = icon.name;
+
+            const span = document.createElement('span');
+            span.textContent = `${icon.name} (${icon.path})`;
+
+            img.onload = () => {
+                span.className = 'success';
+                span.textContent += ' ✓ Cargado correctamente';
+            };
+
+            img.onerror = () => {
+                span.className = 'error';
+                span.textContent += ' ✗ Error al cargar';
+            };
+
+            div.appendChild(img);
+            div.appendChild(span);
+            container.appendChild(div);
+        });
+    </script>
+</body>
+
+</html>
