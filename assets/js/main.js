@@ -628,36 +628,25 @@ function initializeThemeToggle() {
 
     // Aplicar tema guardado
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    updateThemeCheckbox(savedTheme);
 
     if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
+        themeToggle.addEventListener('change', function () {
+            const newTheme = this.checked ? 'dark' : 'light';
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
         });
     }
 }
 
 /**
- * Actualiza el icono del botón de tema
+ * Actualiza el estado del checkbox de tema
  * @param {string} theme - 'light' o 'dark'
  */
-function updateThemeIcon(theme) {
-    // Buscar por ID (página principal) o por clase (página de proyecto)
-    const themeToggle = document.getElementById('themeToggle') || document.querySelector('.theme-toggle');
+function updateThemeCheckbox(theme) {
+    const themeToggle = document.getElementById('themeToggle') || document.querySelector('.theme-toggle input');
     if (themeToggle) {
-        const icon = themeToggle.querySelector('i');
-        if (icon) {
-            if (theme === 'dark') {
-                icon.className = 'fas fa-sun';
-            } else {
-                icon.className = 'fas fa-moon';
-            }
-        }
+        themeToggle.checked = (theme === 'dark');
     }
 }
 
@@ -786,7 +775,7 @@ function toggleTheme() {
 
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
+    updateThemeCheckbox(newTheme);
 }
 
 /**
