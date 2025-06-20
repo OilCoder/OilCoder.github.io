@@ -13,8 +13,8 @@
     },
     "hero": {
         "name": "Carlos Andrés Esquivel Plazas",
-        "title": "Petroleum Engineer | AI & Machine Learning",
-        "objective": "Petroleum engineer specialized in artificial intelligence and data analysis, with proven experience in field operations and development of advanced technological solutions. Focused on applying machine learning and deep learning for petrophysical process optimization and reservoir characterization.",
+        "title": "Petroleum Engineer | Specialist in Machine Learning and Artificial Intelligence",
+        "objective": "Petroleum engineer with solid field experience and a strong interest in integrating machine learning and artificial intelligence solutions. My goal is to apply advanced technologies that optimize processes and improve operational efficiency in the oil and gas industry.",
         "contact": {
             "phone": "+1 (929) 340 8548",
             "email": "carlos.esquivel000@gmail.com",
@@ -24,22 +24,22 @@
     },
     "about": {
         "title": "Professional Profile",
-        "description": "Petroleum engineer with over 10 years of experience combining traditional field operations with emerging artificial intelligence technologies. Specialized in advanced petrophysical analysis, machine learning pipeline development, and industrial process automation. I have led innovative projects that integrate deep neural networks, computer vision, and predictive models to optimize reservoir characterization and improve operational efficiency. Expert in Python, TensorFlow, MATLAB, and data analysis tools, with a focus on scalable, high-impact solutions for the energy industry.",
+        "description": "Petroleum engineer with solid experience in field operations and comprehensive subsurface data analysis. Specialized in developing advanced technology solutions based on machine learning and AI, focused on process automation and improving operational outcomes. Successfully led initiatives to reduce report turnaround times and developed predictive models to support accurate technical decisions in petrophysical workflows. Proficient in Python, MATLAB, and key AI frameworks, combining operational expertise with leadership of multidisciplinary teams and a drive to innovate with emerging technologies in the energy sector.",
         "highlights": [
             {
-                "icon": "fas fa-brain",
-                "title": "Fast Learning",
-                "description": "Software and procedures"
+                "icon": "fas fa-clock",
+                "title": "4+ years in operations",
+                "description": "Wellsite and wireline operations (P/T tests, well testing, QHSE)"
             },
             {
-                "icon": "fas fa-tools",
-                "title": "Problem Solving",
-                "description": "Technical and complex"
+                "icon": "fas fa-robot",
+                "title": "3+ years applying Python & ML",
+                "description": "NDT inspection and well log prediction"
             },
             {
-                "icon": "fas fa-project-diagram",
-                "title": "Project Management",
-                "description": "Technical and innovative"
+                "icon": "fas fa-chart-line",
+                "title": "9+ years bridging operations",
+                "description": "Field operations and AI for subsurface decision-making"
             }
         ]
     },
@@ -152,39 +152,57 @@
         "items": [
             {
                 "icon": "fas fa-chart-line",
-                "title": "Petrophysical Analysis and Synthetic Log Prediction",
+                "title": "Synthetic Well Log Curve Prediction",
                 "period": "2023 – Present",
-                "description": "Complete Machine Learning pipeline for analysis and prediction of petrophysical properties from well logs. Implemented optimized neural networks, rigorous validation, and GPU-accelerated processing.",
+                "description": "Designed machine learning and deep learning models in Python to predict synthetic well log curves (e.g., CNLS, RHOB, Formation) with up to 5× more accuracy than previous methods. Developed an interactive interface to allow technical and non-technical users to evaluate zones with missing or limited data, improving petrophysical assessments and reducing analysis time.",
                 "achievements": [
-                    "8-step automated pipeline",
-                    "Bayesian optimization with Optuna",
-                    "Rigorous K-fold cross-validation"
+                    "5× more accuracy than previous methods",
+                    "Interactive interface for technical users",
+                    "Improved petrophysical assessments"
                 ],
                 "technologies": [
                     "Python",
                     "TensorFlow",
-                    "RAPIDS",
-                    "Docker",
-                    "Optuna"
+                    "Keras",
+                    "Deep Learning",
+                    "Machine Learning"
                 ],
                 "github": "https://github.com/OilCoder/Kansas",
                 "demo": "projects/petrophysical-analysis.html"
             },
             {
-                "icon": "fas fa-tint",
-                "title": "Water Drive Effect in Reservoir Boundary",
-                "period": "2016 – 2018",
-                "description": "Developed software to detect water intrusion in reservoirs with hydraulic activity, improving the accuracy of OOIP calculations and well drainage area.",
+                "icon": "fas fa-eye",
+                "title": "Automated Technical Reporting with Computer Vision (Luna Project)",
+                "period": "2018 – 2020",
+                "description": "Built a Python-based computer vision system for large-scale inspection of oilfield tools, using nondestructive testing (NDT) image analysis. Integrated AI models to detect defects and link image evidence to structured databases, significantly reducing manual errors and speeding up technical reporting.",
                 "achievements": [
-                    "Custom algorithms",
-                    "Precise flow analysis",
-                    "OOIP calculation improvement"
+                    "40% reduction in reporting time",
+                    "Automated NDT inspection",
+                    "Eliminated manual errors"
+                ],
+                "technologies": [
+                    "Python",
+                    "OpenCV",
+                    "Computer Vision",
+                    "Machine Learning",
+                    "NDT Analysis"
+                ]
+            },
+            {
+                "icon": "fas fa-tint",
+                "title": "Water Influx Detection in Reservoirs",
+                "period": "2016 – 2018",
+                "description": "Developed a MATLAB tool to identify water breakthrough in oil reservoirs using pressure test data and boundary condition simulations. Implemented pseudopressure analysis and calculated drainage area and original oil in place (OOIP). The tool helped reduce reserve estimation errors and improved water management and reservoir characterization under complex boundary conditions.",
+                "achievements": [
+                    "Reduced reserve estimation errors",
+                    "Improved water management",
+                    "Enhanced reservoir characterization"
                 ],
                 "technologies": [
                     "MATLAB",
-                    "Custom Algorithms",
+                    "Pseudopressure Analysis",
                     "Well Testing",
-                    "Flow Analysis"
+                    "Reservoir Simulation"
                 ]
             }
         ]
@@ -196,72 +214,50 @@
                 "icon": "fas fa-heart",
                 "title": "Soft Skills",
                 "items": [
-                    "Technical Leadership",
-                    "Multicultural Effective Communication",
-                    "Adaptability and Continuous Learning",
-                    "Collaborative Teamwork",
-                    "Analytical and Critical Thinking",
-                    "Complex Problem Solving",
-                    "Technical Project Management",
-                    "Mentoring and Talent Development"
+                    "Leadership",
+                    "Effective communication",
+                    "Adaptability",
+                    "Teamwork",
+                    "Critical thinking",
+                    "Problem solving",
+                    "Decision-making"
                 ]
             },
             {
                 "icon": "fas fa-code",
                 "title": "Programming Languages",
                 "items": [
-                    "Python (Advanced)",
-                    "MATLAB (Expert)",
-                    "SQL (Intermediate-Advanced)",
-                    "R (Intermediate)",
-                    "JavaScript (Basic-Intermediate)",
-                    "Bash/Shell Scripting"
+                    "Python",
+                    "MATLAB",
+                    "SQL"
                 ]
             },
             {
                 "icon": "fas fa-robot",
-                "title": "AI and Data Analysis Frameworks",
+                "title": "ML / Data Analysis Frameworks",
                 "items": [
-                    "TensorFlow / Keras",
-                    "PyTorch",
+                    "TensorFlow",
+                    "Keras",
                     "Scikit-learn",
-                    "RAPIDS (cuDF, cuML)",
-                    "Pandas / NumPy",
-                    "Matplotlib / Seaborn",
-                    "Plotly / Dash",
-                    "OpenCV",
-                    "Optuna",
-                    "XGBoost / LightGBM"
+                    "Pandas",
+                    "NumPy",
+                    "Matplotlib",
+                    "Seaborn",
+                    "PyTorch",
+                    "Plotly",
+                    "Optuna"
                 ]
             },
             {
                 "icon": "fas fa-tools",
-                "title": "Software and Technical Tools",
+                "title": "Technical Tools",
                 "items": [
                     "F.A.S.T. WellTest™",
                     "LogView++",
                     "OpenWells",
-                    "Petrel / Eclipse",
-                    "Docker / Kubernetes",
-                    "Git / GitHub",
+                    "Git (version control)",
                     "Microsoft Power BI",
-                    "Jupyter Notebooks / JupyterLab",
-                    "Apache Spark",
-                    "MongoDB / PostgreSQL",
-                    "Linux / Ubuntu Server",
-                    "NVIDIA CUDA / cuDNN"
-                ]
-            },
-            {
-                "icon": "fas fa-cloud",
-                "title": "Cloud Platforms and DevOps",
-                "items": [
-                    "AWS (EC2, S3, SageMaker)",
-                    "Google Cloud Platform",
-                    "Docker Containerization",
-                    "CI/CD Pipelines",
-                    "MLOps Best Practices",
-                    "Model Deployment & Monitoring"
+                    "Jupyter Notebooks"
                 ]
             }
         ]

@@ -13,8 +13,8 @@
     },
     "hero": {
         "name": "Carlos Andrés Esquivel Plazas",
-        "title": "Ingeniero de Petróleos | IA & Machine Learning",
-        "objective": "Ingeniero de petróleos especializado en inteligencia artificial y análisis de datos, con experiencia comprobada en operaciones de campo y desarrollo de soluciones tecnológicas avanzadas. Enfocado en la aplicación de machine learning y deep learning para optimización de procesos petrofísicos y caracterización de yacimientos.",
+        "title": "Ingeniero de Petróleos | Especialista en Machine Learning e Inteligencia Artificial",
+        "objective": "Ingeniero de petróleos con sólida experiencia en operaciones de campo y pasión por integrar soluciones de machine learning e inteligencia artificial. Mi objetivo es aplicar tecnologías avanzadas que optimicen procesos y mejoren la eficiencia operativa en la industria del petróleo.",
         "contact": {
             "phone": "+1 (929) 340 8548",
             "email": "carlos.esquivel000@gmail.com",
@@ -24,22 +24,22 @@
     },
     "about": {
         "title": "Perfil Profesional",
-        "description": "Ingeniero de petróleos con más de 10 años de experiencia combinando operaciones de campo tradicionales con tecnologías emergentes de inteligencia artificial. Especializado en análisis petrofísico avanzado, desarrollo de pipelines de machine learning y automatización de procesos industriales. He liderado proyectos innovadores que integran redes neuronales profundas, visión por computadora y modelos predictivos para optimizar la caracterización de yacimientos y mejorar la eficiencia operacional. Experto en Python, TensorFlow, MATLAB y herramientas de análisis de datos, con un enfoque en soluciones escalables y de alto impacto para la industria energética.",
+        "description": "Ingeniero de petróleos con sólida experiencia en operaciones de campo y análisis integral de datos del subsuelo. Especializado en el desarrollo de soluciones tecnológicas avanzadas basadas en machine learning e inteligencia artificial, enfocado en la automatización de procesos y la optimización de resultados operativos. Lideré iniciativas exitosas de reducción de tiempos en generación de reportes y desarrollé modelos predictivos para facilitar decisiones técnicas precisas en el área petrofísica. Domino Python, MATLAB y frameworks clave de IA, combinando experiencia operativa, liderazgo de equipos multidisciplinarios y pasión por innovar con tecnologías emergentes en la industria del petróleo y gas.",
         "highlights": [
             {
-                "icon": "fas fa-brain",
-                "title": "Aprendizaje Rápido",
-                "description": "Software y procedimientos"
+                "icon": "fas fa-clock",
+                "title": "+4 años en operaciones",
+                "description": "Operaciones de pozo y wireline (pruebas P/T, well testing, QHSE)"
             },
             {
-                "icon": "fas fa-tools",
-                "title": "Resolución de Problemas",
-                "description": "Técnicos y complejos"
+                "icon": "fas fa-robot",
+                "title": "+3 años aplicando Python & ML",
+                "description": "Inspección NDT y predicción de curvas de registro"
             },
             {
-                "icon": "fas fa-project-diagram",
-                "title": "Gestión de Proyectos",
-                "description": "Técnicos e innovadores"
+                "icon": "fas fa-chart-line",
+                "title": "+9 años optimizando decisiones",
+                "description": "Subsuelo y operaciones de campo con IA práctica"
             }
         ]
     },
@@ -152,39 +152,57 @@
         "items": [
             {
                 "icon": "fas fa-chart-line",
-                "title": "Análisis Petrofísico y Predicción de Registros Sintéticos",
+                "title": "Predicción de Curvas Sintéticas para Registros de Pozos",
                 "period": "2023 – Presente",
-                "description": "Pipeline completo de Machine Learning para análisis y predicción de propiedades petrofísicas a partir de registros de pozos. Implementé redes neuronales optimizadas, validación rigurosa y procesamiento GPU acelerado.",
+                "description": "Desarrollé modelos avanzados de machine learning y deep learning en Python para generar curvas sintéticas de registros de pozos, incrementando hasta 5 veces la precisión respecto a métodos anteriores. Implementé una interfaz interactiva que permite a usuarios técnicos y no técnicos analizar zonas con datos limitados o ausentes, agilizando la toma de decisiones en la caracterización petrofísica.",
                 "achievements": [
-                    "Pipeline automatizado de 8 pasos",
-                    "Optimización bayesiana con Optuna",
-                    "Validación cruzada K-fold rigurosa"
+                    "Precisión 5x superior a métodos anteriores",
+                    "Interfaz interactiva para usuarios técnicos",
+                    "Optimización de evaluaciones petrofísicas"
                 ],
                 "technologies": [
                     "Python",
                     "TensorFlow",
-                    "RAPIDS",
-                    "Docker",
-                    "Optuna"
+                    "Keras",
+                    "Deep Learning",
+                    "Machine Learning"
                 ],
                 "github": "https://github.com/OilCoder/Kansas",
                 "demo": "projects/petrophysical-analysis.html"
             },
             {
-                "icon": "fas fa-tint",
-                "title": "Efecto de Empuje por Intrusión de Agua",
-                "period": "2016 – 2018",
-                "description": "Desarrollé un software para detectar la intrusión de agua en yacimientos con actividad hidráulica, mejorando la precisión de los cálculos de OOIP y área de drenaje del pozo.",
+                "icon": "fas fa-eye",
+                "title": "Automatización de Reportes Técnicos por Visión Artificial (Proyecto Luna)",
+                "period": "2018 – 2020",
+                "description": "Implementé un sistema de visión artificial en Python, enfocado en la inspección masiva de herramientas petroleras mediante análisis automatizado de imágenes de pruebas no destructivas (NDT). Integré modelos de inteligencia artificial para identificar defectos y vincular evidencia visual con bases de datos técnicas, logrando reducir errores manuales y acelerar la entrega de reportes técnicos.",
                 "achievements": [
-                    "Algoritmos personalizados",
-                    "Análisis preciso de flujo",
-                    "Mejora en cálculos OOIP"
+                    "Reducción del 40% en tiempo de reportes",
+                    "Automatización de inspección NDT",
+                    "Eliminación de errores manuales"
+                ],
+                "technologies": [
+                    "Python",
+                    "OpenCV",
+                    "Computer Vision",
+                    "Machine Learning",
+                    "NDT Analysis"
+                ]
+            },
+            {
+                "icon": "fas fa-tint",
+                "title": "Detección del Efecto de Intrusión de Agua en Yacimientos",
+                "period": "2016 – 2018",
+                "description": "Desarrollé un software en MATLAB para identificar la intrusión de agua en yacimientos petroleros, analizando datos de pruebas de presión y simulaciones con distintas condiciones de frontera. El sistema implementa análisis de pseudopresión y deriva parámetros clave como el área de drenaje y el volumen original de petróleo (OOIP), facilitando la toma de decisiones estratégicas.",
+                "achievements": [
+                    "Reducción del margen de error en estimación de reservas",
+                    "Optimización del manejo de agua",
+                    "Mejora en caracterización de yacimientos"
                 ],
                 "technologies": [
                     "MATLAB",
-                    "Algoritmos Personalizados",
+                    "Análisis de Pseudopresión",
                     "Well Testing",
-                    "Análisis de Flujo"
+                    "Simulación de Yacimientos"
                 ]
             }
         ]
@@ -196,42 +214,38 @@
                 "icon": "fas fa-heart",
                 "title": "Habilidades Blandas",
                 "items": [
-                    "Liderazgo Técnico",
-                    "Comunicación Efectiva Multicultural",
-                    "Adaptabilidad y Aprendizaje Continuo",
-                    "Trabajo en Equipo Colaborativo",
-                    "Pensamiento Analítico y Crítico",
-                    "Resolución de Problemas Complejos",
-                    "Gestión de Proyectos Técnicos",
-                    "Mentoría y Desarrollo de Talento"
+                    "Liderazgo",
+                    "Comunicación Efectiva",
+                    "Adaptabilidad",
+                    "Trabajo en Equipo",
+                    "Pensamiento Crítico",
+                    "Resolución de Problemas",
+                    "Capacidad de Toma de Decisiones"
                 ]
             },
             {
                 "icon": "fas fa-code",
                 "title": "Lenguajes de Programación",
                 "items": [
-                    "Python (Avanzado)",
-                    "MATLAB (Experto)",
-                    "SQL (Intermedio-Avanzado)",
-                    "R (Intermedio)",
-                    "JavaScript (Básico-Intermedio)",
-                    "Bash/Shell Scripting"
+                    "Python",
+                    "MATLAB",
+                    "SQL"
                 ]
             },
             {
                 "icon": "fas fa-robot",
                 "title": "Frameworks para IA y Análisis de Datos",
                 "items": [
-                    "TensorFlow / Keras",
-                    "PyTorch",
+                    "TensorFlow",
+                    "Keras",
                     "Scikit-learn",
-                    "RAPIDS (cuDF, cuML)",
-                    "Pandas / NumPy",
-                    "Matplotlib / Seaborn",
-                    "Plotly / Dash",
-                    "OpenCV",
-                    "Optuna",
-                    "XGBoost / LightGBM"
+                    "Pandas",
+                    "NumPy",
+                    "Matplotlib",
+                    "Seaborn",
+                    "PyTorch",
+                    "Plotly",
+                    "Optuna"
                 ]
             },
             {
@@ -241,27 +255,9 @@
                     "F.A.S.T. WellTest™",
                     "LogView++",
                     "OpenWells",
-                    "Petrel / Eclipse",
-                    "Docker / Kubernetes",
-                    "Git / GitHub",
+                    "Git (control de versiones)",
                     "Microsoft Power BI",
-                    "Jupyter Notebooks / JupyterLab",
-                    "Apache Spark",
-                    "MongoDB / PostgreSQL",
-                    "Linux / Ubuntu Server",
-                    "NVIDIA CUDA / cuDNN"
-                ]
-            },
-            {
-                "icon": "fas fa-cloud",
-                "title": "Plataformas Cloud y DevOps",
-                "items": [
-                    "AWS (EC2, S3, SageMaker)",
-                    "Google Cloud Platform",
-                    "Docker Containerization",
-                    "CI/CD Pipelines",
-                    "MLOps Best Practices",
-                    "Model Deployment & Monitoring"
+                    "Jupyter Notebooks"
                 ]
             }
         ]
