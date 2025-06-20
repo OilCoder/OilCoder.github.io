@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeLanguageSelector();
     initializeMobileMenu();
     initializeSkillsCarousel();
+    initializeSidebarToggle();
 });
 
 /**
@@ -162,11 +163,23 @@ function updateNavigation() {
 
     // Update CV download button in navigation
     const navCvButton = document.querySelector('.btn-nav-cv');
-    if (navCvButton) {
-        navCvButton.innerHTML = `<i class="fas fa-download"></i> CV`;
+    if (navCvButton && contentData.hero) {
         // Update CV link based on language
-        const cvFile = currentLanguage === 'es' ? 'cv/CV_Español.pdf' : 'cv/CV_English.pdf';
+        const cvFile = currentLanguage === 'es' ? 'cv/carlos_esquivel_cv_es.pdf' : 'cv/carlos_esquivel_cv_en.pdf';
         navCvButton.href = cvFile;
+
+        // Update button text based on language
+        const cvText = navCvButton.querySelector('.cv-text');
+        if (cvText && contentData.hero.cvButtonText) {
+            cvText.textContent = contentData.hero.cvButtonText;
+        }
+
+        // Update tooltip text based on language
+        const tooltip = navCvButton.querySelector('.tooltip');
+        if (tooltip) {
+            const tooltipText = currentLanguage === 'es' ? 'HV PDF' : 'CV PDF';
+            tooltip.textContent = tooltipText;
+        }
     }
 }
 
@@ -303,6 +316,12 @@ function updateProjects() {
     const projectCards = document.querySelectorAll('.project-card');
     projects.items.forEach((project, index) => {
         if (projectCards[index]) {
+            // Update project icon
+            const icon = projectCards[index].querySelector('.project-icon i');
+            if (icon && project.icon) {
+                icon.className = project.icon;
+            }
+
             const h3 = projectCards[index].querySelector('h3');
             const projectDate = projectCards[index].querySelector('.project-date');
             const description = projectCards[index].querySelector('p:not(.project-date)');
@@ -375,6 +394,8 @@ function updateProjects() {
 function updateSkills() {
     if (!contentData.skills) return;
 
+    console.log('Updating skills with data:', contentData.skills);
+
     const skills = contentData.skills;
     const title = document.querySelector('#skills h2');
     if (title) title.textContent = skills.title;
@@ -385,13 +406,29 @@ function updateSkills() {
             const h3 = skillCategories[index].querySelector('h3');
             if (h3) h3.innerHTML = `<i class="${category.icon}"></i> ${category.title}`;
 
-            const skillList = skillCategories[index].querySelector('.skill-list');
+            const skillList = skillCategories[index].querySelector('.skill-items');
             if (skillList) {
                 skillList.innerHTML = '';
                 category.items.forEach(skill => {
-                    const span = document.createElement('span');
-                    span.textContent = skill;
-                    skillList.appendChild(span);
+                    const skillItem = document.createElement('div');
+                    skillItem.className = 'skill-item';
+
+                    // Verificar si el skill tiene icono específico
+                    if (typeof skill === 'object' && skill.name && skill.icon) {
+                        // Verificar si es un archivo SVG o un icono de Font Awesome
+                        if (skill.icon.endsWith('.svg')) {
+                            console.log('Creating SVG icon for:', skill.name, 'with path:', skill.icon);
+                            skillItem.innerHTML = `<img src="${skill.icon}" alt="${skill.name}" class="skill-icon-svg"><span>${skill.name}</span>`;
+                        } else {
+                            skillItem.innerHTML = `<i class="${skill.icon}"></i><span>${skill.name}</span>`;
+                        }
+                    } else {
+                        // Mantener compatibilidad con strings simples
+                        const skillName = typeof skill === 'string' ? skill : skill.name || skill;
+                        skillItem.innerHTML = `<span>${skillName}</span>`;
+                    }
+
+                    skillList.appendChild(skillItem);
                 });
             }
         }
@@ -482,6 +519,12 @@ function initializeLanguageSelector() {
             e.preventDefault();
             const selectedLang = this.getAttribute('data-lang');
             changeLanguage(selectedLang);
+
+            // Cerrar el dropdown después de seleccionar idioma
+            const dropdownContent = document.querySelector('.dropdown-content');
+            if (dropdownContent) {
+                dropdownContent.classList.remove('show');
+            }
         });
     });
 
@@ -540,8 +583,8 @@ function updateLanguageSelector() {
             flagImg.alt = 'España';
             langText.textContent = 'Español';
         } else {
-            flagImg.src = 'https://flagcdn.com/w20/gb-eng.png';
-            flagImg.alt = 'Inglaterra';
+            flagImg.src = 'https://flagcdn.com/w20/us.png';
+            flagImg.alt = 'Estados Unidos';
             langText.textContent = 'English';
         }
     } else if (flagImg) {
@@ -550,8 +593,8 @@ function updateLanguageSelector() {
             flagImg.src = 'https://flagcdn.com/w20/es.png';
             flagImg.alt = 'España';
         } else {
-            flagImg.src = 'https://flagcdn.com/w20/gb-eng.png';
-            flagImg.alt = 'Inglaterra';
+            flagImg.src = 'https://flagcdn.com/w20/us.png';
+            flagImg.alt = 'Estados Unidos';
         }
     }
 }
@@ -622,36 +665,25 @@ function initializeThemeToggle() {
 
     // Aplicar tema guardado
     document.documentElement.setAttribute('data-theme', savedTheme);
-    updateThemeIcon(savedTheme);
+    updateThemeCheckbox(savedTheme);
 
     if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
+        themeToggle.addEventListener('change', function () {
+            const newTheme = this.checked ? 'dark' : 'light';
             document.documentElement.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
         });
     }
 }
 
 /**
- * Actualiza el icono del botón de tema
+ * Actualiza el estado del checkbox de tema
  * @param {string} theme - 'light' o 'dark'
  */
-function updateThemeIcon(theme) {
-    // Buscar por ID (página principal) o por clase (página de proyecto)
-    const themeToggle = document.getElementById('themeToggle') || document.querySelector('.theme-toggle');
+function updateThemeCheckbox(theme) {
+    const themeToggle = document.getElementById('themeToggle') || document.querySelector('.theme-toggle input');
     if (themeToggle) {
-        const icon = themeToggle.querySelector('i');
-        if (icon) {
-            if (theme === 'dark') {
-                icon.className = 'fas fa-sun';
-            } else {
-                icon.className = 'fas fa-moon';
-            }
-        }
+        themeToggle.checked = (theme === 'dark');
     }
 }
 
@@ -780,7 +812,7 @@ function toggleTheme() {
 
     document.documentElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    updateThemeIcon(newTheme);
+    updateThemeCheckbox(newTheme);
 }
 
 /**
@@ -916,7 +948,7 @@ function updateProjectNavigation(language) {
     // Actualizar botón de CV
     const navCvButton = document.querySelector('.btn-nav-cv');
     if (navCvButton) {
-        const cvFile = language === 'es' ? '../cv/CV_Español.pdf' : '../cv/CV_English.pdf';
+        const cvFile = language === 'es' ? '../cv/carlos_esquivel_cv_es.pdf' : '../cv/carlos_esquivel_cv_en.pdf';
         navCvButton.href = cvFile;
     }
 
@@ -1181,4 +1213,28 @@ function updateProjectFeatures(project, language) {
             if (descElement) descElement.textContent = feature.description;
         });
     }
-} 
+}
+
+/**
+ * Inicializa el toggle del sidebar
+ */
+function initializeSidebarToggle() {
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebar = document.getElementById('sidebar');
+
+    if (sidebarToggle && sidebar) {
+        // Cargar estado guardado del sidebar
+        const isCollapsed = localStorage.getItem('sidebarCollapsed') === 'true';
+        if (isCollapsed) {
+            sidebar.classList.add('collapsed');
+        }
+
+        sidebarToggle.addEventListener('click', function () {
+            sidebar.classList.toggle('collapsed');
+
+            // Guardar estado en localStorage
+            const collapsed = sidebar.classList.contains('collapsed');
+            localStorage.setItem('sidebarCollapsed', collapsed);
+        });
+    }
+}

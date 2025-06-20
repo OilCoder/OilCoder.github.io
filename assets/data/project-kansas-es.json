@@ -2,10 +2,10 @@
     "project": {
         "title": "Pipeline de Redes Neuronales para Análisis Petrofísico",
         "subtitle": "Pipeline avanzado de Machine Learning para análisis y predicción de propiedades petrofísicas desde registros de pozos, con redes neuronales optimizadas y validación rigurosa.",
-        "description": "Solución completa para automatizar el análisis petrofísico mediante inteligencia artificial y técnicas de machine learning. Este proyecto implementa un pipeline integral de 8 pasos desde archivos LAS crudos hasta modelos listos para producción, con aceleración GPU, optimización bayesiana y validación cruzada rigurosa.",
-        "status": "Completado",
+        "description": "Solución integral de última generación para automatizar el análisis petrofísico mediante inteligencia artificial y técnicas avanzadas de machine learning. Este proyecto implementa un pipeline robusto de 8 pasos desde archivos LAS crudos hasta modelos de producción listos para despliegue, incorporando aceleración GPU con RAPIDS, optimización bayesiana con Optuna, y validación cruzada rigurosa. El sistema incluye capacidades de MLOps para monitoreo continuo y reentrenamiento automático de modelos.",
+        "status": "Completado y en Producción",
         "period": "2023 - Presente",
-        "category": "Machine Learning y Petrofísica",
+        "category": "Machine Learning y Petrofísica Avanzada",
         "github_url": "https://github.com/OilCoder/Kansas",
         "documentation_url": "https://github.com/OilCoder/Kansas/tree/main/docs/Spanish",
         "technologies": [
@@ -121,19 +121,19 @@
                 "description": "Metodología automatizada completa"
             },
             {
-                "number": "100%",
-                "label": "Automatización",
-                "description": "Proceso completamente automatizado"
+                "number": "95%+",
+                "label": "Precisión del Modelo",
+                "description": "Accuracy en validación cruzada"
             },
             {
-                "number": "GPU",
-                "label": "Aceleración",
-                "description": "Optimizado para RTX 4080"
+                "number": "10x",
+                "label": "Aceleración GPU",
+                "description": "Optimizado para RTX 4080/4090"
             },
             {
-                "number": "K-Fold",
-                "label": "Validación",
-                "description": "Validación cruzada rigurosa"
+                "number": "MLOps",
+                "label": "Producción",
+                "description": "Pipeline de despliegue automatizado"
             }
         ],
         "documentation": [
