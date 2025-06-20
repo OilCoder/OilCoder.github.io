@@ -303,6 +303,12 @@ function updateProjects() {
     const projectCards = document.querySelectorAll('.project-card');
     projects.items.forEach((project, index) => {
         if (projectCards[index]) {
+            // Update project icon
+            const icon = projectCards[index].querySelector('.project-icon i');
+            if (icon && project.icon) {
+                icon.className = project.icon;
+            }
+
             const h3 = projectCards[index].querySelector('h3');
             const projectDate = projectCards[index].querySelector('.project-date');
             const description = projectCards[index].querySelector('p:not(.project-date)');
