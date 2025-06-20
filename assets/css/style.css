@@ -105,78 +105,195 @@ header {
     gap: 1rem;
 }
 
-/* Modern Theme Toggle inspired by uiverse.io */
+/* Advanced Theme Toggle inspired by uiverse.io with detailed animations */
 .theme-toggle {
     position: relative;
-    width: 60px;
-    height: 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 50px;
-    border: none;
+    width: 80px;
+    height: 40px;
+    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb, #ff9ff3);
+    background-size: 300% 300%;
+    border-radius: 25px;
+    border: 3px solid #fff;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .theme-toggle::before {
     content: '';
     position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 26px;
-    height: 26px;
-    background: #fff;
+    top: 3px;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
     border-radius: 50%;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.theme-toggle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 30px;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0.3) 0%,
+            rgba(255, 255, 255, 0.1) 50%,
+            rgba(255, 255, 255, 0.3) 100%);
+    border-radius: 15px;
+    opacity: 0;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.theme-toggle:hover::after {
+    opacity: 1;
+    animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translate(-50%, -50%) translateX(-100%);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translateX(100%);
+    }
 }
 
 .theme-toggle i {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 14px;
-    transition: all 0.4s ease;
-    z-index: 1;
+    font-size: 16px;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 3;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .theme-toggle .fa-sun {
-    left: 8px;
-    color: #f39c12;
+    left: 12px;
+    color: #ff6b35;
     opacity: 1;
+    transform: translateY(-50%) rotate(0deg) scale(1);
 }
 
 .theme-toggle .fa-moon {
-    right: 8px;
-    color: #fff;
+    right: 12px;
+    color: #4a69bd;
     opacity: 0;
+    transform: translateY(-50%) rotate(-180deg) scale(0.5);
 }
 
 .theme-toggle:hover {
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* Dark mode active state */
+.theme-toggle:active {
+    transform: scale(0.98);
+    transition: all 0.1s ease;
+}
+
+/* Dark mode active state with enhanced animations */
 [data-theme="dark"] .theme-toggle {
-    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    background: linear-gradient(45deg, #2c3e50, #3498db, #9b59b6, #1abc9c);
+    background-size: 300% 300%;
+    animation: gradientShiftDark 3s ease infinite;
+}
+
+@keyframes gradientShiftDark {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 [data-theme="dark"] .theme-toggle::before {
-    transform: translateX(30px);
-    background: #34495e;
+    transform: translateX(40px);
+    background: linear-gradient(145deg, #34495e, #2c3e50);
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 
 [data-theme="dark"] .theme-toggle .fa-sun {
     opacity: 0;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg) scale(0.5);
+    color: #f39c12;
 }
 
 [data-theme="dark"] .theme-toggle .fa-moon {
     opacity: 1;
-    transform: translateY(-50%) rotate(0deg);
+    transform: translateY(-50%) rotate(0deg) scale(1);
     color: #f1c40f;
+    filter: drop-shadow(0 0 8px rgba(241, 196, 15, 0.5));
+}
+
+/* Additional glow effect for dark mode */
+[data-theme="dark"] .theme-toggle:hover {
+    box-shadow:
+        0 12px 35px rgba(52, 152, 219, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Pulsing animation for the toggle */
+.theme-toggle:focus {
+    outline: none;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(52, 152, 219, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(52, 152, 219, 0);
+    }
 }
 
 .btn-nav-cv {
