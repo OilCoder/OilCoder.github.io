@@ -404,26 +404,28 @@ function updateSkills() {
             const h3 = skillCategories[index].querySelector('h3');
             if (h3) h3.innerHTML = `<i class="${category.icon}"></i> ${category.title}`;
 
-            const skillList = skillCategories[index].querySelector('.skill-list');
+            const skillList = skillCategories[index].querySelector('.skill-items');
             if (skillList) {
                 skillList.innerHTML = '';
                 category.items.forEach(skill => {
-                    const span = document.createElement('span');
+                    const skillItem = document.createElement('div');
+                    skillItem.className = 'skill-item';
 
                     // Verificar si el skill tiene icono específico
                     if (typeof skill === 'object' && skill.name && skill.icon) {
                         // Verificar si es un archivo SVG o un icono de Font Awesome
                         if (skill.icon.endsWith('.svg')) {
-                            span.innerHTML = `<img src="${skill.icon}" alt="${skill.name}" class="skill-icon-svg"> ${skill.name}`;
+                            skillItem.innerHTML = `<img src="${skill.icon}" alt="${skill.name}" class="skill-icon-svg"><span>${skill.name}</span>`;
                         } else {
-                            span.innerHTML = `<i class="${skill.icon}"></i> ${skill.name}`;
+                            skillItem.innerHTML = `<i class="${skill.icon}"></i><span>${skill.name}</span>`;
                         }
                     } else {
                         // Mantener compatibilidad con strings simples
-                        span.textContent = typeof skill === 'string' ? skill : skill.name || skill;
+                        const skillName = typeof skill === 'string' ? skill : skill.name || skill;
+                        skillItem.innerHTML = `<span>${skillName}</span>`;
                     }
 
-                    skillList.appendChild(span);
+                    skillList.appendChild(skillItem);
                 });
             }
         }
