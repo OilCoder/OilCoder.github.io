@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="optuna-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" fill="url(#optuna-grad)" rx="15"/>
+  <circle cx="50" cy="35" r="8" fill="white"/>
+  <path d="M50 45 L35 60 L50 75 L65 60 Z" fill="white"/>
+  <circle cx="35" cy="60" r="4" fill="url(#optuna-grad)"/>
+  <circle cx="65" cy="60" r="4" fill="url(#optuna-grad)"/>
+  <circle cx="50" cy="75" r="4" fill="url(#optuna-grad)"/>
+  <text x="50" y="90" text-anchor="middle" fill="white" font-family="Arial" font-size="7" font-weight="bold">Optuna</text>
+</svg> 

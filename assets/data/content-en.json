@@ -13,33 +13,34 @@
     },
     "hero": {
         "name": "Carlos Andrés Esquivel Plazas",
-        "title": "Petroleum Engineer | AI & Machine Learning",
-        "objective": "Petroleum engineer with solid experience in field operations and the use of artificial intelligence for reservoir characterization, seeking opportunities to apply advanced technological solutions in the area of petrophysics.",
+        "title": "Petroleum Engineer | Specialist in Machine Learning and Artificial Intelligence",
+        "objective": "Petroleum engineer with solid field experience and a strong interest in integrating machine learning and artificial intelligence solutions. My goal is to apply advanced technologies that optimize processes and improve operational efficiency in the oil and gas industry.",
         "contact": {
             "phone": "+1 (929) 340 8548",
             "email": "carlos.esquivel000@gmail.com",
             "location": "New York, USA"
         },
-        "downloadCV": "Download CV"
+        "downloadCV": "Download CV",
+        "cvButtonText": "CV"
     },
     "about": {
         "title": "Professional Profile",
-        "description": "Petroleum engineer with experience in wireline, well testing and subsurface data analysis, complemented with advanced skills in data science, machine learning and deep learning. I have led innovative projects that apply artificial intelligence, such as deep neural networks and generative models, for the prediction of synthetic curves in well logs, exceeding expectations with precise and efficient analysis. Expert in Python, MATLAB and AI frameworks, I provide technological solutions that optimize operations in the oil and gas industry.",
+        "description": "Petroleum engineer with solid experience in field operations and comprehensive subsurface data analysis. Specialized in developing advanced technology solutions based on machine learning and AI, focused on process automation and improving operational outcomes. Successfully led initiatives to reduce report turnaround times and developed predictive models to support accurate technical decisions in petrophysical workflows. Proficient in Python, MATLAB, and key AI frameworks, combining operational expertise with leadership of multidisciplinary teams and a drive to innovate with emerging technologies in the energy sector.",
         "highlights": [
             {
-                "icon": "fas fa-brain",
-                "title": "Fast Learning",
-                "description": "Software and procedures"
+                "icon": "fas fa-clock",
+                "title": "4+ years in operations",
+                "description": "Wellsite and wireline operations (P/T tests, well testing, QHSE)"
             },
             {
-                "icon": "fas fa-tools",
-                "title": "Problem Solving",
-                "description": "Technical and complex"
+                "icon": "fas fa-robot",
+                "title": "3+ years applying Python & ML",
+                "description": "NDT inspection and well log prediction"
             },
             {
-                "icon": "fas fa-project-diagram",
-                "title": "Project Management",
-                "description": "Technical and innovative"
+                "icon": "fas fa-chart-line",
+                "title": "9+ years bridging operations",
+                "description": "Field operations and AI for subsurface decision-making"
             }
         ]
     },
@@ -71,7 +72,7 @@
                 },
                 {
                     "language": "English",
-                    "level": "Intermediate / Advanced"
+                    "level": "Advanced"
                 }
             ]
         }
@@ -80,14 +81,25 @@
         "title": "Professional Experience",
         "items": [
             {
+                "period": "2023 - Present",
+                "position": "Machine Learning Specialist | Independent Consultant",
+                "company": "AI and Petrophysical Analysis Projects",
+                "responsibilities": [
+                    "Development of complete machine learning pipelines for petrophysical analysis using TensorFlow and RAPIDS",
+                    "Implementation of optimized neural networks with K-fold cross-validation and Bayesian optimization",
+                    "Automation of well log analysis processes with GPU-accelerated processing",
+                    "Technical consulting in AI applications for reservoir characterization and operational optimization"
+                ]
+            },
+            {
                 "period": "2020 - 2023",
                 "position": "Team and Operations Coordinator",
                 "company": "Ribalta NYC (Top 50 Pizza USA)",
                 "responsibilities": [
-                    "Coordinated workflows in three specialized areas: Hot area, Cold bar and Pizzeria",
-                    "Optimized dish delivery to more than 400 daily diners during peak hours",
-                    "Reduced order delivery times from 10-20 minutes to 5-10 minutes",
-                    "Improved leadership skills managing bilingual teams in high-pressure environment"
+                    "Coordinated workflows in three specialized areas optimizing operational processes",
+                    "Implemented improvements that reduced delivery times from 15-20 minutes to 5-10 minutes",
+                    "Managed multicultural teams of up to 25 people in high-demand environment (400+ daily orders)",
+                    "Developed leadership and operational management skills in multicultural, high-pressure environment"
                 ]
             },
             {
@@ -95,10 +107,10 @@
                 "position": "Automation Engineer",
                 "company": "Luna Company S.A.S",
                 "responsibilities": [
-                    "Developed computer vision model for automatic tool recognition",
-                    "Reduced report preparation time by 40%",
-                    "Implemented solution in Python using computer vision frameworks",
-                    "Optimized workflows and reduced manual processing errors"
+                    "Developed computer vision system for automatic recognition of industrial tools",
+                    "Implemented complete solution in Python with OpenCV and machine learning frameworks",
+                    "Achieved 40% reduction in report preparation time through intelligent automation",
+                    "Optimized workflows eliminating manual processing errors and improving traceability"
                 ]
             },
             {
@@ -106,10 +118,10 @@
                 "position": "Data Analyst and Database Administrator",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Prepared and compiled data for strategic business development reports",
-                    "Designed databases in Excel and SQL, modeled data using MATLAB",
-                    "Automated data storage and retrieval processes",
-                    "Optimized document management of physical and electronic files"
+                    "Designed and developed relational databases in SQL Server for technical information management",
+                    "Implemented data analysis models using MATLAB and advanced Excel for strategic reports",
+                    "Automated ETL (Extract, Transform, Load) processes improving efficiency by 60%",
+                    "Established digital document management protocols optimizing information access and retrieval"
                 ]
             },
             {
@@ -117,10 +129,10 @@
                 "position": "Wireline Operations Engineer",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Performed wireline and well testing operations",
-                    "Managed pressure and temperature tests (decline/restoration, injection and interference)",
-                    "Supervised field tests to ensure data integrity and quality",
-                    "Improved reliability of memory logs ensuring accurate results"
+                    "Executed specialized wireline and well testing operations in oil and gas wells",
+                    "Supervised pressure and temperature tests (build-up, drawdown, injection and interference)",
+                    "Implemented QA/QC protocols to ensure formation data integrity and reliability",
+                    "Improved operational procedures achieving 99% reliability in memory logs"
                 ]
             },
             {
@@ -128,10 +140,10 @@
                 "position": "Operations Analyst",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Provided operational and analytical support ensuring QHSE compliance",
-                    "Evaluated operational processes to implement integrated management system",
-                    "Applied improvements in procedures to optimize execution times",
-                    "Ensured compliance with quality standards"
+                    "Provided technical and analytical support ensuring QHSE standards compliance",
+                    "Evaluated and optimized operational processes implementing ISO 9001 integrated management system",
+                    "Developed operational procedure improvements reducing execution times by 25%",
+                    "Established performance metrics and KPIs for continuous operational quality monitoring"
                 ]
             }
         ]
@@ -141,39 +153,57 @@
         "items": [
             {
                 "icon": "fas fa-chart-line",
-                "title": "Petrophysical Analysis and Synthetic Log Prediction",
+                "title": "Synthetic Well Log Curve Prediction",
                 "period": "2023 – Present",
-                "description": "Complete Machine Learning pipeline for analysis and prediction of petrophysical properties from well logs. Implemented optimized neural networks, rigorous validation, and GPU-accelerated processing.",
+                "description": "Designed machine learning and deep learning models in Python to predict synthetic well log curves (e.g., CNLS, RHOB, Formation) with up to 5× more accuracy than previous methods. Developed an interactive interface to allow technical and non-technical users to evaluate zones with missing or limited data, improving petrophysical assessments and reducing analysis time.",
                 "achievements": [
-                    "8-step automated pipeline",
-                    "Bayesian optimization with Optuna",
-                    "Rigorous K-fold cross-validation"
+                    "5× more accuracy than previous methods",
+                    "Interactive interface for technical users",
+                    "Improved petrophysical assessments"
                 ],
                 "technologies": [
                     "Python",
                     "TensorFlow",
-                    "RAPIDS",
-                    "Docker",
-                    "Optuna"
+                    "Keras",
+                    "Deep Learning",
+                    "Machine Learning"
                 ],
                 "github": "https://github.com/OilCoder/Kansas",
-                "demo": "projects/petrophysical-analysis-en.html"
+                "demo": "projects/petrophysical-analysis.html"
+            },
+            {
+                "icon": "fas fa-eye",
+                "title": "Automated Technical Reporting with Computer Vision (Luna Project)",
+                "period": "2018 – 2020",
+                "description": "Built a Python-based computer vision system for large-scale inspection of oilfield tools, using nondestructive testing (NDT) image analysis. Integrated AI models to detect defects and link image evidence to structured databases, significantly reducing manual errors and speeding up technical reporting.",
+                "achievements": [
+                    "40% reduction in reporting time",
+                    "Automated NDT inspection",
+                    "Eliminated manual errors"
+                ],
+                "technologies": [
+                    "Python",
+                    "OpenCV",
+                    "Computer Vision",
+                    "Machine Learning",
+                    "NDT Analysis"
+                ]
             },
             {
                 "icon": "fas fa-tint",
-                "title": "Water Drive Effect in Reservoir Boundary",
+                "title": "Water Influx Detection in Reservoirs",
                 "period": "2016 – 2018",
-                "description": "Developed software to detect water intrusion in reservoirs with hydraulic activity, improving the accuracy of OOIP calculations and well drainage area.",
+                "description": "Developed a MATLAB tool to identify water breakthrough in oil reservoirs using pressure test data and boundary condition simulations. Implemented pseudopressure analysis and calculated drainage area and original oil in place (OOIP). The tool helped reduce reserve estimation errors and improved water management and reservoir characterization under complex boundary conditions.",
                 "achievements": [
-                    "Custom algorithms",
-                    "Precise flow analysis",
-                    "OOIP calculation improvement"
+                    "Reduced reserve estimation errors",
+                    "Improved water management",
+                    "Enhanced reservoir characterization"
                 ],
                 "technologies": [
                     "MATLAB",
-                    "Custom Algorithms",
+                    "Pseudopressure Analysis",
                     "Well Testing",
-                    "Flow Analysis"
+                    "Reservoir Simulation"
                 ]
             }
         ]
@@ -185,49 +215,128 @@
                 "icon": "fas fa-heart",
                 "title": "Soft Skills",
                 "items": [
-                    "Leadership",
-                    "Effective Communication",
-                    "Adaptability",
-                    "Teamwork",
-                    "Critical Thinking",
-                    "Problem Solving",
-                    "Decision Making Ability"
+                    {
+                        "name": "Leadership",
+                        "icon": "fas fa-crown"
+                    },
+                    {
+                        "name": "Effective communication",
+                        "icon": "fas fa-comments"
+                    },
+                    {
+                        "name": "Adaptability",
+                        "icon": "fas fa-exchange-alt"
+                    },
+                    {
+                        "name": "Teamwork",
+                        "icon": "fas fa-users"
+                    },
+                    {
+                        "name": "Critical thinking",
+                        "icon": "fas fa-lightbulb"
+                    },
+                    {
+                        "name": "Problem solving",
+                        "icon": "fas fa-puzzle-piece"
+                    },
+                    {
+                        "name": "Decision-making",
+                        "icon": "fas fa-balance-scale"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-code",
                 "title": "Programming Languages",
                 "items": [
-                    "Python",
-                    "MATLAB",
-                    "SQL"
+                    {
+                        "name": "Python",
+                        "icon": "assets/icons/python.svg"
+                    },
+                    {
+                        "name": "MATLAB",
+                        "icon": "assets/icons/matlab.svg"
+                    },
+                    {
+                        "name": "SQL",
+                        "icon": "assets/icons/postgresql.svg"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-robot",
-                "title": "AI and Data Analysis Frameworks",
+                "title": "ML / Data Analysis Frameworks",
                 "items": [
-                    "TensorFlow",
-                    "Keras",
-                    "Scikit-learn",
-                    "Pandas",
-                    "NumPy",
-                    "Matplotlib",
-                    "Seaborn",
-                    "PyTorch",
-                    "Plotly"
+                    {
+                        "name": "TensorFlow",
+                        "icon": "assets/icons/tensorflow.svg"
+                    },
+                    {
+                        "name": "Keras",
+                        "icon": "assets/icons/keras.svg"
+                    },
+                    {
+                        "name": "Scikit-learn",
+                        "icon": "assets/icons/scikit-learn.svg"
+                    },
+                    {
+                        "name": "Pandas",
+                        "icon": "assets/icons/pandas.svg"
+                    },
+                    {
+                        "name": "NumPy",
+                        "icon": "assets/icons/numpy.svg"
+                    },
+                    {
+                        "name": "Matplotlib",
+                        "icon": "assets/icons/matplotlib.svg"
+                    },
+                    {
+                        "name": "Seaborn",
+                        "icon": "assets/icons/seaborn.svg"
+                    },
+                    {
+                        "name": "PyTorch",
+                        "icon": "assets/icons/pytorch.svg"
+                    },
+                    {
+                        "name": "Plotly",
+                        "icon": "assets/icons/plotly.svg"
+                    },
+                    {
+                        "name": "Optuna",
+                        "icon": "assets/icons/optuna.svg"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-tools",
-                "title": "Software and Technical Tools",
+                "title": "Technical Tools",
                 "items": [
-                    "F.A.S.T. WellTest™",
-                    "LogView++",
-                    "OpenWells",
-                    "Git",
-                    "Microsoft Power BI",
-                    "Jupyter Notebooks"
+                    {
+                        "name": "F.A.S.T. WellTest™",
+                        "icon": "fas fa-oil-well"
+                    },
+                    {
+                        "name": "LogView++",
+                        "icon": "fas fa-chart-line"
+                    },
+                    {
+                        "name": "OpenWells",
+                        "icon": "fas fa-industry"
+                    },
+                    {
+                        "name": "Git",
+                        "icon": "assets/icons/git.svg"
+                    },
+                    {
+                        "name": "Microsoft Power BI",
+                        "icon": "assets/icons/power-bi.svg"
+                    },
+                    {
+                        "name": "Jupyter Notebooks",
+                        "icon": "assets/icons/jupyter.svg"
+                    }
                 ]
             }
         ]

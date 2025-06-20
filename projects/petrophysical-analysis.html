@@ -1,6 +1,6 @@
 <!--
   @file   petrophysical-analysis.html
-  @brief  Página de detalle del proyecto Neural Network Pipeline para Análisis Petrofísico
+  @brief  Página de detalle del proyecto Neural Network Pipeline para Análisis Petrofísico (Multiidioma)
   @author OilCoder
   @date   2025-01-27
 -->
@@ -10,27 +10,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neural Network Pipeline para Análisis Petrofísico | OilCoder</title>
+    <title id="page-title">Cargando...</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description"
-        content="Pipeline avanzado de Machine Learning para análisis y predicción de propiedades petrofísicas. Redes neuronales, TensorFlow, GPU acceleration y validación rigurosa.">
+    <meta name="description" id="page-description" content="Cargando...">
     <meta name="keywords"
         content="machine learning, petrofísica, redes neuronales, tensorflow, python, análisis de pozos, LAS files, GPU">
     <meta name="author" content="OilCoder">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Neural Network Pipeline para Análisis Petrofísico">
-    <meta property="og:description"
-        content="Pipeline completo de ML para automatizar análisis petrofísico con redes neuronales y validación rigurosa">
+    <meta property="og:title" id="og-title" content="Cargando...">
+    <meta property="og:description" id="og-description" content="Cargando...">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://oilcoder.github.io/projects/petrophysical-analysis.html">
     <meta property="og:image" content="https://oilcoder.github.io/assets/images/projects/kansas-hero.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Neural Network Pipeline para Análisis Petrofísico">
-    <meta name="twitter:description" content="Pipeline avanzado de ML para análisis petrofísico automatizado">
+    <meta name="twitter:title" id="twitter-title" content="Cargando...">
+    <meta name="twitter:description" id="twitter-description" content="Cargando...">
     <meta name="twitter:image" content="https://oilcoder.github.io/assets/images/projects/kansas-hero.jpg">
 
     <!-- Favicon -->
@@ -60,9 +58,71 @@
             </div>
 
             <div class="nav-actions">
-                <button class="theme-toggle" onclick="toggleTheme()" aria-label="Cambiar tema">
-                    <i class="fas fa-moon"></i>
-                </button>
+                <label class="theme-toggle">
+                    <input type="checkbox" onchange="toggleTheme()" />
+                    <div class="slider round">
+                        <div class="sun-moon">
+                            <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                            <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="50"></circle>
+                            </svg>
+                        </div>
+                        <div class="stars">
+                            <svg id="star-1" class="star" viewBox="0 0 20 20">
+                                <path
+                                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                </path>
+                            </svg>
+                            <svg id="star-2" class="star" viewBox="0 0 20 20">
+                                <path
+                                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                </path>
+                            </svg>
+                            <svg id="star-3" class="star" viewBox="0 0 20 20">
+                                <path
+                                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                </path>
+                            </svg>
+                            <svg id="star-4" class="star" viewBox="0 0 20 20">
+                                <path
+                                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
 
                 <a href="../cv/CV_Español.pdf" class="btn-nav-cv" target="_blank">
                     <i class="fas fa-download"></i>
@@ -71,16 +131,17 @@
 
                 <div class="dropdown">
                     <button class="dropdown-btn" onclick="toggleLanguageDropdown()">
-                        <img src="../assets/images/flags/es.png" alt="Español" class="flag-img" id="current-flag">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Español" class="flag-img" id="current-flag">
+                        <span class="lang-text">Español</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="dropdown-content" id="language-dropdown">
-                        <a href="#" class="lang-option" onclick="changeLanguage('es')">
-                            <img src="../assets/images/flags/es.png" alt="Español" class="flag-img">
+                        <a href="#" class="lang-option" data-lang="es">
+                            <img src="https://flagcdn.com/w20/es.png" alt="Español" class="flag-img">
                             <span>Español</span>
                         </a>
-                        <a href="#" class="lang-option" onclick="changeLanguage('en')">
-                            <img src="../assets/images/flags/en.png" alt="English" class="flag-img">
+                        <a href="#" class="lang-option" data-lang="en">
+                            <img src="https://flagcdn.com/w20/us.png" alt="English" class="flag-img">
                             <span>English</span>
                         </a>
                     </div>
@@ -94,39 +155,37 @@
         <div class="project-hero-content">
             <a href="../index.html#projects" class="project-back-btn">
                 <i class="fas fa-arrow-left"></i>
-                <span>Volver al Portfolio</span>
+                <span id="back-text">Cargando...</span>
             </a>
 
-            <h1 class="project-title">Neural Network Pipeline para Análisis Petrofísico</h1>
-            <p class="project-subtitle">
-                Pipeline avanzado de Machine Learning para análisis y predicción de propiedades petrofísicas
-                a partir de registros de pozos, con redes neuronales optimizadas y validación rigurosa.
+            <h1 class="project-title" id="project-title">Cargando...</h1>
+            <p class="project-subtitle" id="project-subtitle">
+                Cargando...
             </p>
 
             <div class="project-meta">
                 <div class="project-meta-item">
                     <i class="fas fa-calendar-alt"></i>
-                    <span>2023 - Presente</span>
+                    <span id="project-period">Cargando...</span>
                 </div>
                 <div class="project-meta-item">
                     <i class="fas fa-tag"></i>
-                    <span>Machine Learning & Petrofísica</span>
+                    <span id="project-category">Cargando...</span>
                 </div>
                 <div class="project-meta-item">
                     <i class="fas fa-check-circle"></i>
-                    <span>Completado</span>
+                    <span id="project-status">Cargando...</span>
                 </div>
             </div>
 
             <div class="project-actions">
-                <a href="https://github.com/OilCoder/Kansas" target="_blank" class="project-btn project-btn-primary">
+                <a href="#" target="_blank" class="project-btn project-btn-primary" id="github-link">
                     <i class="fab fa-github"></i>
-                    <span>Ver Código</span>
+                    <span id="github-text">Cargando...</span>
                 </a>
-                <a href="https://github.com/OilCoder/Kansas/tree/main/docs/Spanish" target="_blank"
-                    class="project-btn project-btn-outline">
+                <a href="#" target="_blank" class="project-btn project-btn-outline" id="docs-link">
                     <i class="fas fa-book"></i>
-                    <span>Documentación</span>
+                    <span id="docs-text">Cargando...</span>
                 </a>
             </div>
         </div>
@@ -138,45 +197,41 @@
 
             <!-- OVERVIEW SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title">Resumen del Proyecto</h2>
-                <p class="project-section-subtitle">
-                    Solución completa para automatizar el análisis petrofísico mediante inteligencia artificial
+                <h2 class="project-section-title" id="overview-title">Cargando...</h2>
+                <p class="project-section-subtitle" id="overview-subtitle">
+                    Cargando...
                 </p>
 
                 <div class="tech-overview">
                     <div class="tech-card">
                         <i class="tech-card-icon fas fa-brain"></i>
-                        <h3 class="tech-card-title">Redes Neuronales Avanzadas</h3>
-                        <p class="tech-card-description">
-                            Arquitecturas optimizadas con GPU RTX 4080, entrenamiento de precisión mixta y
-                            algoritmos de optimización bayesiana para máximo rendimiento.
+                        <h3 class="tech-card-title" id="feature-1-title">Cargando...</h3>
+                        <p class="tech-card-description" id="feature-1-desc">
+                            Cargando...
                         </p>
                     </div>
 
                     <div class="tech-card">
                         <i class="tech-card-icon fas fa-cogs"></i>
-                        <h3 class="tech-card-title">Pipeline Automatizado</h3>
-                        <p class="tech-card-description">
-                            Procesamiento completo desde archivos LAS crudos hasta modelos desplegables,
-                            incluyendo ingeniería de características y validación cruzada.
+                        <h3 class="tech-card-title" id="feature-2-title">Cargando...</h3>
+                        <p class="tech-card-description" id="feature-2-desc">
+                            Cargando...
                         </p>
                     </div>
 
                     <div class="tech-card">
                         <i class="tech-card-icon fas fa-chart-line"></i>
-                        <h3 class="tech-card-title">Validación Rigurosa</h3>
-                        <p class="tech-card-description">
-                            Validación cruzada K-fold con métricas compuestas, evaluación de estabilidad
-                            y control de calidad automatizado.
+                        <h3 class="tech-card-title" id="feature-3-title">Cargando...</h3>
+                        <p class="tech-card-description" id="feature-3-desc">
+                            Cargando...
                         </p>
                     </div>
 
                     <div class="tech-card">
                         <i class="tech-card-icon fas fa-docker"></i>
-                        <h3 class="tech-card-title">Entorno Containerizado</h3>
-                        <p class="tech-card-description">
-                            Desarrollo con Docker y dev containers, soporte completo para GPU NVIDIA
-                            y frameworks TensorFlow/RAPIDS.
+                        <h3 class="tech-card-title" id="feature-4-title">Cargando...</h3>
+                        <p class="tech-card-description" id="feature-4-desc">
+                            Cargando...
                         </p>
                     </div>
                 </div>
@@ -184,74 +239,74 @@
 
             <!-- METHODOLOGY SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title">Metodología del Pipeline</h2>
-                <p class="project-section-subtitle">
-                    Pipeline completo de 8 pasos desde datos crudos hasta modelos de producción
+                <h2 class="project-section-title" id="methodology-title">Cargando...</h2>
+                <p class="project-section-subtitle" id="methodology-subtitle">
+                    Cargando...
                 </p>
 
                 <div class="methodology-pipeline">
                     <div class="pipeline-steps">
                         <div class="pipeline-step">
                             <div class="pipeline-step-number">1</div>
-                            <h4 class="pipeline-step-title">Análisis Exploratorio</h4>
-                            <p class="pipeline-step-description">
-                                EDA completo de archivos LAS con visualización de curvas y detección de anomalías
+                            <h4 class="pipeline-step-title" id="step-1-title">Cargando...</h4>
+                            <p class="pipeline-step-description" id="step-1-desc">
+                                Cargando...
                             </p>
                         </div>
 
                         <div class="pipeline-step">
                             <div class="pipeline-step-number">2</div>
-                            <h4 class="pipeline-step-title">Ingeniería de Características</h4>
-                            <p class="pipeline-step-description">
-                                Generación de características petrofísicas avanzadas desde registros crudos
+                            <h4 class="pipeline-step-title" id="step-2-title">Cargando...</h4>
+                            <p class="pipeline-step-description" id="step-2-desc">
+                                Cargando...
                             </p>
                         </div>
 
                         <div class="pipeline-step">
                             <div class="pipeline-step-number">3</div>
-                            <h4 class="pipeline-step-title">Normalización</h4>
-                            <p class="pipeline-step-description">
-                                Estrategias de normalización por pozo y global para optimizar el entrenamiento
+                            <h4 class="pipeline-step-title" id="step-3-title">Cargando...</h4>
+                            <p class="pipeline-step-description" id="step-3-desc">
+                                Cargando...
                             </p>
                         </div>
 
                         <div class="pipeline-step">
                             <div class="pipeline-step-number">4</div>
-                            <h4 class="pipeline-step-title">Optimización Hiperparámetros</h4>
-                            <p class="pipeline-step-description">
-                                Búsqueda bayesiana con Optuna para arquitecturas y parámetros óptimos
+                            <h4 class="pipeline-step-title" id="step-4-title">Cargando...</h4>
+                            <p class="pipeline-step-description" id="step-4-desc">
+                                Cargando...
                             </p>
                         </div>
 
                         <div class="pipeline-step">
                             <div class="pipeline-step-number">5</div>
-                            <h4 class="pipeline-step-title">Validación Cruzada</h4>
-                            <p class="pipeline-step-description">
-                                Validación K-fold rigurosa con métricas compuestas y evaluación de estabilidad
+                            <h4 class="pipeline-step-title" id="step-5-title">Cargando...</h4>
+                            <p class="pipeline-step-description" id="step-5-desc">
+                                Cargando...
                             </p>
                         </div>
 
                         <div class="pipeline-step">
                             <div class="pipeline-step-number">6</div>
-                            <h4 class="pipeline-step-title">Entrenamiento Final</h4>
-                            <p class="pipeline-step-description">
-                                Entrenamiento de producción con mejores hiperparámetros y datos completos
+                            <h4 class="pipeline-step-title" id="step-6-title">Cargando...</h4>
+                            <p class="pipeline-step-description" id="step-6-desc">
+                                Cargando...
                             </p>
                         </div>
 
                         <div class="pipeline-step">
                             <div class="pipeline-step-number">7</div>
-                            <h4 class="pipeline-step-title">Evaluación Modelo</h4>
-                            <p class="pipeline-step-description">
-                                Evaluación exhaustiva con métricas múltiples y visualizaciones por pozo
+                            <h4 class="pipeline-step-title" id="step-7-title">Cargando...</h4>
+                            <p class="pipeline-step-description" id="step-7-desc">
+                                Cargando...
                             </p>
                         </div>
 
                         <div class="pipeline-step">
                             <div class="pipeline-step-number">8</div>
-                            <h4 class="pipeline-step-title">Despliegue</h4>
-                            <p class="pipeline-step-description">
-                                Empaquetado completo del modelo con escaladores y transformadores
+                            <h4 class="pipeline-step-title" id="step-8-title">Cargando...</h4>
+                            <p class="pipeline-step-description" id="step-8-desc">
+                                Cargando...
                             </p>
                         </div>
                     </div>
@@ -260,73 +315,73 @@
 
             <!-- TECHNOLOGY STACK SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title">Stack Tecnológico</h2>
-                <p class="project-section-subtitle">
-                    Tecnologías de vanguardia para máximo rendimiento y escalabilidad
+                <h2 class="project-section-title" id="tech-title">Cargando...</h2>
+                <p class="project-section-subtitle" id="tech-subtitle">
+                    Cargando...
                 </p>
 
                 <div class="tech-stack">
                     <div class="tech-item">
                         <i class="tech-item-icon fab fa-python"></i>
                         <div class="tech-item-info">
-                            <h4>Python</h4>
-                            <p>Lenguaje principal del pipeline</p>
+                            <h4 id="tech-1-name">Cargando...</h4>
+                            <p id="tech-1-desc">Cargando...</p>
                         </div>
                     </div>
 
                     <div class="tech-item">
                         <i class="tech-item-icon fas fa-brain"></i>
                         <div class="tech-item-info">
-                            <h4>TensorFlow</h4>
-                            <p>Framework de deep learning</p>
+                            <h4 id="tech-2-name">Cargando...</h4>
+                            <p id="tech-2-desc">Cargando...</p>
                         </div>
                     </div>
 
                     <div class="tech-item">
                         <i class="tech-item-icon fas fa-chart-bar"></i>
                         <div class="tech-item-info">
-                            <h4>RAPIDS</h4>
-                            <p>Procesamiento GPU acelerado</p>
+                            <h4 id="tech-3-name">Cargando...</h4>
+                            <p id="tech-3-desc">Cargando...</p>
                         </div>
                     </div>
 
                     <div class="tech-item">
                         <i class="tech-item-icon fab fa-docker"></i>
                         <div class="tech-item-info">
-                            <h4>Docker</h4>
-                            <p>Containerización y despliegue</p>
+                            <h4 id="tech-4-name">Cargando...</h4>
+                            <p id="tech-4-desc">Cargando...</p>
                         </div>
                     </div>
 
                     <div class="tech-item">
                         <i class="tech-item-icon fas fa-microchip"></i>
                         <div class="tech-item-info">
-                            <h4>CUDA</h4>
-                            <p>Computación GPU NVIDIA</p>
+                            <h4 id="tech-5-name">Cargando...</h4>
+                            <p id="tech-5-desc">Cargando...</p>
                         </div>
                     </div>
 
                     <div class="tech-item">
                         <i class="tech-item-icon fas fa-search"></i>
                         <div class="tech-item-info">
-                            <h4>Optuna</h4>
-                            <p>Optimización hiperparámetros</p>
+                            <h4 id="tech-6-name">Cargando...</h4>
+                            <p id="tech-6-desc">Cargando...</p>
                         </div>
                     </div>
 
                     <div class="tech-item">
                         <i class="tech-item-icon fas fa-chart-line"></i>
                         <div class="tech-item-info">
-                            <h4>Pandas</h4>
-                            <p>Manipulación de datos</p>
+                            <h4 id="tech-7-name">Cargando...</h4>
+                            <p id="tech-7-desc">Cargando...</p>
                         </div>
                     </div>
 
                     <div class="tech-item">
                         <i class="tech-item-icon fas fa-eye"></i>
                         <div class="tech-item-info">
-                            <h4>Matplotlib</h4>
-                            <p>Visualización científica</p>
+                            <h4 id="tech-8-name">Cargando...</h4>
+                            <p id="tech-8-desc">Cargando...</p>
                         </div>
                     </div>
                 </div>
@@ -334,43 +389,43 @@
 
             <!-- RESULTS SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title">Resultados y Métricas</h2>
-                <p class="project-section-subtitle">
-                    Logros cuantificables del pipeline de machine learning
+                <h2 class="project-section-title" id="results-title">Cargando...</h2>
+                <p class="project-section-subtitle" id="results-subtitle">
+                    Cargando...
                 </p>
 
                 <div class="results-grid">
                     <div class="result-card">
-                        <span class="result-number">8</span>
-                        <h4 class="result-label">Pasos del Pipeline</h4>
-                        <p class="result-description">Metodología completa automatizada</p>
+                        <span class="result-number" id="result-1-number">Cargando...</span>
+                        <h4 class="result-label" id="result-1-label">Cargando...</h4>
+                        <p class="result-description" id="result-1-desc">Cargando...</p>
                     </div>
 
                     <div class="result-card">
-                        <span class="result-number">100%</span>
-                        <h4 class="result-label">Automatización</h4>
-                        <p class="result-description">Proceso completamente automatizado</p>
+                        <span class="result-number" id="result-2-number">Cargando...</span>
+                        <h4 class="result-label" id="result-2-label">Cargando...</h4>
+                        <p class="result-description" id="result-2-desc">Cargando...</p>
                     </div>
 
                     <div class="result-card">
-                        <span class="result-number">GPU</span>
-                        <h4 class="result-label">Aceleración</h4>
-                        <p class="result-description">Optimizado para RTX 4080</p>
+                        <span class="result-number" id="result-3-number">Cargando...</span>
+                        <h4 class="result-label" id="result-3-label">Cargando...</h4>
+                        <p class="result-description" id="result-3-desc">Cargando...</p>
                     </div>
 
                     <div class="result-card">
-                        <span class="result-number">K-Fold</span>
-                        <h4 class="result-label">Validación</h4>
-                        <p class="result-description">Validación cruzada rigurosa</p>
+                        <span class="result-number" id="result-4-number">Cargando...</span>
+                        <h4 class="result-label" id="result-4-label">Cargando...</h4>
+                        <p class="result-description" id="result-4-desc">Cargando...</p>
                     </div>
                 </div>
             </section>
 
             <!-- DOCUMENTATION SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title">Documentación Técnica</h2>
-                <p class="project-section-subtitle">
-                    Documentación completa de cada fase del pipeline
+                <h2 class="project-section-title" id="docs-title">Cargando...</h2>
+                <p class="project-section-subtitle" id="docs-subtitle">
+                    Cargando...
                 </p>
 
                 <div class="docs-grid">
@@ -441,45 +496,41 @@
 
             <!-- FEATURES SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title">Características Principales</h2>
-                <p class="project-section-subtitle">
-                    Funcionalidades avanzadas del pipeline de machine learning
+                <h2 class="project-section-title" id="features-title">Cargando...</h2>
+                <p class="project-section-subtitle" id="features-subtitle">
+                    Cargando...
                 </p>
 
                 <div class="tech-overview">
                     <div class="tech-card">
                         <i class="tech-card-icon fas fa-file-code"></i>
-                        <h3 class="tech-card-title">Procesamiento LAS</h3>
-                        <p class="tech-card-description">
-                            Procesamiento automatizado de archivos LAS con detección de anomalías y
-                            limpieza de datos inteligente.
+                        <h3 class="tech-card-title" id="key-feature-1-title">Cargando...</h3>
+                        <p class="tech-card-description" id="key-feature-1-desc">
+                            Cargando...
                         </p>
                     </div>
 
                     <div class="tech-card">
                         <i class="tech-card-icon fas fa-magic"></i>
-                        <h3 class="tech-card-title">Feature Engineering</h3>
-                        <p class="tech-card-description">
-                            Ingeniería de características petrofísicas avanzadas con transformaciones
-                            específicas del dominio.
+                        <h3 class="tech-card-title" id="key-feature-2-title">Cargando...</h3>
+                        <p class="tech-card-description" id="key-feature-2-desc">
+                            Cargando...
                         </p>
                     </div>
 
                     <div class="tech-card">
                         <i class="tech-card-icon fas fa-robot"></i>
-                        <h3 class="tech-card-title">Optimización Automática</h3>
-                        <p class="tech-card-description">
-                            Optimización bayesiana de hiperparámetros con búsqueda inteligente y
-                            evaluación multi-objetivo.
+                        <h3 class="tech-card-title" id="key-feature-3-title">Cargando...</h3>
+                        <p class="tech-card-description" id="key-feature-3-desc">
+                            Cargando...
                         </p>
                     </div>
 
                     <div class="tech-card">
                         <i class="tech-card-icon fas fa-shield-alt"></i>
-                        <h3 class="tech-card-title">Validación Robusta</h3>
-                        <p class="tech-card-description">
-                            Validación cruzada K-fold rigurosa con métricas compuestas y evaluación
-                            de estabilidad del modelo.
+                        <h3 class="tech-card-title" id="key-feature-4-title">Cargando...</h3>
+                        <p class="tech-card-description" id="key-feature-4-desc">
+                            Cargando...
                         </p>
                     </div>
                 </div>
@@ -491,99 +542,24 @@
     <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 OilCoder. Todos los derechos reservados.</p>
+            <p id="footer-text">Cargando...</p>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="../assets/js/main.js?v=3.3.3"></script>
+    <script src="../assets/js/main.js?v=3.6.0"></script>
     <script>
-        // Project-specific JavaScript
+        // Project page initialization - use main.js functions
         document.addEventListener('DOMContentLoaded', function () {
-            // Initialize theme from localStorage or default to light
-            const savedTheme = localStorage.getItem('theme') || 'light';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-            updateThemeIcon(savedTheme);
+            console.log('Project page DOM loaded, initializing...');
 
-            // Smooth scrolling for internal links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
+            // Initialize using main.js functions
+            initializeLanguage();
+            initializeThemeToggle();
+            initializeLanguageSelector();
 
-            // Add loading animation to external links
-            document.querySelectorAll('a[target="_blank"]').forEach(link => {
-                link.addEventListener('click', function () {
-                    const icon = this.querySelector('i');
-                    if (icon) {
-                        const originalClass = icon.className;
-                        icon.className = 'fas fa-spinner fa-spin';
-                        setTimeout(() => {
-                            icon.className = originalClass;
-                        }, 2000);
-                    }
-                });
-            });
-        });
-
-        // Theme toggle functionality
-        function toggleTheme() {
-            const currentTheme = document.documentElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        }
-
-        function updateThemeIcon(theme) {
-            const themeIcon = document.querySelector('.theme-toggle i');
-            if (themeIcon) {
-                themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-            }
-        }
-
-        // Language dropdown functionality
-        function toggleLanguageDropdown() {
-            const dropdown = document.getElementById('language-dropdown');
-            if (dropdown) {
-                dropdown.classList.toggle('show');
-            }
-        }
-
-        function changeLanguage(lang) {
-            const currentFlag = document.getElementById('current-flag');
-            const dropdown = document.getElementById('language-dropdown');
-
-            if (currentFlag) {
-                currentFlag.src = `../assets/images/flags/${lang}.png`;
-                currentFlag.alt = lang === 'es' ? 'Español' : 'English';
-            }
-
-            if (dropdown) {
-                dropdown.classList.remove('show');
-            }
-
-            // Store language preference
-            localStorage.setItem('language', lang);
-        }
-
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function (event) {
-            const dropdown = document.getElementById('language-dropdown');
-            const dropdownBtn = document.querySelector('.dropdown-btn');
-
-            if (dropdown && dropdownBtn && !dropdownBtn.contains(event.target)) {
-                dropdown.classList.remove('show');
-            }
+            // Load project content
+            adProjectContent(currentLanguage);
         });
     </script>
 </body>

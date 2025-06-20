@@ -13,33 +13,34 @@
     },
     "hero": {
         "name": "Carlos Andrés Esquivel Plazas",
-        "title": "Ingeniero de Petróleos | IA & Machine Learning",
-        "objective": "Ingeniero de petróleos con sólida experiencia en operaciones de campo y en el uso de inteligencia artificial para la caracterización de yacimientos, buscando oportunidades para aplicar soluciones tecnológicas avanzadas en el área de petrofísica.",
+        "title": "Ingeniero de Petróleos | Especialista en Machine Learning e Inteligencia Artificial",
+        "objective": "Ingeniero de petróleos con sólida experiencia en operaciones de campo y pasión por integrar soluciones de machine learning e inteligencia artificial. Mi objetivo es aplicar tecnologías avanzadas que optimicen procesos y mejoren la eficiencia operativa en la industria del petróleo.",
         "contact": {
             "phone": "+1 (929) 340 8548",
             "email": "carlos.esquivel000@gmail.com",
             "location": "Nueva York, USA"
         },
-        "downloadCV": "Descargar CV"
+        "downloadCV": "Descargar HV",
+        "cvButtonText": "HV"
     },
     "about": {
         "title": "Perfil Profesional",
-        "description": "Ingeniero de petróleos con experiencia en wireline, pruebas de pozos y análisis de datos del subsuelo, complementada con habilidades avanzadas en ciencia de datos, machine learning y deep learning. He liderado proyectos innovadores que aplican inteligencia artificial, como redes neuronales profundas y modelos generativos, para la predicción de curvas sintéticas de registros de pozos, superando las expectativas con análisis precisos y eficientes. Experto en Python, MATLAB y frameworks de IA, aporto soluciones tecnológicas que optimizan las operaciones en la industria del petróleo y gas.",
+        "description": "Ingeniero de petróleos con sólida experiencia en operaciones de campo y análisis integral de datos del subsuelo. Especializado en el desarrollo de soluciones tecnológicas avanzadas basadas en machine learning e inteligencia artificial, enfocado en la automatización de procesos y la optimización de resultados operativos. Lideré iniciativas exitosas de reducción de tiempos en generación de reportes y desarrollé modelos predictivos para facilitar decisiones técnicas precisas en el área petrofísica. Domino Python, MATLAB y frameworks clave de IA, combinando experiencia operativa, liderazgo de equipos multidisciplinarios y pasión por innovar con tecnologías emergentes en la industria del petróleo y gas.",
         "highlights": [
             {
-                "icon": "fas fa-brain",
-                "title": "Aprendizaje Rápido",
-                "description": "Software y procedimientos"
+                "icon": "fas fa-clock",
+                "title": "+4 años en operaciones",
+                "description": "Operaciones de pozo y wireline (pruebas P/T, well testing, QHSE)"
             },
             {
-                "icon": "fas fa-tools",
-                "title": "Resolución de Problemas",
-                "description": "Técnicos y complejos"
+                "icon": "fas fa-robot",
+                "title": "+3 años aplicando Python & ML",
+                "description": "Inspección NDT y predicción de curvas de registro"
             },
             {
-                "icon": "fas fa-project-diagram",
-                "title": "Gestión de Proyectos",
-                "description": "Técnicos e innovadores"
+                "icon": "fas fa-chart-line",
+                "title": "+9 años optimizando decisiones",
+                "description": "Subsuelo y operaciones de campo con IA práctica"
             }
         ]
     },
@@ -71,7 +72,7 @@
                 },
                 {
                     "language": "English",
-                    "level": "Intermedio / Avanzado"
+                    "level": "Avanzado"
                 }
             ]
         }
@@ -80,14 +81,25 @@
         "title": "Experiencia Profesional",
         "items": [
             {
+                "period": "2023 - Presente",
+                "position": "Especialista en Machine Learning | Consultor Independiente",
+                "company": "Proyectos de IA y Análisis Petrofísico",
+                "responsibilities": [
+                    "Desarrollo de pipelines completos de machine learning para análisis petrofísico utilizando TensorFlow y RAPIDS",
+                    "Implementación de redes neuronales optimizadas con validación cruzada K-fold y optimización bayesiana",
+                    "Automatización de procesos de análisis de registros de pozos con procesamiento GPU acelerado",
+                    "Consultoría técnica en aplicaciones de IA para caracterización de yacimientos y optimización operacional"
+                ]
+            },
+            {
                 "period": "2020 - 2023",
                 "position": "Coordinador de Equipos y Operaciones",
                 "company": "Ribalta NYC (Top 50 Pizza USA)",
                 "responsibilities": [
-                    "Coordiné flujos de trabajo en tres áreas especializadas: Área caliente, Barra fría y Pizzería",
-                    "Optimicé la entrega de platos a más de 400 comensales diarios en horas pico",
-                    "Reduje los tiempos de entrega de las órdenes de 10-20 minutos a 5-10 minutos",
-                    "Mejoré habilidades de liderazgo gestionando equipos bilingües en ambiente de alta presión"
+                    "Coordiné flujos de trabajo en tres áreas especializadas optimizando procesos operacionales",
+                    "Implementé mejoras que redujeron tiempos de entrega de 15-20 minutos a 5-10 minutos",
+                    "Gestioné equipos multiculturales de hasta 25 personas en ambiente de alta demanda (400+ órdenes diarias)",
+                    "Desarrollé habilidades de liderazgo y gestión operacional en entorno multicultural y de alta presión"
                 ]
             },
             {
@@ -95,10 +107,10 @@
                 "position": "Ingeniero de Automatización",
                 "company": "Luna Company S.A.S",
                 "responsibilities": [
-                    "Desarrollé modelo de visión por computadora para reconocimiento automático de herramientas",
-                    "Reduje el tiempo de elaboración de reportes en un 40%",
-                    "Implementé solución en Python utilizando frameworks de visión artificial",
-                    "Optimicé flujos de trabajo y reduje errores del procesamiento manual"
+                    "Desarrollé sistema de visión por computadora para reconocimiento automático de herramientas industriales",
+                    "Implementé solución completa en Python con OpenCV y frameworks de machine learning",
+                    "Logré reducción del 40% en tiempo de elaboración de reportes mediante automatización inteligente",
+                    "Optimicé flujos de trabajo eliminando errores del procesamiento manual y mejorando la trazabilidad"
                 ]
             },
             {
@@ -106,10 +118,10 @@
                 "position": "Analista de Datos y Administrador de Base de Datos",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Preparé y compilé datos para reportes de desarrollo estratégico del negocio",
-                    "Diseñé bases de datos en Excel y SQL, modelé datos utilizando MATLAB",
-                    "Automaticé procesos de almacenamiento y recuperación de datos",
-                    "Optimicé gestión documental de archivos físicos y electrónicos"
+                    "Diseñé y desarrollé bases de datos relacionales en SQL Server para gestión de información técnica",
+                    "Implementé modelos de análisis de datos utilizando MATLAB y Excel avanzado para reportes estratégicos",
+                    "Automaticé procesos de ETL (Extract, Transform, Load) mejorando la eficiencia en un 60%",
+                    "Establecí protocolos de gestión documental digital optimizando el acceso y recuperación de información"
                 ]
             },
             {
@@ -117,10 +129,10 @@
                 "position": "Ingeniero de Operaciones Wireline",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Realicé operaciones de wireline y well testing",
-                    "Gestioné pruebas de presión y temperatura (declinación/restauración, inyección e interferencia)",
-                    "Supervisé pruebas de campo para asegurar integridad y calidad de datos",
-                    "Mejoré confiabilidad de registros memorizados garantizando resultados precisos"
+                    "Ejecuté operaciones especializadas de wireline y well testing en pozos de petróleo y gas",
+                    "Supervisé pruebas de presión y temperatura (build-up, drawdown, inyección e interferencia)",
+                    "Implementé protocolos de QA/QC para garantizar integridad y confiabilidad de datos de formación",
+                    "Mejoré procedimientos operativos logrando 99% de confiabilidad en registros memorizados"
                 ]
             },
             {
@@ -128,10 +140,10 @@
                 "position": "Analista de Operaciones",
                 "company": "Maxim & Fishing S.A.S.",
                 "responsibilities": [
-                    "Proporcioné apoyo operativo y analítico asegurando cumplimiento de QHSE",
-                    "Evalué procesos operativos para implementar sistema de gestión integrada",
-                    "Apliqué mejoras en procedimientos para optimizar tiempos de ejecución",
-                    "Garanticé cumplimiento de estándares de calidad"
+                    "Proporcioné soporte técnico y analítico asegurando cumplimiento de estándares QHSE",
+                    "Evalué y optimicé procesos operativos implementando sistema de gestión integrada ISO 9001",
+                    "Desarrollé mejoras en procedimientos operativos reduciendo tiempos de ejecución en 25%",
+                    "Establecí métricas de rendimiento y KPIs para monitoreo continuo de calidad operacional"
                 ]
             }
         ]
@@ -141,39 +153,57 @@
         "items": [
             {
                 "icon": "fas fa-chart-line",
-                "title": "Análisis Petrofísico y Predicción de Registros Sintéticos",
+                "title": "Predicción de Curvas Sintéticas para Registros de Pozos",
                 "period": "2023 – Presente",
-                "description": "Pipeline completo de Machine Learning para análisis y predicción de propiedades petrofísicas a partir de registros de pozos. Implementé redes neuronales optimizadas, validación rigurosa y procesamiento GPU acelerado.",
+                "description": "Desarrollé modelos avanzados de machine learning y deep learning en Python para generar curvas sintéticas de registros de pozos, incrementando hasta 5 veces la precisión respecto a métodos anteriores. Implementé una interfaz interactiva que permite a usuarios técnicos y no técnicos analizar zonas con datos limitados o ausentes, agilizando la toma de decisiones en la caracterización petrofísica.",
                 "achievements": [
-                    "Pipeline automatizado de 8 pasos",
-                    "Optimización bayesiana con Optuna",
-                    "Validación cruzada K-fold rigurosa"
+                    "Precisión 5x superior a métodos anteriores",
+                    "Interfaz interactiva para usuarios técnicos",
+                    "Optimización de evaluaciones petrofísicas"
                 ],
                 "technologies": [
                     "Python",
                     "TensorFlow",
-                    "RAPIDS",
-                    "Docker",
-                    "Optuna"
+                    "Keras",
+                    "Deep Learning",
+                    "Machine Learning"
                 ],
                 "github": "https://github.com/OilCoder/Kansas",
                 "demo": "projects/petrophysical-analysis.html"
             },
             {
-                "icon": "fas fa-tint",
-                "title": "Efecto de Empuje por Intrusión de Agua",
-                "period": "2016 – 2018",
-                "description": "Desarrollé un software para detectar la intrusión de agua en yacimientos con actividad hidráulica, mejorando la precisión de los cálculos de OOIP y área de drenaje del pozo.",
+                "icon": "fas fa-eye",
+                "title": "Automatización de Reportes Técnicos por Visión Artificial (Proyecto Luna)",
+                "period": "2018 – 2020",
+                "description": "Implementé un sistema de visión artificial en Python, enfocado en la inspección masiva de herramientas petroleras mediante análisis automatizado de imágenes de pruebas no destructivas (NDT). Integré modelos de inteligencia artificial para identificar defectos y vincular evidencia visual con bases de datos técnicas, logrando reducir errores manuales y acelerar la entrega de reportes técnicos.",
                 "achievements": [
-                    "Algoritmos personalizados",
-                    "Análisis preciso de flujo",
-                    "Mejora en cálculos OOIP"
+                    "Reducción del 40% en tiempo de reportes",
+                    "Automatización de inspección NDT",
+                    "Eliminación de errores manuales"
+                ],
+                "technologies": [
+                    "Python",
+                    "OpenCV",
+                    "Computer Vision",
+                    "Machine Learning",
+                    "NDT Analysis"
+                ]
+            },
+            {
+                "icon": "fas fa-tint",
+                "title": "Detección del Efecto de Intrusión de Agua en Yacimientos",
+                "period": "2016 – 2018",
+                "description": "Desarrollé un software en MATLAB para identificar la intrusión de agua en yacimientos petroleros, analizando datos de pruebas de presión y simulaciones con distintas condiciones de frontera. El sistema implementa análisis de pseudopresión y deriva parámetros clave como el área de drenaje y el volumen original de petróleo (OOIP), facilitando la toma de decisiones estratégicas.",
+                "achievements": [
+                    "Reducción del margen de error en estimación de reservas",
+                    "Optimización del manejo de agua",
+                    "Mejora en caracterización de yacimientos"
                 ],
                 "technologies": [
                     "MATLAB",
-                    "Algoritmos Personalizados",
+                    "Análisis de Pseudopresión",
                     "Well Testing",
-                    "Análisis de Flujo"
+                    "Simulación de Yacimientos"
                 ]
             }
         ]
@@ -185,49 +215,128 @@
                 "icon": "fas fa-heart",
                 "title": "Habilidades Blandas",
                 "items": [
-                    "Liderazgo",
-                    "Comunicación Efectiva",
-                    "Adaptabilidad",
-                    "Trabajo en Equipo",
-                    "Pensamiento Crítico",
-                    "Resolución de Problemas",
-                    "Capacidad de Toma de Decisiones"
+                    {
+                        "name": "Liderazgo",
+                        "icon": "fas fa-crown"
+                    },
+                    {
+                        "name": "Comunicación Efectiva",
+                        "icon": "fas fa-comments"
+                    },
+                    {
+                        "name": "Adaptabilidad",
+                        "icon": "fas fa-exchange-alt"
+                    },
+                    {
+                        "name": "Trabajo en Equipo",
+                        "icon": "fas fa-users"
+                    },
+                    {
+                        "name": "Pensamiento Crítico",
+                        "icon": "fas fa-lightbulb"
+                    },
+                    {
+                        "name": "Resolución de Problemas",
+                        "icon": "fas fa-puzzle-piece"
+                    },
+                    {
+                        "name": "Capacidad de Toma de Decisiones",
+                        "icon": "fas fa-balance-scale"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-code",
                 "title": "Lenguajes de Programación",
                 "items": [
-                    "Python",
-                    "MATLAB",
-                    "SQL"
+                    {
+                        "name": "Python",
+                        "icon": "assets/icons/python.svg"
+                    },
+                    {
+                        "name": "MATLAB",
+                        "icon": "assets/icons/matlab.svg"
+                    },
+                    {
+                        "name": "SQL",
+                        "icon": "assets/icons/postgresql.svg"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-robot",
                 "title": "Frameworks para IA y Análisis de Datos",
                 "items": [
-                    "TensorFlow",
-                    "Keras",
-                    "Scikit-learn",
-                    "Pandas",
-                    "NumPy",
-                    "Matplotlib",
-                    "Seaborn",
-                    "PyTorch",
-                    "Plotly"
+                    {
+                        "name": "TensorFlow",
+                        "icon": "assets/icons/tensorflow.svg"
+                    },
+                    {
+                        "name": "Keras",
+                        "icon": "assets/icons/keras.svg"
+                    },
+                    {
+                        "name": "Scikit-learn",
+                        "icon": "assets/icons/scikit-learn.svg"
+                    },
+                    {
+                        "name": "Pandas",
+                        "icon": "assets/icons/pandas.svg"
+                    },
+                    {
+                        "name": "NumPy",
+                        "icon": "assets/icons/numpy.svg"
+                    },
+                    {
+                        "name": "Matplotlib",
+                        "icon": "assets/icons/matplotlib.svg"
+                    },
+                    {
+                        "name": "Seaborn",
+                        "icon": "assets/icons/seaborn.svg"
+                    },
+                    {
+                        "name": "PyTorch",
+                        "icon": "assets/icons/pytorch.svg"
+                    },
+                    {
+                        "name": "Plotly",
+                        "icon": "assets/icons/plotly.svg"
+                    },
+                    {
+                        "name": "Optuna",
+                        "icon": "assets/icons/optuna.svg"
+                    }
                 ]
             },
             {
                 "icon": "fas fa-tools",
                 "title": "Software y Herramientas Técnicas",
                 "items": [
-                    "F.A.S.T. WellTest™",
-                    "LogView++",
-                    "OpenWells",
-                    "Git",
-                    "Microsoft Power BI",
-                    "Jupyter Notebooks"
+                    {
+                        "name": "F.A.S.T. WellTest™",
+                        "icon": "fas fa-oil-well"
+                    },
+                    {
+                        "name": "LogView++",
+                        "icon": "fas fa-chart-line"
+                    },
+                    {
+                        "name": "OpenWells",
+                        "icon": "fas fa-industry"
+                    },
+                    {
+                        "name": "Git",
+                        "icon": "assets/icons/git.svg"
+                    },
+                    {
+                        "name": "Microsoft Power BI",
+                        "icon": "assets/icons/power-bi.svg"
+                    },
+                    {
+                        "name": "Jupyter Notebooks",
+                        "icon": "assets/icons/jupyter.svg"
+                    }
                 ]
             }
         ]

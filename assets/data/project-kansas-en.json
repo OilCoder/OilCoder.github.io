@@ -1,0 +1,184 @@
+{
+    "project": {
+        "title": "Neural Network Pipeline for Petrophysical Analysis",
+        "subtitle": "Advanced Machine Learning pipeline for petrophysical analysis and prediction from well logs, with optimized neural networks and rigorous validation.",
+        "description": "State-of-the-art comprehensive solution to automate petrophysical analysis through artificial intelligence and advanced machine learning techniques. This project implements a robust 8-step pipeline from raw LAS files to production-ready deployment models, incorporating GPU acceleration with RAPIDS, Bayesian optimization with Optuna, and rigorous cross-validation. The system includes MLOps capabilities for continuous monitoring and automatic model retraining.",
+        "status": "Completed and in Production",
+        "period": "2023 - Present",
+        "category": "Machine Learning & Advanced Petrophysics",
+        "github_url": "https://github.com/OilCoder/Kansas",
+        "documentation_url": "https://github.com/OilCoder/Kansas/tree/main/docs/English",
+        "technologies": [
+            {
+                "name": "Python",
+                "description": "Main pipeline language",
+                "icon": "fab fa-python"
+            },
+            {
+                "name": "TensorFlow",
+                "description": "Deep learning framework",
+                "icon": "fas fa-brain"
+            },
+            {
+                "name": "RAPIDS",
+                "description": "GPU-accelerated processing",
+                "icon": "fas fa-chart-bar"
+            },
+            {
+                "name": "Docker",
+                "description": "Containerization and deployment",
+                "icon": "fab fa-docker"
+            },
+            {
+                "name": "CUDA",
+                "description": "NVIDIA GPU computing",
+                "icon": "fas fa-microchip"
+            },
+            {
+                "name": "Optuna",
+                "description": "Hyperparameter optimization",
+                "icon": "fas fa-search"
+            },
+            {
+                "name": "Pandas",
+                "description": "Data manipulation",
+                "icon": "fas fa-chart-line"
+            },
+            {
+                "name": "Matplotlib",
+                "description": "Scientific visualization",
+                "icon": "fas fa-eye"
+            }
+        ],
+        "pipeline_steps": [
+            {
+                "number": 1,
+                "title": "Data Collection & Preprocessing",
+                "description": "Comprehensive data acquisition from LAS files with quality control, outlier detection and data cleaning procedures"
+            },
+            {
+                "number": 2,
+                "title": "Feature Engineering",
+                "description": "Generation of advanced petrophysical features from raw well logs"
+            },
+            {
+                "number": 3,
+                "title": "Data Normalization",
+                "description": "Per-well and global normalization strategies to optimize training performance"
+            },
+            {
+                "number": 4,
+                "title": "Hyperparameter Optimization",
+                "description": "Bayesian search with Optuna for optimal architectures and parameters"
+            },
+            {
+                "number": 5,
+                "title": "Cross Validation",
+                "description": "Rigorous K-fold validation with composite metrics and stability evaluation"
+            },
+            {
+                "number": 6,
+                "title": "Final Training",
+                "description": "Production training with best hyperparameters and complete dataset"
+            },
+            {
+                "number": 7,
+                "title": "Model Evaluation",
+                "description": "Comprehensive evaluation with multiple metrics and per-well visualizations"
+            },
+            {
+                "number": 8,
+                "title": "Model Deployment",
+                "description": "Complete model packaging with scalers and transformers for production use"
+            }
+        ],
+        "key_features": [
+            {
+                "title": "LAS Processing",
+                "description": "Automated LAS file processing with anomaly detection and intelligent data cleaning capabilities.",
+                "icon": "fas fa-file-code"
+            },
+            {
+                "title": "Feature Engineering",
+                "description": "Advanced petrophysical feature engineering with domain-specific transformations and predictive modeling.",
+                "icon": "fas fa-magic"
+            },
+            {
+                "title": "Automatic Optimization",
+                "description": "Bayesian hyperparameter optimization with intelligent search and multi-objective evaluation strategies.",
+                "icon": "fas fa-robot"
+            },
+            {
+                "title": "Robust Validation",
+                "description": "Rigorous K-fold cross-validation with composite metrics and model stability evaluation framework.",
+                "icon": "fas fa-shield-alt"
+            }
+        ],
+        "results": [
+            {
+                "number": "8",
+                "label": "Pipeline Steps",
+                "description": "Complete automated methodology"
+            },
+            {
+                "number": "95%+",
+                "label": "Model Accuracy",
+                "description": "Cross-validation accuracy"
+            },
+            {
+                "number": "10x",
+                "label": "GPU Acceleration",
+                "description": "Optimized for RTX 4080/4090"
+            },
+            {
+                "number": "MLOps",
+                "label": "Production",
+                "description": "Automated deployment pipeline"
+            }
+        ],
+        "documentation": [
+            {
+                "title": "00_Methodology",
+                "description": "Exploratory Data Analysis (EDA)",
+                "url": "https://github.com/OilCoder/Kansas/blob/main/docs/English/00_Methodology_Petrophysical_Analysis.md",
+                "icon": "fas fa-search"
+            },
+            {
+                "title": "01_Complete Pipeline",
+                "description": "Complete neural network pipeline",
+                "url": "https://github.com/OilCoder/Kansas/blob/main/docs/English/01_Complete_Neural_Network_Pipeline.md",
+                "icon": "fas fa-project-diagram"
+            },
+            {
+                "title": "02_Feature Engineering",
+                "description": "From raw logs to predictive features",
+                "url": "https://github.com/OilCoder/Kansas/blob/main/docs/English/02_Petrophysical_Feature_Engineering_From_Raw_Logs_to_Predictive_Features.md",
+                "icon": "fas fa-cogs"
+            },
+            {
+                "title": "03_Normalization",
+                "description": "Normalization in petrophysical processing",
+                "url": "https://github.com/OilCoder/Kansas/blob/main/docs/English/03_Normalization_in_petrophysical_data_processing.md",
+                "icon": "fas fa-balance-scale"
+            },
+            {
+                "title": "04_Hyperparameter Optimization",
+                "description": "Initial exploration with Optuna",
+                "url": "https://github.com/OilCoder/Kansas/blob/main/docs/English/04_Initial_Hyperparameter_Exploration_Optuna.md",
+                "icon": "fas fa-sliders-h"
+            },
+            {
+                "title": "05_Cross Validation",
+                "description": "Rigorous cross-validation",
+                "url": "https://github.com/OilCoder/Kansas/blob/main/docs/English/05_Rigorous_Cross_Validation.md",
+                "icon": "fas fa-check-double"
+            },
+            {
+                "title": "06_Final Training",
+                "description": "Final training for production",
+                "url": "https://github.com/OilCoder/Kansas/blob/main/docs/English/06_Final_Production_Training.md",
+                "icon": "fas fa-rocket"
+            }
+        ]
+    }
+}
