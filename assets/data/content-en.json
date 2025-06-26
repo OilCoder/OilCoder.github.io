@@ -11,7 +11,100 @@
         "skills": "Skills",
         "contact": "Contact"
     },
+    "sidebar": {
+        "about": {
+            "title": "About Me",
+            "description": "I'm <strong>Carlos Andrés</strong>, petroleum engineer and AI specialist. This is my digital portfolio. 🛢️"
+        },
+        "contact": {
+            "title": "Contact Information",
+            "items": [
+                {
+                    "type": "phone",
+                    "icon": "📞",
+                    "label": "Phone",
+                    "value": "+1 (929) 340-8548",
+                    "link": "tel:+19293408548"
+                },
+                {
+                    "type": "email",
+                    "icon": "📧",
+                    "label": "Email",
+                    "value": "carlos.esquivel000@gmail.com",
+                    "link": "mailto:carlos.esquivel000@gmail.com"
+                },
+                {
+                    "type": "linkedin",
+                    "icon": "💼",
+                    "label": "LinkedIn",
+                    "value": "andresesquivel",
+                    "link": "https://linkedin.com/in/andresesquivel"
+                },
+                {
+                    "type": "github",
+                    "icon": "💻",
+                    "label": "GitHub",
+                    "value": "OilCoder",
+                    "link": "https://github.com/OilCoder"
+                }
+            ]
+        },
+        "resume": {
+            "title": "Resume",
+            "description": "Available in English and Spanish",
+            "download": {
+                "label": "Download CV",
+                "file": "carlos_esquivel_cv_en.pdf",
+                "flag": "🇺🇸"
+            }
+        },
+        "navigation": {
+            "title": "Navigation",
+            "items": [
+                {
+                    "label": "About Me",
+                    "target": "#about",
+                    "icon": "user"
+                },
+                {
+                    "label": "Education",
+                    "target": "#education",
+                    "icon": "education"
+                },
+                {
+                    "label": "Experience",
+                    "target": "#experience",
+                    "icon": "experience"
+                },
+                {
+                    "label": "Projects",
+                    "target": "#projects",
+                    "icon": "projects"
+                },
+                {
+                    "label": "Skills",
+                    "target": "#skills",
+                    "icon": "skills"
+                }
+            ]
+        },
+        "skills": {
+            "title": "Tech Stack"
+        },
+        "projects": {
+            "title": "Projects"
+        },
+        "extras": {
+            "title": "Fun Facts"
+        }
+    },
     "hero": {
+        "greeting": "Hey, I'm Carlos Andrés!",
+        "intro": {
+            "paragraph1": "I'm a petroleum engineer with <strong>solid field operations experience</strong> and specialization in <strong>artificial intelligence</strong> for reservoir characterization. I've been optimizing subsurface decisions since 2013 and <a href=\"#ml-projects\">applying practical AI</a> in recent years.",
+            "paragraph2": "With over 9 years of experience, I combine solid technical knowledge in petroleum engineering with advanced skills in <strong>machine learning and deep learning</strong>, transforming complex reservoir data into valuable insights for decision-making."
+        },
+        "cta": "Send Email",
         "name": "Carlos Andrés Esquivel Plazas",
         "title": "Petroleum Engineer | Specialist in Machine Learning and Artificial Intelligence",
         "objective": "Petroleum engineer with solid field experience and a strong interest in integrating machine learning and artificial intelligence solutions. My goal is to apply advanced technologies that optimize processes and improve operational efficiency in the oil and gas industry.",
@@ -78,7 +171,9 @@
         }
     },
     "experience": {
-        "title": "Professional Experience",
+        "title": "Experience",
+        "seeAll": "See All",
+        "subtitle": "My professional journey combining petroleum operations with AI.",
         "items": [
             {
                 "period": "2023 - Present",
@@ -149,7 +244,9 @@
         ]
     },
     "projects": {
-        "title": "Featured Projects",
+        "title": "Projects",
+        "seeAll": "See All",
+        "subtitle": "Development of innovative solutions using AI and ML.",
         "items": [
             {
                 "icon": "fas fa-chart-line",
@@ -209,7 +306,8 @@
         ]
     },
     "skills": {
-        "title": "Skills and Technologies",
+        "title": "Tech Stack",
+        "subtitle": "Tools and technologies I master to solve complex problems.",
         "categories": [
             {
                 "icon": "fas fa-heart",
@@ -343,6 +441,8 @@
     },
     "contact": {
         "title": "Contact",
+        "subtitle": "Interested in collaborating on AI projects for the energy industry?",
+        "description": "I love connecting with professionals who share my passion for applying emerging technologies in the petroleum industry. If you have an interesting project or simply want to discuss AI applied to petroleum engineering, don't hesitate to contact me.",
         "info": {
             "title": "Contact Information",
             "phone": "+1 (929) 340 8548",

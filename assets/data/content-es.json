@@ -3,6 +3,96 @@
         "title": "Carlos Andrés Esquivel - Ingeniero de Petróleos | IA & ML",
         "lang": "es"
     },
+    "sidebar": {
+        "about": {
+            "title": "Sobre mí",
+            "description": "Soy <strong>Carlos Andrés</strong>, ingeniero de petróleos y especialista en IA. Este es mi portafolio digital. 🛢️"
+        },
+        "contact": {
+            "title": "Información de Contacto",
+            "items": [
+                {
+                    "type": "phone",
+                    "icon": "📞",
+                    "label": "Teléfono",
+                    "value": "+1 (929) 340-8548",
+                    "link": "tel:+19293408548"
+                },
+                {
+                    "type": "email",
+                    "icon": "📧",
+                    "label": "Email",
+                    "value": "carlos.esquivel000@gmail.com",
+                    "link": "mailto:carlos.esquivel000@gmail.com"
+                },
+                {
+                    "type": "linkedin",
+                    "icon": "💼",
+                    "label": "LinkedIn",
+                    "value": "andresesquivel",
+                    "link": "https://linkedin.com/in/andresesquivel"
+                },
+                {
+                    "type": "github",
+                    "icon": "💻",
+                    "label": "GitHub",
+                    "value": "OilCoder",
+                    "link": "https://github.com/OilCoder"
+                }
+            ]
+        },
+        "cv": {
+            "title": "Currículum"
+        },
+        "skills": {
+            "title": "Stack Técnico"
+        },
+        "projects": {
+            "title": "Proyectos"
+        },
+        "extras": {
+            "title": "Datos Curiosos"
+        },
+        "resume": {
+            "title": "Resumen",
+            "description": "Disponible en inglés y español",
+            "download": {
+                "label": "Descargar CV",
+                "file": "carlos_esquivel_cv_es.pdf",
+                "flag": "🇪🇸"
+            }
+        },
+        "navigation": {
+            "title": "Navegación",
+            "items": [
+                {
+                    "label": "Sobre mí",
+                    "target": "#about",
+                    "icon": "user"
+                },
+                {
+                    "label": "Educación",
+                    "target": "#education",
+                    "icon": "education"
+                },
+                {
+                    "label": "Experiencia",
+                    "target": "#experience",
+                    "icon": "experience"
+                },
+                {
+                    "label": "Proyectos",
+                    "target": "#projects",
+                    "icon": "projects"
+                },
+                {
+                    "label": "Habilidades",
+                    "target": "#skills",
+                    "icon": "skills"
+                }
+            ]
+        }
+    },
     "navigation": {
         "about": "Sobre Mí",
         "education": "Educación",
@@ -12,6 +102,12 @@
         "contact": "Contacto"
     },
     "hero": {
+        "greeting": "¡Hola, soy Carlos Andrés!",
+        "intro": {
+            "paragraph1": "Soy ingeniero de petróleos con <strong>sólida experiencia en operaciones de campo</strong> y especialización en <strong>inteligencia artificial</strong> para la caracterización de yacimientos. He estado optimizando decisiones de subsuelo desde 2013 y <a href=\"#ml-projects\">aplicando IA práctica</a> durante los últimos años.",
+            "paragraph2": "Con más de 9 años de experiencia, combino conocimientos técnicos sólidos en ingeniería de petróleos con habilidades avanzadas en <strong>machine learning y deep learning</strong>, transformando datos complejos de yacimientos en insights valiosos para la toma de decisiones."
+        },
+        "cta": "Enviar Email",
         "name": "Carlos Andrés Esquivel Plazas",
         "title": "Ingeniero de Petróleos | Especialista en Machine Learning e Inteligencia Artificial",
         "objective": "Ingeniero de petróleos con sólida experiencia en operaciones de campo y pasión por integrar soluciones de machine learning e inteligencia artificial. Mi objetivo es aplicar tecnologías avanzadas que optimicen procesos y mejoren la eficiencia operativa en la industria del petróleo.",
@@ -78,7 +174,9 @@
         }
     },
     "experience": {
-        "title": "Experiencia Profesional",
+        "title": "Experiencia",
+        "seeAll": "Ver Todo",
+        "subtitle": "Mi trayectoria profesional combinando operaciones petroleras con IA.",
         "items": [
             {
                 "period": "2023 - Presente",
@@ -149,7 +247,9 @@
         ]
     },
     "projects": {
-        "title": "Proyectos Destacados",
+        "title": "Proyectos",
+        "seeAll": "Ver Todos",
+        "subtitle": "Desarrollo de soluciones innovadoras usando IA y ML.",
         "items": [
             {
                 "icon": "fas fa-chart-line",
@@ -209,7 +309,8 @@
         ]
     },
     "skills": {
-        "title": "Habilidades y Tecnologías",
+        "title": "Stack Tecnológico",
+        "subtitle": "Herramientas y tecnologías que domino para resolver problemas complejos.",
         "categories": [
             {
                 "icon": "fas fa-heart",
@@ -343,6 +444,8 @@
     },
     "contact": {
         "title": "Contacto",
+        "subtitle": "¿Interesado en colaborar en proyectos de IA para la industria energética?",
+        "description": "Me encanta conectar con profesionales que comparten mi pasión por la aplicación de tecnologías emergentes en la industria petrolera. Si tienes algún proyecto interesante o simplemente quieres conversar sobre IA aplicada a ingeniería de petróleos, no dudes en contactarme.",
         "info": {
             "title": "Información de Contacto",
             "phone": "+1 (929) 340 8548",

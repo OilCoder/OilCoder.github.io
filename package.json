@@ -1,36 +1,50 @@
 {
-    "name": "oilcoder-portfolio",
+    "name": "carlos-esquivel-portfolio",
     "version": "2.0.0",
-    "description": "Portfolio website for Carlos Andrés Esquivel - Petroleum Engineer specialized in AI & ML",
+    "description": "Clean and minimalist portfolio website inspired by Tania Rascia's aesthetic",
     "main": "index.html",
     "scripts": {
-        "lint:html": "htmlhint **/*.html",
-        "lint:css": "stylelint assets/css/**/*.css",
-        "lint:js": "eslint assets/js/**/*.js",
-        "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+        "dev": "live-server --port=3000 --open=/index.html",
+        "build": "echo 'No build process needed for static site'",
+        "lint": "htmlhint index.html && stylelint assets/css/*.css",
+        "validate": "html-validate index.html",
         "serve": "python3 -m http.server 8000",
-        "build": "echo 'Static site - no build process required'",
-        "deploy": "git add . && git commit -m 'Update site' && git push origin main"
+        "deploy": "echo 'Deploy via git subtree push'"
     },
     "keywords": [
         "portfolio",
-        "cv",
-        "petroleum-engineer",
-        "ai",
-        "machine-learning",
-        "data-science"
+        "developer",
+        "data-science",
+        "clean-design",
+        "minimalist",
+        "responsive",
+        "javascript",
+        "css3",
+        "html5"
     ],
-    "author": "Carlos Andrés Esquivel Plazas <carlos.esquivel000@gmail.com>",
+    "author": {
+        "name": "Carlos Esquivel",
+        "email": "tu@email.com",
+        "url": "https://oilcoder.github.io"
+    },
     "license": "MIT",
+    "homepage": "https://oilcoder.github.io",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/OilCoder/OilCoder-root.git"
+    },
     "devDependencies": {
         "htmlhint": "^1.1.4",
         "stylelint": "^15.10.3",
-        "stylelint-config-standard": "^34.0.0",
-        "eslint": "^8.48.0"
+        "html-validate": "^8.7.4",
+        "live-server": "^1.2.2"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/OilCoder/OilCoder.github.io.git"
-    },
-    "homepage": "https://oilcoder.github.io"
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not dead"
+    ],
+    "engines": {
+        "node": ">=14.0.0"
+    }
 }
