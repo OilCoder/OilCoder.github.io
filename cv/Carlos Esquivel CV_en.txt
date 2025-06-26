@@ -1,0 +1,88 @@
+Carlos Andres Esquivel Plazas
+Petroleum Engineer | Specialist in Machine Learning and Artificial Intelligence
+
+
+OBJECTIVE 
+Petroleum engineer with solid field experience and a strong interest in integrating machine learning and artificial intelligence solutions. My goal is to apply advanced technologies that optimize processes and improve operational efficiency in the oil and gas industry.
+
+
+PROFILE
+Petroleum engineer with solid experience in field operations and comprehensive subsurface data analysis. Specialized in developing advanced technology solutions based on machine learning and AI, focused on process automation and improving operational outcomes. Successfully led initiatives to reduce report turnaround times and developed predictive models to support accurate technical decisions in petrophysical workflows. Proficient in Python, MATLAB, and key AI frameworks, combining operational expertise with leadership of multidisciplinary teams and a drive to innovate with emerging technologies in the energy sector.
+
+
+
+CONTACT INFORMATION 
++1 (929) 340 8548
+carlos.esquivel000@gmail.com
+linkedin.com/in/andresesquivel
+github.com/OilCoder
+
+
+KEY HIGHLIGHTS
+4+ years in wellsite and wireline operations (P/T tests, well testing, QHSE)
+3+ years applying Python & ML to NDT inspection and well log prediction
+9+ years bridging field operations and AI for subsurface decision-making
+
+LANGUAGES
+Spanish – Native
+English – Advanced
+
+
+
+PROFESSIONAL EXPERIENCE 
+
+TEAM AND OPERATIONS COORDINATOR
+RIBALTA NYC (TOP 50 PIZZA USA) | 2020 – 2023
+Led teams across three operational areas, improving workflows to ensure most orders were served in under 20 minutes during peak hours, handling over 400 customers per day. These improvements reduced errors and waste, enhanced cross-team collaboration, and improved the overall customer experience in high-pressure environments.
+
+AUTOMATION ENGINEER
+LUNA COMPANY S.A.S | 2018 - 2020
+Developed Python-based systems to automate integrity inspection reports for oilfield tools. Implemented computer vision techniques to process UV and penetrant test images, enabling microfracture detection and automated result logging. This system streamlined the generation of hundreds of technical reports, cut reporting time by 40%, and improved traceability and quality control.
+
+DATA ANALYST AND DATABASE ADMINISTRATOR
+MAXIM & FISHING S.A.S. | 2015 - 2016
+Automated documentation workflows by building databases in Excel and SQL and integrating MATLAB-based analysis models. These tools improved strategic reporting and document handling, enabling faster access to operational data and improved information retrieval for critical decision-making
+
+WIRELINE FIELD ENGINEER
+MAXIM & FISHING S.A.S. | 2014 - 2015
+Performed wireline and well testing operations, managing pressure and temperature tests (fall-off, buildup, injection, interference) using wireline and gauge carrier tools. Supervised field testing to ensure data quality and reliability. Improved the consistency of downhole pressure/temperature logging for more accurate technical assessments.
+
+OPERATIONS ANALYST
+MAXIM & FISHING S.A.S. | 2013 - 2014
+Provided analytical and operational support in various areas, ensuring compliance with QHSE requirements. Evaluated operational processes to properly implement the company’s integrated management system. Applied process improvements to reduce execution time and maintain quality standards.
+
+
+
+EDUCATION AND CERTIFICATIONS
+
+PETROLEUM ENGINEER
+Universidad Surcolombiana |Professional License: 6677
+
+CERTIFICATIONS – MACHINE LEARNING AND ENGLISH
+Platzi | June - July 2020
+
+Artificial Intelligence and Machine Learning: Practical training in ML and DL techniques. Adapted models to solve challenges in oil and gas workflows.
+English Academy: Intensive training in professional communication in English, focused on technical and multicultural environments.
+
+PROJECTS
+
+SYNTHETIC WELL LOG CURVE PREDICTION (2023 – PRESENT)
+Designed machine learning and deep learning models in Python to predict synthetic well log curves (e.g., CNLS, RHOB, Formation) with up to 5× more accuracy than previous methods. Developed an interactive interface to allow technical and non-technical users to evaluate zones with missing or limited data, improving petrophysical assessments and reducing analysis time.
+
+AUTOMATED TECHNICAL REPORTING WITH COMPUTER VISION (LUNA PROJECT) (2018 – 2020)
+Built a Python-based computer vision system for large-scale inspection of oilfield tools, using nondestructive testing (NDT) image analysis. Integrated AI models to detect defects and link image evidence to structured databases, significantly reducing manual errors and speeding up technical reporting.
+
+WATER INFLUX DETECTION IN RESERVOIRS (2016 – 2018)
+Developed a MATLAB tool to identify water breakthrough in oil reservoirs using pressure test data and boundary condition simulations. Implemented pseudopressure analysis and calculated drainage area and original oil in place (OOIP). The tool helped reduce reserve estimation errors and improved water management and reservoir characterization under complex boundary conditions.
+
+
+SOFT SKILLS
+	PROGRAMMING LANGUAGES
+	ML / DATA ANALYSIS FRAMEWORKS
+	TECHNICAL TOOLS
+
+Leadership, Effective communication, Adaptability, Teamwork, Critical thinking, Problem solving, Decision-making
+	Python, MATLAB, SQL
+	TensorFlow, Keras, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, PyTorch, Plotly, Optuna
+	F.A.S.T. WellTest™, LogView++, OpenWells, Git (version control), Microsoft Power BI, Jupyter Notebooks
+

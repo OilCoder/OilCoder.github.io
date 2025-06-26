@@ -1,0 +1,80 @@
+Carlos Andres Esquivel Plazas
+Ingeniero de Petróleos | Especialista en Machine Learning e Inteligencia Artificial
+
+OBJETIVO 
+Ingeniero de petróleos con sólida experiencia en operaciones de campo y pasión por integrar soluciones de machine learning e inteligencia artificial. Mi objetivo es aplicar tecnologías avanzadas que optimicen procesos y mejoren la eficiencia operativa en la industria del petróleo.
+
+
+PERFIL 
+Ingeniero de petróleos con sólida experiencia en operaciones de campo y análisis integral de datos del subsuelo. Especializado en el desarrollo de soluciones tecnológicas avanzadas basadas en machine learning e inteligencia artificial, enfocado en la automatización de procesos y la optimización de resultados operativos. Lideré iniciativas exitosas de reducción de tiempos en generación de reportes y desarrollé modelos predictivos para facilitar decisiones técnicas precisas en el área petrofísica. Domino Python, MATLAB y frameworks clave de IA, combinando experiencia operativa, liderazgo de equipos multidisciplinarios y pasión por innovar con tecnologías emergentes en la industria del petróleo y gas.
+
+
+
+INFORMACIÓN DE CONTACTO 
++1 (929) 340 8548
+carlos.esquivel000@gmail.com
+linkedin.com/in/andresesquivel
+github.com/OilCoder
+
+
+PUNTOS CLAVE
++4 años en operaciones de pozo y wireline (pruebas P/T, well testing, QHSE)
++3 años aplicando Python & ML para inspección NDT y predicción de curvas de registro
++9 años optimizando decisiones de subsuelo y operaciones de campo con IA práctica.
+
+IDIOMAS
+Español – lenguaje nativo
+Ingles – avanzado
+
+
+EXPERIENCIA 
+
+COORDINADOR DE EQUIPOS Y OPERACIONES
+RIBALTA NYC (TOP 50 PIZZA USA) | 2020 – 2023
+Lideré equipos en tres áreas operativas, optimizando procesos para asegurar que la mayoría de los pedidos llegaran en menos de 20 minutos, atendiendo a más de 400 comensales en horas pico. Estas mejoras redujeron errores y desperdicio, fortalecieron la colaboración entre áreas y elevaron la experiencia del cliente, incluso en momentos de alta demanda.
+
+INGENIERO DE AUTOMATIZACIÓN
+LUNA COMPANY S.A.S | 2018 - 2020
+Desarrollé sistemas en Python para automatizar la documentación de inspecciones de integridad en herramientas petroleras. Implementé sistemas de visión por computador para procesar imágenes obtenidas en pruebas con líquidos penetrantes y luz ultravioleta, facilitando la detección de microfracturas y el registro automático de resultados. Esta solución permitió gestionar cientos de reportes técnicos, redujo el tiempo de generación de reportes en un 40% y mejoró la trazabilidad y precisión en el control de calidad.
+
+ANALISTA DE DATOS Y ADMINISTRADOR DE BASE DE DATOS
+MAXIM & FISHING S.A.S. | 2015 - 2016
+Automatizé la gestión de datos y documentación mediante el diseño de bases de datos en Excel y SQL, y la integración de modelos de análisis con MATLAB. Estos desarrollos optimizaron la elaboración de reportes estratégicos y mejoraron la eficiencia en la gestión documental, facilitando el acceso y la recuperación de información clave para la operación.
+
+INGENIERO DE OPERACIONES WIRELINE
+MAXIM & FISHING S.A.S. | 2014 - 2015
+Realicé operaciones de wireline y well testing, gestionando pruebas de presión y temperatura (declinación/restauración, inyección e interferencia) mediante wireline o gauge carrier. Supervisé pruebas de campo para asegurar la integridad y calidad de los datos obtenidos, brindando soporte técnico en la evaluación de las condiciones del pozo. Mejoré la confiabilidad de los registros memorizados de presión y temperatura, garantizando resultados precisos y seguros para el cliente.
+
+ANALISTA DE OPERACIONES
+MAXIM & FISHING S.A.S. | 2013 - 2014
+Proporcioné apoyo operativo y analítico en diversas áreas, asegurando el cumplimiento de los requerimientos de QHSE. Evalué los procesos operativos para implementar correctamente el sistema de gestión integrada de la compañía, maximizando la eficiencia y el valor del producto final. Apliqué mejoras en los procedimientos operativos para optimizar los tiempos de ejecución y garantizar el cumplimiento de los estándares de calidad.
+
+EDUCACIÓN Y CERTIFICACIONES
+
+INGENIERO DE PETRÓLEOS
+Universidad Surcolombiana |Matrícula profesional: 6677
+
+CERTIFICACIONES EN MACHINE LEARNING E INGLÉS
+Platzi | Junio - Julio 2020
+
+Inteligencia Artificial y Machine Learning: Formación práctica en técnicas avanzadas de machine learning y deep learning. Apliqué los conocimientos adquiridos adaptando algoritmos y modelos para resolver desafíos propios de la industria petrolera.
+Platzi English Academy: Capacitación intensiva en comunicación profesional en inglés avanzado, orientada a entornos técnicos y equipos multiculturales.
+
+PROYECTOS PERSONALES
+
+PREDICCIÓN DE CURVAS SINTÉTICAS PARA REGISTROS DE POZOS (2023 – PRESENTE)
+Desarrollé modelos avanzados de machine learning y deep learning en Python para generar curvas sintéticas de registros de pozos, incrementando hasta 5 veces la precisión respecto a métodos anteriores. Implementé una interfaz interactiva que permite a usuarios técnicos y no técnicos analizar zonas con datos limitados o ausentes, agilizando la toma de decisiones en la caracterización petrofísica. El proyecto optimizó el uso de información disponible y redujo el tiempo necesario para evaluaciones técnicas.
+
+AUTOMATIZACIÓN DE REPORTES TÉCNICOS POR VISIÓN ARTIFICIAL (PROYECTO LUNA) (2018 – 2020)
+Implementé un sistema de visión artificial en Python, enfocado en la inspección masiva de herramientas petroleras mediante análisis automatizado de imágenes de pruebas no destructivas (NDT). Integré modelos de inteligencia artificial para identificar defectos y vincular evidencia visual con bases de datos técnicas, logrando reducir errores manuales y acelerar la entrega de reportes técnicos.
+
+DETECCIÓN DEL EFECTO DE INTRUSIÓN DE AGUA EN YACIMIENTOS (2016 – 2018)
+Desarrollé un software en MATLAB para identificar la intrusión de agua en yacimientos petroleros, analizando datos de pruebas de presión y simulaciones con distintas condiciones de frontera. El sistema implementa análisis de pseudopresión y deriva parámetros clave como el área de drenaje y el volumen original de petróleo (OOIP), facilitando la toma de decisiones estratégicas. La herramienta permitió reducir el margen de error en la estimación de reservas, optimizar el manejo de agua y mejorar la caracterización de yacimientos con fronteras parcialmente activas o fallas no sellantes.
+HABILIDADES BLANDAS	LENGUAJES DE PROGRAMACIÓN	FRAMEWORKS PARA IA Y ANÁLISIS DE DATOS	SOFTWARE Y HERRAMIENTAS TÉCNICAS
+
+Liderazgo, Comunicación Efectiva, Adaptabilidad, Trabajo en Equipo, Pensamiento Crítico, Resolución de Problemas, Capacidad de Toma de Decisiones.
+	Python, MATLAB, SQL
+	TensorFlow, Keras, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn, PyTorch, Plotly, Optuna
+	F.A.S.T. WellTest™, LogView++, OpenWells, Git (control de versiones), Microsoft Power BI, Jupyter Notebooks
+
+

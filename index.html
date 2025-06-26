@@ -1,589 +1,184 @@
+<!--
+  @file   index.html
+  @brief  Portfolio website template with dynamic content loading from JSON
+  @author Carlos Esquivel
+  @date   2025-01-26
+-->
 <!DOCTYPE html>
-<html lang="es">
-<!-- Updated: 2024-06-13 01:35 - Dynamic content loading v2.0.0 -->
+<html lang="es" data-lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Andrés Esquivel - Ingeniero de Petróleos | IA & ML</title>
-
-    <!-- SEO Meta Tags -->
+    <title data-content="meta.title">Carlos Andrés Esquivel Plazas</title>
     <meta name="description"
-        content="Ingeniero de petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.">
-    <meta name="keywords"
-        content="ingeniero petroleos, machine learning, inteligencia artificial, python, matlab, wireline, analisis datos, nueva york, carlos esquivel">
-    <meta name="author" content="Carlos Andrés Esquivel Plazas">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://oilcoder.github.io/">
+        content="Ingeniero de Petróleos especializado en Machine Learning e Inteligencia Artificial">
 
-    <!-- OpenGraph Meta Tags -->
-    <meta property="og:title" content="Carlos Andrés Esquivel – Ingeniero de Petróleos | IA & Machine Learning">
-    <meta property="og:description"
-        content="Ingeniero de petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.">
-    <meta property="og:image" content="https://oilcoder.github.io/assets/images/banner_share.png">
-    <meta property="og:url" content="https://oilcoder.github.io">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Carlos Andrés Esquivel - Portfolio">
-    <meta property="og:locale" content="es_ES">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Carlos Andrés Esquivel – Ingeniero de Petróleos | IA & Machine Learning">
-    <meta name="twitter:description"
-        content="Ingeniero de petróleos especializado en IA y Machine Learning. Experto en operaciones wireline, pruebas de pozos y análisis avanzado de datos con Python, MATLAB y frameworks de deep learning.">
-    <meta name="twitter:image" content="https://oilcoder.github.io/assets/images/banner_share.png">
-    <meta name="twitter:creator" content="@OilCoder">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <!-- Preload critical resources -->
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </noscript>
-
-    <link rel="stylesheet" href="assets/css/style.css?v=3.2.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
 </head>
 
 <body>
-    <header>
-        <nav role="navigation" aria-label="Main navigation">
-            <div class="nav-container">
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#about">Sobre Mí</a></li>
-                    <li><a href="#education">Educación</a></li>
-                    <li><a href="#experience">Experiencia</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                </ul>
-                <div class="nav-actions">
-                    <label class="theme-toggle">
-                        <input id="themeToggle" type="checkbox" />
-                        <div class="slider round">
-                            <div class="sun-moon">
-                                <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                                <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
-                                    <circle cx="50" cy="50" r="50"></circle>
-                                </svg>
-                            </div>
-                            <div class="stars">
-                                <svg id="star-1" class="star" viewBox="0 0 20 20">
-                                    <path
-                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                                    </path>
-                                </svg>
-                                <svg id="star-2" class="star" viewBox="0 0 20 20">
-                                    <path
-                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                                    </path>
-                                </svg>
-                                <svg id="star-3" class="star" viewBox="0 0 20 20">
-                                    <path
-                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                                    </path>
-                                </svg>
-                                <svg id="star-4" class="star" viewBox="0 0 20 20">
-                                    <path
-                                        d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                                    </path>
-                                </svg>
-                            </div>
-                        </div>
-                    </label>
-                    <a href="cv/carlos_esquivel_cv_es.pdf" target="_blank" class="btn-nav-cv" download>
-                        <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z">
-                            </path>
-                        </svg>
-                        <span class="cv-text">HV</span>
-                        <span class="tooltip">HV PDF</span>
-                    </a>
-                    <div class="language-selector">
-                        <div class="dropdown">
-                            <button class="dropdown-btn" id="languageDropdown">
-                                <img src="https://flagcdn.com/w20/es.png" alt="España" class="flag-img">
-                                <span class="lang-text">Español</span>
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#" class="lang-option" data-lang="es">
-                                    <img src="https://flagcdn.com/w20/es.png" alt="España" class="flag-img">
-                                    <span>Español</span>
-                                </a>
-                                <a href="#" class="lang-option" data-lang="en">
-                                    <img src="https://flagcdn.com/w20/us.png" alt="Estados Unidos" class="flag-img">
-                                    <span>English</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Theme and Language Toggle -->
+    <div class="top-controls">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+            <span id="theme-icon">🌙</span>
+        </button>
+        <div class="language-toggle">
+            <button class="lang-btn active" data-lang="es">ES</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <!-- Sidebar Toggle Button -->
+    <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle Sidebar">
+        <span id="toggle-icon">☰</span>
+    </button>
+
+    <!-- SECTION: Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <!-- Profile Photo -->
+        <div class="profile-photo">
+            <img src="assets/images/me.png" alt="Carlos Andrés Esquivel" />
+        </div>
+
+        <!-- Contact Information -->
+        <section class="sidebar-section contact-info-section">
+            <h2 data-content="sidebar.contact.title">Información de Contacto</h2>
+            <div class="contact-details" id="sidebar-contact-details">
+                <!-- Dynamic content -->
             </div>
-        </nav>
-    </header>
+        </section>
 
-    <main class="main-layout">
-        <!-- Sidebar izquierda -->
-        <aside class="sidebar" id="sidebar">
-            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
-                <i class="fas fa-chevron-left toggle-arrow"></i>
-            </button>
-            <div class="sidebar-content">
-                <!-- Foto de perfil -->
-                <div class="profile-photo">
-                    <img src="assets/images/me.png" alt="Carlos Andrés Esquivel Plazas" class="profile-img">
-                </div>
-
-                <!-- Información básica -->
-                <div class="profile-info">
-                    <h1>Carlos Andrés Esquivel Plazas</h1>
-                    <h2>Ingeniero de Petróleos | IA & Machine Learning</h2>
-                    <p class="objective">Cargando...</p>
-                </div>
-
-                <!-- Información de contacto -->
-                <div class="sidebar-contact">
-                    <h3><i class="fas fa-address-book"></i> Contacto</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>carlos.esquivel000@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+1 (929) 340 8548</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/andresesquivel" target="_blank">LinkedIn</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <a href="https://github.com/OilCoder" target="_blank">GitHub</a>
-                    </div>
-                </div>
-
-                <!-- Idiomas en sidebar -->
-                <div class="sidebar-languages">
-                    <h3><i class="fas fa-globe"></i> Idiomas</h3>
-                    <div class="language-item">
-                        <div class="language-name">
-                            <img src="https://flagcdn.com/w40/es.png" alt="Español" class="language-flag">
-                            <span>Cargando...</span>
-                        </div>
-                        <span class="level">Cargando...</span>
-                    </div>
-                    <div class="language-item">
-                        <div class="language-name">
-                            <img src="https://flagcdn.com/w40/us.png" alt="English" class="language-flag">
-                            <span>Cargando...</span>
-                        </div>
-                        <span class="level">Cargando...</span>
-                    </div>
-                </div>
-
-
+        <!-- Resume Downloads -->
+        <section class="sidebar-section resume-section">
+            <h2 data-content="sidebar.resume.title">Resumen</h2>
+            <div class="resume-downloads" id="sidebar-resume-downloads">
+                <!-- Dynamic content -->
             </div>
-        </aside>
+        </section>
 
-        <!-- Contenido principal -->
-        <div class="main-content">
+        <!-- Navigation Links -->
+        <section class="sidebar-section navigation-section">
+            <h2 data-content="sidebar.navigation.title">Navegación</h2>
+            <ul class="sidebar-navigation" id="sidebar-navigation">
+                <!-- Dynamic content -->
+            </ul>
+        </section>
+    </aside>
 
-            <section id="about">
-                <div class="container">
-                    <h2>Perfil Profesional</h2>
-                    <p>Cargando...</p>
+    <!-- SECTION: Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <h1 data-content="hero.greeting">¡Hola, soy Carlos Andrés!</h1>
 
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-brain"></i>
-                            <h3>Cargando...</h3>
-                            <p>Cargando...</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-tools"></i>
-                            <h3>Cargando...</h3>
-                            <p>Cargando...</p>
-                        </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-project-diagram"></i>
-                            <h3>Cargando...</h3>
-                            <p>Cargando...</p>
-                        </div>
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <p data-content="hero.intro.paragraph1">
+                            <!-- Dynamic content -->
+                        </p>
+                        <p data-content="hero.intro.paragraph2">
+                            <!-- Dynamic content -->
+                        </p>
                     </div>
                 </div>
             </section>
 
-            <section id="education">
-                <div class="container">
-                    <h2>Educación</h2>
-                    <div class="education-grid">
-                        <div class="education-item">
-                            <h3>Cargando...</h3>
-                            <h4>Cargando...</h4>
-                            <p>Cargando...</p>
-                        </div>
-                        <div class="education-item">
-                            <h3>Cargando...</h3>
-                            <h4>Cargando...</h4>
-                            <p>Cargando...</p>
-                        </div>
-                        <div class="education-item">
-                            <h3>Cargando...</h3>
-                            <h4>Cargando...</h4>
-                            <p>Cargando...</p>
-                        </div>
-                    </div>
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h2 data-content="about.title">Perfil Profesional</h2>
+                <p class="section-subtitle" data-content="about.description">
+                    <!-- Dynamic content -->
+                </p>
+
+                <div class="highlights-grid" id="about-highlights">
+                    <!-- Dynamic content -->
                 </div>
             </section>
 
-            <section id="experience">
-                <div class="container">
-                    <h2>Experiencia Profesional</h2>
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-date">Cargando...</div>
-                            <div class="timeline-content">
-                                <h3>Cargando...</h3>
-                                <h4>Cargando...</h4>
-                                <ul>
-                                    <li>Cargando...</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">Cargando...</div>
-                            <div class="timeline-content">
-                                <h3>Cargando...</h3>
-                                <h4>Cargando...</h4>
-                                <ul>
-                                    <li>Cargando...</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">Cargando...</div>
-                            <div class="timeline-content">
-                                <h3>Cargando...</h3>
-                                <h4>Cargando...</h4>
-                                <ul>
-                                    <li>Cargando...</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">Cargando...</div>
-                            <div class="timeline-content">
-                                <h3>Cargando...</h3>
-                                <h4>Cargando...</h4>
-                                <ul>
-                                    <li>Cargando...</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-date">Cargando...</div>
-                            <div class="timeline-content">
-                                <h3>Cargando...</h3>
-                                <h4>Cargando...</h4>
-                                <ul>
-                                    <li>Cargando...</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Education Section -->
+            <section id="education" class="content-section">
+                <h2 data-content="education.title">Educación</h2>
+
+                <div class="education-grid" id="education-container">
+                    <!-- Dynamic content -->
+                </div>
+
+                <div class="languages-section" id="languages-container">
+                    <!-- Dynamic content -->
                 </div>
             </section>
 
-            <section id="projects">
-                <div class="container">
-                    <h2>Proyectos Destacados</h2>
-                    <div class="project-grid">
-                        <div class="project-card">
-                            <div class="project-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Cargando...</h3>
-                            <p class="project-date">Cargando...</p>
-                            <p>Cargando...</p>
-                            <div class="project-achievements">
-                                <span class="achievement">Cargando...</span>
-                            </div>
-                            <div class="tech-stack">
-                                <span>Cargando...</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link github-link" target="_blank">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                                <a href="#" class="project-link demo-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a>
-                            </div>
-                        </div>
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <h2>
+                    <span data-content="experience.title">Experiencia</span>
+                    <a href="#experience" class="section-link" data-content="experience.seeAll">Ver Todo</a>
+                </h2>
+                <p class="section-subtitle" data-content="experience.subtitle">Mi trayectoria profesional combinando
+                    operaciones petroleras con IA.</p>
 
-                        <div class="project-card">
-                            <div class="project-icon">
-                                <i class="fas fa-eye"></i>
-                            </div>
-                            <h3>Cargando...</h3>
-                            <p class="project-date">Cargando...</p>
-                            <p>Cargando...</p>
-                            <div class="project-achievements">
-                                <span class="achievement">Cargando...</span>
-                            </div>
-                            <div class="tech-stack">
-                                <span>Cargando...</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link github-link" target="_blank">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                                <a href="#" class="project-link demo-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="project-card">
-                            <div class="project-icon">
-                                <i class="fas fa-tint"></i>
-                            </div>
-                            <h3>Cargando...</h3>
-                            <p class="project-date">Cargando...</p>
-                            <p>Cargando...</p>
-                            <div class="project-achievements">
-                                <span class="achievement">Cargando...</span>
-                            </div>
-                            <div class="tech-stack">
-                                <span>Cargando...</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link github-link" target="_blank">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                                <a href="#" class="project-link demo-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div id="experience-container">
+                    <!-- Dynamic content from JSON -->
                 </div>
             </section>
 
-            <section id="skills">
-                <div class="container">
-                    <h2>Habilidades y Tecnologías</h2>
-                    <div class="skills-carousel-container">
-                        <button class="carousel-btn carousel-btn-prev" id="skillsPrev">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <h2>
+                    <span data-content="projects.title">Proyectos</span>
+                    <a href="#projects" class="section-link" data-content="projects.seeAll">Ver Todos</a>
+                </h2>
+                <p class="section-subtitle" data-content="projects.subtitle">Desarrollo de soluciones innovadoras usando
+                    IA y ML.</p>
 
-                        <div class="skills-carousel" id="skillsCarousel">
-                            <!-- Habilidades Blandas -->
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class="fas fa-users skill-category-icon"></i>
-                                    <h3>Habilidades Blandas</h3>
-                                </div>
-                                <div class="skill-items">
-                                    <div class="skill-item">
-                                        <i class="fas fa-crown"></i>
-                                        <span>Liderazgo</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-comments"></i>
-                                        <span>Comunicación Efectiva</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-sync-alt"></i>
-                                        <span>Adaptabilidad</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-handshake"></i>
-                                        <span>Trabajo en Equipo</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-brain"></i>
-                                        <span>Pensamiento Crítico</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-lightbulb"></i>
-                                        <span>Resolución de Problemas</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-balance-scale"></i>
-                                        <span>Capacidad de Toma de Decisiones</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Lenguajes de Programación -->
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class="fas fa-code skill-category-icon"></i>
-                                    <h3>Lenguajes de Programación</h3>
-                                </div>
-                                <div class="skill-items">
-                                    <div class="skill-item">
-                                        <i class="fab fa-python"></i>
-                                        <span>Python</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-calculator"></i>
-                                        <span>MATLAB</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-database"></i>
-                                        <span>SQL</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Frameworks IA/ML -->
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class="fas fa-robot skill-category-icon"></i>
-                                    <h3>Frameworks para IA y Análisis de Datos</h3>
-                                </div>
-                                <div class="skill-items">
-                                    <div class="skill-item">
-                                        <i class="fas fa-brain"></i>
-                                        <span>TensorFlow</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-network-wired"></i>
-                                        <span>Keras</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-chart-line"></i>
-                                        <span>Scikit-learn</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-table"></i>
-                                        <span>Pandas</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-square-root-alt"></i>
-                                        <span>NumPy</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-chart-area"></i>
-                                        <span>Matplotlib</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-water"></i>
-                                        <span>Seaborn</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-fire"></i>
-                                        <span>PyTorch</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-chart-pie"></i>
-                                        <span>Plotly</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Software y Herramientas -->
-                            <div class="skill-card">
-                                <div class="skill-header">
-                                    <i class="fas fa-tools skill-category-icon"></i>
-                                    <h3>Software y Herramientas Técnicas</h3>
-                                </div>
-                                <div class="skill-items">
-                                    <div class="skill-item">
-                                        <i class="fas fa-oil-can"></i>
-                                        <span>F.A.S.T. WellTest™</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-chart-line"></i>
-                                        <span>LogView++</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-layer-group"></i>
-                                        <span>OpenWells</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fab fa-git-alt"></i>
-                                        <span>Git (control de versiones)</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-chart-bar"></i>
-                                        <span>Microsoft Power BI</span>
-                                    </div>
-                                    <div class="skill-item">
-                                        <i class="fas fa-book"></i>
-                                        <span>Jupyter Notebooks</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button class="carousel-btn carousel-btn-next" id="skillsNext">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-
-                    <!-- Indicadores del carrusel -->
-                    <div class="carousel-indicators" id="skillsIndicators">
-                        <span class="indicator active" data-slide="0"></span>
-                        <span class="indicator" data-slide="1"></span>
-                        <span class="indicator" data-slide="2"></span>
-                        <span class="indicator" data-slide="3"></span>
-                    </div>
+                <div id="projects-container">
+                    <!-- Dynamic content from JSON -->
                 </div>
             </section>
 
+            <!-- Tech Stack Section -->
+            <section id="skills" class="content-section">
+                <h2 data-content="skills.title">Stack Tecnológico</h2>
+                <p class="section-subtitle" data-content="skills.subtitle">Herramientas y tecnologías que domino para
+                    resolver problemas complejos.</p>
 
-        </div> <!-- Cierre main-content -->
+                <div class="tech-grid" id="tech-grid">
+                    <!-- Dynamic content from JSON -->
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="content-section">
+                <h2 data-content="contact.title">Contacto</h2>
+                <p class="section-subtitle" data-content="contact.subtitle">¿Interesado en colaborar en proyectos de IA
+                    para la industria energética?</p>
+
+                <p data-content="contact.description">
+                    Me encanta conectar con profesionales que comparten mi pasión por la aplicación de tecnologías
+                    emergentes
+                    en la industria petrolera. Si tienes algún proyecto interesante o simplemente quieres conversar
+                    sobre
+                    IA aplicada a ingeniería de petróleos, no dudes en contactarme.
+                </p>
+
+                <div class="contact-info" id="contact-info">
+                    <!-- Dynamic content from JSON -->
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Carlos Andrés Esquivel Plazas. Todos los derechos reservados.</p>
-        </div>
-    </footer>
-
-    <script src="assets/js/main.js?v=3.6.0"></script>
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
