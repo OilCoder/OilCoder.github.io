@@ -21,7 +21,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -31,8 +33,12 @@
             <span id="theme-icon">🌙</span>
         </button>
         <div class="language-toggle">
-            <button class="lang-btn active" data-lang="es">ES</button>
-            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn active" data-lang="es">
+                <img src="https://flagcdn.com/w20/es.png" alt="Español" class="flag-icon" />
+            </button>
+            <button class="lang-btn" data-lang="en">
+                <img src="https://flagcdn.com/w20/us.png" alt="English" class="flag-icon" />
+            </button>
         </div>
     </div>
 
@@ -119,10 +125,7 @@
 
             <!-- Experience Section -->
             <section id="experience" class="content-section">
-                <h2>
-                    <span data-content="experience.title">Experiencia</span>
-                    <a href="#experience" class="section-link" data-content="experience.seeAll">Ver Todo</a>
-                </h2>
+                <h2 data-content="experience.title">Experiencia</h2>
                 <p class="section-subtitle" data-content="experience.subtitle">Mi trayectoria profesional combinando
                     operaciones petroleras con IA.</p>
 
@@ -133,10 +136,7 @@
 
             <!-- Projects Section -->
             <section id="projects" class="content-section">
-                <h2>
-                    <span data-content="projects.title">Proyectos</span>
-                    <a href="#projects" class="section-link" data-content="projects.seeAll">Ver Todos</a>
-                </h2>
+                <h2 data-content="projects.title">Proyectos</h2>
                 <p class="section-subtitle" data-content="projects.subtitle">Desarrollo de soluciones innovadoras usando
                     IA y ML.</p>
 
@@ -176,6 +176,13 @@
             </section>
         </div>
     </main>
+
+    <!-- SECTION: Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p data-content="footer.copyright">© 2025 Carlos Andrés Esquivel Plazas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>

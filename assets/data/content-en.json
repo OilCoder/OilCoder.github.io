@@ -143,17 +143,20 @@
             {
                 "institution": "Universidad Surcolombiana",
                 "degree": "Petroleum Engineer",
-                "details": "Professional license 6677"
+                "details": "Professional license 6677",
+                "icon_img": "assets/icons/usco-shield.svg"
             },
             {
                 "institution": "Artificial Intelligence and Machine Learning Career",
                 "degree": "Platzi | June 2020",
-                "details": "Advanced ML and AI techniques, Deep Learning, neural networks and clustering algorithms applied to the petroleum industry."
+                "details": "Advanced ML and AI techniques, Deep Learning, neural networks and clustering algorithms applied to the petroleum industry.",
+                "icon_img": "https://cdn.simpleicons.org/platzi/98CA3F"
             },
             {
                 "institution": "Platzi English Academy",
                 "degree": "Platzi | July 2020",
-                "details": "Advanced English usage for effective communication in multicultural and professional environments."
+                "details": "Advanced English usage for effective communication in multicultural and professional environments.",
+                "icon_img": "https://cdn.simpleicons.org/platzi/98CA3F"
             }
         ],
         "languages": {
@@ -284,7 +287,9 @@
                     "Computer Vision",
                     "Machine Learning",
                     "NDT Analysis"
-                ]
+                ],
+                "github": "https://github.com/OilCoder/Luna-ImageDetection",
+                "demo": "projects/luna-image-detection.html"
             },
             {
                 "icon": "fas fa-tint",
@@ -349,15 +354,15 @@
                 "items": [
                     {
                         "name": "Python",
-                        "icon": "assets/icons/python.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
                     },
                     {
                         "name": "MATLAB",
-                        "icon": "assets/icons/matlab.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg"
                     },
                     {
                         "name": "SQL",
-                        "icon": "assets/icons/postgresql.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
                     }
                 ]
             },
@@ -367,43 +372,43 @@
                 "items": [
                     {
                         "name": "TensorFlow",
-                        "icon": "assets/icons/tensorflow.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
                     },
                     {
                         "name": "Keras",
-                        "icon": "assets/icons/keras.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/keras/keras-original.svg"
                     },
                     {
                         "name": "Scikit-learn",
-                        "icon": "assets/icons/scikit-learn.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg"
                     },
                     {
                         "name": "Pandas",
-                        "icon": "assets/icons/pandas.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
                     },
                     {
                         "name": "NumPy",
-                        "icon": "assets/icons/numpy.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg"
                     },
                     {
                         "name": "Matplotlib",
-                        "icon": "assets/icons/matplotlib.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
                     },
                     {
                         "name": "Seaborn",
-                        "icon": "assets/icons/seaborn.svg"
+                        "icon": "fas fa-chart-area"
                     },
                     {
                         "name": "PyTorch",
-                        "icon": "assets/icons/pytorch.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg"
                     },
                     {
                         "name": "Plotly",
-                        "icon": "assets/icons/plotly.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/plotly/plotly-original.svg"
                     },
                     {
                         "name": "Optuna",
-                        "icon": "assets/icons/optuna.svg"
+                        "icon_img": "https://cdn.simpleicons.org/optuna"
                     }
                 ]
             },
@@ -413,7 +418,7 @@
                 "items": [
                     {
                         "name": "F.A.S.T. WellTest™",
-                        "icon": "fas fa-oil-well"
+                        "icon": "fas fa-oil-can"
                     },
                     {
                         "name": "LogView++",
@@ -425,15 +430,23 @@
                     },
                     {
                         "name": "Git",
-                        "icon": "assets/icons/git.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
                     },
                     {
-                        "name": "Microsoft Power BI",
-                        "icon": "assets/icons/power-bi.svg"
+                        "name": "Power BI",
+                        "icon": "fas fa-chart-bar"
                     },
                     {
                         "name": "Jupyter Notebooks",
-                        "icon": "assets/icons/jupyter.svg"
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg"
+                    },
+                    {
+                        "name": "Streamlit",
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
+                    },
+                    {
+                        "name": "Docker",
+                        "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
                     }
                 ]
             }
@@ -456,6 +469,6 @@
         }
     },
     "footer": {
-        "copyright": "© 2024 Carlos Andrés Esquivel Plazas. All rights reserved."
+        "copyright": "© 2025 Carlos Andrés Esquivel Plazas. All rights reserved."
     }
 }

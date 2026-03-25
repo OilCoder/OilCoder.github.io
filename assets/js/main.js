@@ -19,6 +19,22 @@ class PortfolioApp {
         this.renderContent();
         this.setupEventListeners();
         this.setupScrollSpy();
+        this.scrollToHash();
+    }
+
+    /**
+     * Scroll to the URL hash target after dynamic content has loaded.
+     */
+    scrollToHash() {
+        const hash = window.location.hash;
+        if (hash) {
+            const target = document.querySelector(hash);
+            if (target) {
+                setTimeout(() => {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+            }
+        }
     }
 
     async loadContent() {
@@ -289,34 +305,67 @@ class PortfolioApp {
         const container = document.getElementById('experience-container');
         if (!container || !data.experience) return;
 
-        container.innerHTML = data.experience.items.slice(0, 3).map(exp => `
+        const items = data.experience.items;
+        const initialCount = 3;
+        const moreLabel = this.currentLang === 'es' ? 'Ver más experiencia' : 'See more experience';
+        const lessLabel = this.currentLang === 'es' ? 'Ver menos' : 'See less';
+
+        const renderItem = (exp) => `
             <article class="experience-article">
                 <h3>${exp.position}</h3>
                 <p class="company-name">${exp.company}</p>
                 <p class="experience-date">${exp.period}</p>
                 <p>${exp.responsibilities[0]}</p>
             </article>
-        `).join('');
+        `;
+
+        const visibleHtml = items.slice(0, initialCount).map(renderItem).join('');
+        const hiddenHtml = items.length > initialCount
+            ? `<div class="experience-hidden" style="display:none;">
+                 ${items.slice(initialCount).map(renderItem).join('')}
+               </div>
+               <button class="expand-btn" id="expand-experience">${moreLabel}</button>`
+            : '';
+
+        container.innerHTML = visibleHtml + hiddenHtml;
+
+        const btn = document.getElementById('expand-experience');
+        if (btn) {
+            btn.addEventListener('click', () => {
+                const hidden = container.querySelector('.experience-hidden');
+                const isVisible = hidden.style.display !== 'none';
+                hidden.style.display = isVisible ? 'none' : 'block';
+                btn.textContent = isVisible ? moreLabel : lessLabel;
+            });
+        }
     }
 
     renderSkills(data) {
         const container = document.getElementById('tech-grid');
         if (!container || !data.skills) return;
 
-        // Filter relevant categories for tech stack
+        // Show all categories except soft skills
         const relevantCategories = data.skills.categories.filter(cat =>
-            cat.title.includes('Programming') ||
-            cat.title.includes('Programación') ||
-            cat.title.includes('ML') ||
-            cat.title.includes('IA') ||
-            cat.title.includes('Technical') ||
-            cat.title.includes('Técnicas')
+            !cat.title.includes('Soft Skills') &&
+            !cat.title.includes('Habilidades Blandas')
         );
 
         container.innerHTML = relevantCategories.map(category => `
             <div class="tech-category">
                 <h4>${category.title}</h4>
-                <p><strong>${category.items.map(item => item.name).join(', ')}</strong> - ${this.getTechDescription(category.title)}</p>
+                <div class="tech-items-grid">
+                    ${category.items.map(item => {
+                        const iconHtml = item.icon_img
+                            ? `<img class="tech-item-logo" src="${item.icon_img}" alt="${item.name}" />`
+                            : `<i class="tech-item-fa ${item.icon || ''}"></i>`;
+                        return `
+                            <div class="tech-skill-item">
+                                ${iconHtml}
+                                <span>${item.name}</span>
+                            </div>
+                        `;
+                    }).join('')}
+                </div>
             </div>
         `).join('');
     }
@@ -434,13 +483,25 @@ class PortfolioApp {
         // Render education items
         const educationContainer = document.getElementById('education-container');
         if (educationContainer && data.education && data.education.items) {
-            educationContainer.innerHTML = data.education.items.map(item => `
-                <div class="education-item">
-                    <h4>${item.degree}</h4>
-                    <div class="institution">${item.institution}</div>
-                    <div class="details">${item.details}</div>
-                </div>
-            `).join('');
+            educationContainer.innerHTML = data.education.items.map(item => {
+                const iconHtml = item.icon_img
+                    ? `<img class="education-icon" src="${item.icon_img}" alt="${item.institution}" />`
+                    : item.icon
+                        ? `<i class="education-icon-fa ${item.icon}"></i>`
+                        : '';
+                return `
+                    <div class="education-item">
+                        <div class="education-header">
+                            ${iconHtml}
+                            <div>
+                                <h4>${item.degree}</h4>
+                                <div class="institution">${item.institution}</div>
+                            </div>
+                        </div>
+                        <div class="details">${item.details}</div>
+                    </div>
+                `;
+            }).join('');
         }
 
         // Render languages
