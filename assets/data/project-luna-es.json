@@ -1,0 +1,129 @@
+{
+    "project": {
+        "title": "Automatización de Reportes Técnicos por Visión Artificial",
+        "subtitle": "Sistema de visión por computadora para la identificación automática de herramientas slickline en la industria petrolera, con clasificación por deep learning e interfaz interactiva.",
+        "description": "Aplicación de machine learning diseñada para identificar automáticamente herramientas slickline en fotografías de la industria del petróleo y gas. El sistema utiliza visión por computadora y deep learning para clasificar imágenes no etiquetadas de equipos de fondo de pozo, automatizando la documentación de inspecciones de integridad y reduciendo significativamente el tiempo de generación de reportes técnicos.",
+        "status": "Completado",
+        "period": "2018 - 2020",
+        "category": "Visión por Computadora y ML",
+        "github_url": "https://github.com/OilCoder/Luna-ImageDetection",
+        "technologies": [
+            {
+                "name": "Python",
+                "description": "Lenguaje principal del proyecto",
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+            },
+            {
+                "name": "Deep Learning",
+                "description": "Modelos de clasificación de imágenes",
+                "icon": "fas fa-brain"
+            },
+            {
+                "name": "OpenCV",
+                "description": "Procesamiento de imágenes",
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg"
+            },
+            {
+                "name": "Streamlit",
+                "description": "Interfaz web interactiva",
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
+            },
+            {
+                "name": "Docker",
+                "description": "Containerización y despliegue",
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+            },
+            {
+                "name": "GPU / CUDA",
+                "description": "Aceleración de entrenamiento",
+                "icon_img": "https://cdn.simpleicons.org/nvidia/76B900"
+            }
+        ],
+        "pipeline_steps": [
+            {
+                "number": 1,
+                "title": "Recolección de Imágenes",
+                "description": "Adquisición de fotografías de herramientas slickline obtenidas en inspecciones NDT con líquidos penetrantes y luz ultravioleta"
+            },
+            {
+                "number": 2,
+                "title": "Preparación de Datos",
+                "description": "Organización, limpieza y etiquetado de imágenes para entrenamiento del modelo de clasificación"
+            },
+            {
+                "number": 3,
+                "title": "Preprocesamiento",
+                "description": "Normalización, redimensionamiento y augmentación de imágenes para mejorar la generalización del modelo"
+            },
+            {
+                "number": 4,
+                "title": "Entrenamiento del Modelo",
+                "description": "Entrenamiento de modelos de deep learning para clasificación de herramientas con soporte GPU"
+            },
+            {
+                "number": 5,
+                "title": "Evaluación",
+                "description": "Validación del modelo con matriz de confusión y métricas de precisión por categoría"
+            },
+            {
+                "number": 6,
+                "title": "Predicción",
+                "description": "Generación de predicciones con scores de confianza sobre imágenes no clasificadas"
+            },
+            {
+                "number": 7,
+                "title": "Interfaz Web",
+                "description": "Aplicación Streamlit para carga de imágenes y clasificación en tiempo real"
+            },
+            {
+                "number": 8,
+                "title": "Despliegue",
+                "description": "Containerización con Docker para ejecución reproducible con soporte GPU"
+            }
+        ],
+        "key_features": [
+            {
+                "title": "Clasificación Automática",
+                "description": "Identificación automática de múltiples tipos de herramientas slickline: centralizadores, pulling tools, válvulas y equipos de fondo.",
+                "icon": "fas fa-tags"
+            },
+            {
+                "title": "Interfaz Interactiva",
+                "description": "Aplicación web con Streamlit para carga de imágenes y visualización de resultados de clasificación en tiempo real.",
+                "icon": "fas fa-desktop"
+            },
+            {
+                "title": "Inspección NDT",
+                "description": "Procesamiento de imágenes obtenidas en pruebas no destructivas con líquidos penetrantes y luz ultravioleta.",
+                "icon": "fas fa-search"
+            },
+            {
+                "title": "Reportes Automatizados",
+                "description": "Generación automática de reportes técnicos vinculando evidencia visual con bases de datos de herramientas.",
+                "icon": "fas fa-file-alt"
+            }
+        ],
+        "results": [
+            {
+                "number": "40%",
+                "label": "Reducción de Tiempo",
+                "description": "En generación de reportes técnicos"
+            },
+            {
+                "number": "100+",
+                "label": "Herramientas",
+                "description": "Tipos de herramientas clasificadas"
+            },
+            {
+                "number": "GPU",
+                "label": "Aceleración",
+                "description": "Entrenamiento con soporte CUDA"
+            },
+            {
+                "number": "Web",
+                "label": "Interfaz",
+                "description": "App Streamlit para uso en campo"
+            }
+        ]
+    }
+}

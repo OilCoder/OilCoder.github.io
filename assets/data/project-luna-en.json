@@ -1,0 +1,129 @@
+{
+    "project": {
+        "title": "Automated Technical Reporting with Computer Vision",
+        "subtitle": "Computer vision system for automatic identification of slickline tools in the oil and gas industry, with deep learning classification and interactive interface.",
+        "description": "Machine learning application designed to automatically identify slickline tools in photographs from the oil and gas industry. The system uses computer vision and deep learning to classify unlabeled images of downhole equipment, automating integrity inspection documentation and significantly reducing technical report generation time.",
+        "status": "Completed",
+        "period": "2018 - 2020",
+        "category": "Computer Vision & ML",
+        "github_url": "https://github.com/OilCoder/Luna-ImageDetection",
+        "technologies": [
+            {
+                "name": "Python",
+                "description": "Main project language",
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+            },
+            {
+                "name": "Deep Learning",
+                "description": "Image classification models",
+                "icon": "fas fa-brain"
+            },
+            {
+                "name": "OpenCV",
+                "description": "Image processing",
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg"
+            },
+            {
+                "name": "Streamlit",
+                "description": "Interactive web interface",
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg"
+            },
+            {
+                "name": "Docker",
+                "description": "Containerization and deployment",
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
+            },
+            {
+                "name": "GPU / CUDA",
+                "description": "Training acceleration",
+                "icon_img": "https://cdn.simpleicons.org/nvidia/76B900"
+            }
+        ],
+        "pipeline_steps": [
+            {
+                "number": 1,
+                "title": "Image Collection",
+                "description": "Acquisition of slickline tool photographs from NDT inspections using penetrant liquids and ultraviolet light"
+            },
+            {
+                "number": 2,
+                "title": "Data Preparation",
+                "description": "Organization, cleaning, and labeling of images for classification model training"
+            },
+            {
+                "number": 3,
+                "title": "Preprocessing",
+                "description": "Normalization, resizing, and image augmentation to improve model generalization"
+            },
+            {
+                "number": 4,
+                "title": "Model Training",
+                "description": "Deep learning model training for tool classification with GPU support"
+            },
+            {
+                "number": 5,
+                "title": "Evaluation",
+                "description": "Model validation with confusion matrix and per-category precision metrics"
+            },
+            {
+                "number": 6,
+                "title": "Prediction",
+                "description": "Prediction generation with confidence scores on unclassified images"
+            },
+            {
+                "number": 7,
+                "title": "Web Interface",
+                "description": "Streamlit application for image upload and real-time classification"
+            },
+            {
+                "number": 8,
+                "title": "Deployment",
+                "description": "Docker containerization for reproducible execution with GPU support"
+            }
+        ],
+        "key_features": [
+            {
+                "title": "Automatic Classification",
+                "description": "Automatic identification of multiple slickline tool types: centralizers, pulling tools, valves, and downhole equipment.",
+                "icon": "fas fa-tags"
+            },
+            {
+                "title": "Interactive Interface",
+                "description": "Streamlit web application for image upload and real-time classification result visualization.",
+                "icon": "fas fa-desktop"
+            },
+            {
+                "title": "NDT Inspection",
+                "description": "Processing of images from non-destructive testing with penetrant liquids and ultraviolet light.",
+                "icon": "fas fa-search"
+            },
+            {
+                "title": "Automated Reports",
+                "description": "Automatic generation of technical reports linking visual evidence with tool databases.",
+                "icon": "fas fa-file-alt"
+            }
+        ],
+        "results": [
+            {
+                "number": "40%",
+                "label": "Time Reduction",
+                "description": "In technical report generation"
+            },
+            {
+                "number": "100+",
+                "label": "Tools",
+                "description": "Tool types classified"
+            },
+            {
+                "number": "GPU",
+                "label": "Acceleration",
+                "description": "Training with CUDA support"
+            },
+            {
+                "number": "Web",
+                "label": "Interface",
+                "description": "Streamlit app for field use"
+            }
+        ]
+    }
+}
