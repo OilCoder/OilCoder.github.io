@@ -85,8 +85,8 @@ class PortfolioApp {
     setupEventListeners() {
         // Language toggle buttons
         document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                const lang = e.target.dataset.lang;
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang;
                 this.switchLanguage(lang);
             });
         });
