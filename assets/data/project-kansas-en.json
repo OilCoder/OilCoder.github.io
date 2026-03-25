@@ -12,42 +12,42 @@
             {
                 "name": "Python",
                 "description": "Main pipeline language",
-                "icon": "fab fa-python"
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
             },
             {
                 "name": "TensorFlow",
                 "description": "Deep learning framework",
-                "icon": "fas fa-brain"
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg"
             },
             {
                 "name": "RAPIDS",
                 "description": "GPU-accelerated processing",
-                "icon": "fas fa-chart-bar"
+                "icon_img": "https://cdn.simpleicons.org/nvidia/76B900"
             },
             {
                 "name": "Docker",
                 "description": "Containerization and deployment",
-                "icon": "fab fa-docker"
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg"
             },
             {
                 "name": "CUDA",
                 "description": "NVIDIA GPU computing",
-                "icon": "fas fa-microchip"
+                "icon_img": "https://cdn.simpleicons.org/nvidia/76B900"
             },
             {
                 "name": "Optuna",
                 "description": "Hyperparameter optimization",
-                "icon": "fas fa-search"
+                "icon_img": "https://cdn.simpleicons.org/optuna"
             },
             {
                 "name": "Pandas",
                 "description": "Data manipulation",
-                "icon": "fas fa-chart-line"
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"
             },
             {
                 "name": "Matplotlib",
                 "description": "Scientific visualization",
-                "icon": "fas fa-eye"
+                "icon_img": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg"
             }
         ],
         "pipeline_steps": [

@@ -1,7 +1,7 @@
 <!--
   @file   petrophysical-analysis.html
-  @brief  Página de detalle del proyecto Neural Network Pipeline para Análisis Petrofísico (Multiidioma)
-  @author OilCoder
+  @brief  Página de detalle del proyecto Neural Network Pipeline para Análisis Petrofísico
+  @author Carlos Esquivel
   @date   2025-01-27
 -->
 <!DOCTYPE html>
@@ -13,26 +13,18 @@
     <title id="page-title">Cargando...</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" id="page-description" content="Cargando...">
-    <meta name="keywords"
-        content="machine learning, petrofísica, redes neuronales, tensorflow, python, análisis de pozos, LAS files, GPU">
-    <meta name="author" content="OilCoder">
+    <meta name="description" id="page-description" content="">
+    <meta name="author" content="Carlos Esquivel">
 
     <!-- Open Graph -->
-    <meta property="og:title" id="og-title" content="Cargando...">
-    <meta property="og:description" id="og-description" content="Cargando...">
+    <meta property="og:title" id="og-title" content="">
+    <meta property="og:description" id="og-description" content="">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://oilcoder.github.io/projects/petrophysical-analysis.html">
-    <meta property="og:image" content="https://oilcoder.github.io/assets/images/projects/kansas-hero.jpg">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" id="twitter-title" content="Cargando...">
-    <meta name="twitter:description" id="twitter-description" content="Cargando...">
-    <meta name="twitter:image" content="https://oilcoder.github.io/assets/images/projects/kansas-hero.jpg">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+    <meta name="twitter:title" id="twitter-title" content="">
+    <meta name="twitter:description" id="twitter-description" content="">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,107 +36,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../assets/css/style.css?v=3.3.3">
+    <link rel="stylesheet" href="../assets/css/project.css">
 </head>
 
-<body>
+<body data-project="kansas">
     <!-- HEADER -->
     <header>
         <div class="nav-container">
-            <div class="nav-menu">
-                <li><a href="../index.html#about">Inicio</a></li>
+            <div class="nav-menu" id="nav-menu">
+                <li><a href="../index.html">Inicio</a></li>
                 <li><a href="../index.html#projects">Proyectos</a></li>
-                <li><a href="../index.html#skills">Habilidades</a></li>
             </div>
 
             <div class="nav-actions">
-                <label class="theme-toggle">
-                    <input type="checkbox" onchange="toggleTheme()" />
-                    <div class="slider round">
-                        <div class="sun-moon">
-                            <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                            <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
-                                <circle cx="50" cy="50" r="50"></circle>
-                            </svg>
-                        </div>
-                        <div class="stars">
-                            <svg id="star-1" class="star" viewBox="0 0 20 20">
-                                <path
-                                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                                </path>
-                            </svg>
-                            <svg id="star-2" class="star" viewBox="0 0 20 20">
-                                <path
-                                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                                </path>
-                            </svg>
-                            <svg id="star-3" class="star" viewBox="0 0 20 20">
-                                <path
-                                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                                </path>
-                            </svg>
-                            <svg id="star-4" class="star" viewBox="0 0 20 20">
-                                <path
-                                    d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                </label>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <span id="theme-icon">🌙</span>
+                </button>
 
-                <a href="../cv/CV_Español.pdf" class="btn-nav-cv" target="_blank">
+                <a href="../cv/carlos_esquivel_cv_es.pdf" class="btn-nav-cv" target="_blank">
                     <i class="fas fa-download"></i>
                     <span>CV</span>
                 </a>
 
-                <div class="dropdown">
-                    <button class="dropdown-btn" onclick="toggleLanguageDropdown()">
-                        <img src="https://flagcdn.com/w20/es.png" alt="Español" class="flag-img" id="current-flag">
-                        <span class="lang-text">Español</span>
-                        <i class="fas fa-chevron-down"></i>
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="es">
+                        <img src="https://flagcdn.com/w20/es.png" alt="Español" class="flag-icon" />
                     </button>
-                    <div class="dropdown-content" id="language-dropdown">
-                        <a href="#" class="lang-option" data-lang="es">
-                            <img src="https://flagcdn.com/w20/es.png" alt="Español" class="flag-img">
-                            <span>Español</span>
-                        </a>
-                        <a href="#" class="lang-option" data-lang="en">
-                            <img src="https://flagcdn.com/w20/us.png" alt="English" class="flag-img">
-                            <span>English</span>
-                        </a>
-                    </div>
+                    <button class="lang-btn" data-lang="en">
+                        <img src="https://flagcdn.com/w20/us.png" alt="English" class="flag-icon" />
+                    </button>
                 </div>
             </div>
         </div>
@@ -155,37 +75,35 @@
         <div class="project-hero-content">
             <a href="../index.html#projects" class="project-back-btn">
                 <i class="fas fa-arrow-left"></i>
-                <span id="back-text">Cargando...</span>
+                <span id="back-text">Volver a Proyectos</span>
             </a>
 
             <h1 class="project-title" id="project-title">Cargando...</h1>
-            <p class="project-subtitle" id="project-subtitle">
-                Cargando...
-            </p>
+            <p class="project-subtitle" id="project-subtitle">Cargando...</p>
 
             <div class="project-meta">
                 <div class="project-meta-item">
                     <i class="fas fa-calendar-alt"></i>
-                    <span id="project-period">Cargando...</span>
+                    <span id="project-period">...</span>
                 </div>
                 <div class="project-meta-item">
                     <i class="fas fa-tag"></i>
-                    <span id="project-category">Cargando...</span>
+                    <span id="project-category">...</span>
                 </div>
                 <div class="project-meta-item">
                     <i class="fas fa-check-circle"></i>
-                    <span id="project-status">Cargando...</span>
+                    <span id="project-status">...</span>
                 </div>
             </div>
 
             <div class="project-actions">
                 <a href="#" target="_blank" class="project-btn project-btn-primary" id="github-link">
                     <i class="fab fa-github"></i>
-                    <span id="github-text">Cargando...</span>
+                    <span id="github-text">GitHub</span>
                 </a>
                 <a href="#" target="_blank" class="project-btn project-btn-outline" id="docs-link">
                     <i class="fas fa-book"></i>
-                    <span id="docs-text">Cargando...</span>
+                    <span id="docs-text">Documentación</span>
                 </a>
             </div>
         </div>
@@ -197,343 +115,37 @@
 
             <!-- OVERVIEW SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title" id="overview-title">Cargando...</h2>
-                <p class="project-section-subtitle" id="overview-subtitle">
-                    Cargando...
-                </p>
-
-                <div class="tech-overview">
-                    <div class="tech-card">
-                        <i class="tech-card-icon fas fa-brain"></i>
-                        <h3 class="tech-card-title" id="feature-1-title">Cargando...</h3>
-                        <p class="tech-card-description" id="feature-1-desc">
-                            Cargando...
-                        </p>
-                    </div>
-
-                    <div class="tech-card">
-                        <i class="tech-card-icon fas fa-cogs"></i>
-                        <h3 class="tech-card-title" id="feature-2-title">Cargando...</h3>
-                        <p class="tech-card-description" id="feature-2-desc">
-                            Cargando...
-                        </p>
-                    </div>
-
-                    <div class="tech-card">
-                        <i class="tech-card-icon fas fa-chart-line"></i>
-                        <h3 class="tech-card-title" id="feature-3-title">Cargando...</h3>
-                        <p class="tech-card-description" id="feature-3-desc">
-                            Cargando...
-                        </p>
-                    </div>
-
-                    <div class="tech-card">
-                        <i class="tech-card-icon fas fa-docker"></i>
-                        <h3 class="tech-card-title" id="feature-4-title">Cargando...</h3>
-                        <p class="tech-card-description" id="feature-4-desc">
-                            Cargando...
-                        </p>
-                    </div>
-                </div>
+                <h2 class="project-section-title" id="overview-title">Visión General</h2>
+                <p class="project-section-subtitle" id="overview-subtitle">Cargando...</p>
+                <div class="tech-overview" id="overview-grid"></div>
             </section>
 
             <!-- METHODOLOGY SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title" id="methodology-title">Cargando...</h2>
-                <p class="project-section-subtitle" id="methodology-subtitle">
-                    Cargando...
-                </p>
-
-                <div class="methodology-pipeline">
-                    <div class="pipeline-steps">
-                        <div class="pipeline-step">
-                            <div class="pipeline-step-number">1</div>
-                            <h4 class="pipeline-step-title" id="step-1-title">Cargando...</h4>
-                            <p class="pipeline-step-description" id="step-1-desc">
-                                Cargando...
-                            </p>
-                        </div>
-
-                        <div class="pipeline-step">
-                            <div class="pipeline-step-number">2</div>
-                            <h4 class="pipeline-step-title" id="step-2-title">Cargando...</h4>
-                            <p class="pipeline-step-description" id="step-2-desc">
-                                Cargando...
-                            </p>
-                        </div>
-
-                        <div class="pipeline-step">
-                            <div class="pipeline-step-number">3</div>
-                            <h4 class="pipeline-step-title" id="step-3-title">Cargando...</h4>
-                            <p class="pipeline-step-description" id="step-3-desc">
-                                Cargando...
-                            </p>
-                        </div>
-
-                        <div class="pipeline-step">
-                            <div class="pipeline-step-number">4</div>
-                            <h4 class="pipeline-step-title" id="step-4-title">Cargando...</h4>
-                            <p class="pipeline-step-description" id="step-4-desc">
-                                Cargando...
-                            </p>
-                        </div>
-
-                        <div class="pipeline-step">
-                            <div class="pipeline-step-number">5</div>
-                            <h4 class="pipeline-step-title" id="step-5-title">Cargando...</h4>
-                            <p class="pipeline-step-description" id="step-5-desc">
-                                Cargando...
-                            </p>
-                        </div>
-
-                        <div class="pipeline-step">
-                            <div class="pipeline-step-number">6</div>
-                            <h4 class="pipeline-step-title" id="step-6-title">Cargando...</h4>
-                            <p class="pipeline-step-description" id="step-6-desc">
-                                Cargando...
-                            </p>
-                        </div>
-
-                        <div class="pipeline-step">
-                            <div class="pipeline-step-number">7</div>
-                            <h4 class="pipeline-step-title" id="step-7-title">Cargando...</h4>
-                            <p class="pipeline-step-description" id="step-7-desc">
-                                Cargando...
-                            </p>
-                        </div>
-
-                        <div class="pipeline-step">
-                            <div class="pipeline-step-number">8</div>
-                            <h4 class="pipeline-step-title" id="step-8-title">Cargando...</h4>
-                            <p class="pipeline-step-description" id="step-8-desc">
-                                Cargando...
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="project-section-title" id="methodology-title">Metodología</h2>
+                <p class="project-section-subtitle" id="methodology-subtitle">Cargando...</p>
+                <div class="pipeline-steps" id="pipeline-grid"></div>
             </section>
 
             <!-- TECHNOLOGY STACK SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title" id="tech-title">Cargando...</h2>
-                <p class="project-section-subtitle" id="tech-subtitle">
-                    Cargando...
-                </p>
-
-                <div class="tech-stack">
-                    <div class="tech-item">
-                        <i class="tech-item-icon fab fa-python"></i>
-                        <div class="tech-item-info">
-                            <h4 id="tech-1-name">Cargando...</h4>
-                            <p id="tech-1-desc">Cargando...</p>
-                        </div>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="tech-item-icon fas fa-brain"></i>
-                        <div class="tech-item-info">
-                            <h4 id="tech-2-name">Cargando...</h4>
-                            <p id="tech-2-desc">Cargando...</p>
-                        </div>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="tech-item-icon fas fa-chart-bar"></i>
-                        <div class="tech-item-info">
-                            <h4 id="tech-3-name">Cargando...</h4>
-                            <p id="tech-3-desc">Cargando...</p>
-                        </div>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="tech-item-icon fab fa-docker"></i>
-                        <div class="tech-item-info">
-                            <h4 id="tech-4-name">Cargando...</h4>
-                            <p id="tech-4-desc">Cargando...</p>
-                        </div>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="tech-item-icon fas fa-microchip"></i>
-                        <div class="tech-item-info">
-                            <h4 id="tech-5-name">Cargando...</h4>
-                            <p id="tech-5-desc">Cargando...</p>
-                        </div>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="tech-item-icon fas fa-search"></i>
-                        <div class="tech-item-info">
-                            <h4 id="tech-6-name">Cargando...</h4>
-                            <p id="tech-6-desc">Cargando...</p>
-                        </div>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="tech-item-icon fas fa-chart-line"></i>
-                        <div class="tech-item-info">
-                            <h4 id="tech-7-name">Cargando...</h4>
-                            <p id="tech-7-desc">Cargando...</p>
-                        </div>
-                    </div>
-
-                    <div class="tech-item">
-                        <i class="tech-item-icon fas fa-eye"></i>
-                        <div class="tech-item-info">
-                            <h4 id="tech-8-name">Cargando...</h4>
-                            <p id="tech-8-desc">Cargando...</p>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="project-section-title" id="tech-title">Stack Tecnológico</h2>
+                <p class="project-section-subtitle" id="tech-subtitle">Cargando...</p>
+                <div class="tech-stack" id="tech-grid"></div>
             </section>
 
             <!-- RESULTS SECTION -->
             <section class="project-section">
-                <h2 class="project-section-title" id="results-title">Cargando...</h2>
-                <p class="project-section-subtitle" id="results-subtitle">
-                    Cargando...
-                </p>
-
-                <div class="results-grid">
-                    <div class="result-card">
-                        <span class="result-number" id="result-1-number">Cargando...</span>
-                        <h4 class="result-label" id="result-1-label">Cargando...</h4>
-                        <p class="result-description" id="result-1-desc">Cargando...</p>
-                    </div>
-
-                    <div class="result-card">
-                        <span class="result-number" id="result-2-number">Cargando...</span>
-                        <h4 class="result-label" id="result-2-label">Cargando...</h4>
-                        <p class="result-description" id="result-2-desc">Cargando...</p>
-                    </div>
-
-                    <div class="result-card">
-                        <span class="result-number" id="result-3-number">Cargando...</span>
-                        <h4 class="result-label" id="result-3-label">Cargando...</h4>
-                        <p class="result-description" id="result-3-desc">Cargando...</p>
-                    </div>
-
-                    <div class="result-card">
-                        <span class="result-number" id="result-4-number">Cargando...</span>
-                        <h4 class="result-label" id="result-4-label">Cargando...</h4>
-                        <p class="result-description" id="result-4-desc">Cargando...</p>
-                    </div>
-                </div>
+                <h2 class="project-section-title" id="results-title">Resultados</h2>
+                <p class="project-section-subtitle" id="results-subtitle">Cargando...</p>
+                <div class="results-grid" id="results-grid"></div>
             </section>
 
             <!-- DOCUMENTATION SECTION -->
-            <section class="project-section">
-                <h2 class="project-section-title" id="docs-title">Cargando...</h2>
-                <p class="project-section-subtitle" id="docs-subtitle">
-                    Cargando...
-                </p>
-
-                <div class="docs-grid">
-                    <a href="https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/00_Metodologia_Analisis_Petrofisico.md"
-                        target="_blank" class="doc-link">
-                        <i class="doc-icon fas fa-search"></i>
-                        <div class="doc-info">
-                            <h4>00_Metodología</h4>
-                            <p>Análisis Exploratorio de Datos (EDA)</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/01_Pipeline_Neural_Network_Completo.md"
-                        target="_blank" class="doc-link">
-                        <i class="doc-icon fas fa-project-diagram"></i>
-                        <div class="doc-info">
-                            <h4>01_Pipeline Completo</h4>
-                            <p>Pipeline completo de redes neuronales</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/02_Ingeniería%20de%20Características%20Petrofísicas%20De%20Registros%20Crudos%20a%20Características%20Predictivas.md"
-                        target="_blank" class="doc-link">
-                        <i class="doc-icon fas fa-cogs"></i>
-                        <div class="doc-info">
-                            <h4>02_Ingeniería de Características</h4>
-                            <p>De registros crudos a características predictivas</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/03_Normalización%20en%20el%20procesamiento%20de%20datos%20petrofísicos.md"
-                        target="_blank" class="doc-link">
-                        <i class="doc-icon fas fa-balance-scale"></i>
-                        <div class="doc-info">
-                            <h4>03_Normalización</h4>
-                            <p>Normalización en procesamiento petrofísico</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/04_Exploracion_Inicial_Hyperparametros_Optuna.md"
-                        target="_blank" class="doc-link">
-                        <i class="doc-icon fas fa-sliders-h"></i>
-                        <div class="doc-info">
-                            <h4>04_Optimización Hiperparámetros</h4>
-                            <p>Exploración inicial con Optuna</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/05_Validacion_Rigurosa_Cross_Validation.md"
-                        target="_blank" class="doc-link">
-                        <i class="doc-icon fas fa-check-double"></i>
-                        <div class="doc-info">
-                            <h4>05_Validación Cruzada</h4>
-                            <p>Validación rigurosa cross-validation</p>
-                        </div>
-                    </a>
-
-                    <a href="https://github.com/OilCoder/Kansas/blob/main/docs/Spanish/06_Entrenamiento_Final_Produccion.md"
-                        target="_blank" class="doc-link">
-                        <i class="doc-icon fas fa-rocket"></i>
-                        <div class="doc-info">
-                            <h4>06_Entrenamiento Final</h4>
-                            <p>Entrenamiento final para producción</p>
-                        </div>
-                    </a>
-                </div>
-            </section>
-
-            <!-- FEATURES SECTION -->
-            <section class="project-section">
-                <h2 class="project-section-title" id="features-title">Cargando...</h2>
-                <p class="project-section-subtitle" id="features-subtitle">
-                    Cargando...
-                </p>
-
-                <div class="tech-overview">
-                    <div class="tech-card">
-                        <i class="tech-card-icon fas fa-file-code"></i>
-                        <h3 class="tech-card-title" id="key-feature-1-title">Cargando...</h3>
-                        <p class="tech-card-description" id="key-feature-1-desc">
-                            Cargando...
-                        </p>
-                    </div>
-
-                    <div class="tech-card">
-                        <i class="tech-card-icon fas fa-magic"></i>
-                        <h3 class="tech-card-title" id="key-feature-2-title">Cargando...</h3>
-                        <p class="tech-card-description" id="key-feature-2-desc">
-                            Cargando...
-                        </p>
-                    </div>
-
-                    <div class="tech-card">
-                        <i class="tech-card-icon fas fa-robot"></i>
-                        <h3 class="tech-card-title" id="key-feature-3-title">Cargando...</h3>
-                        <p class="tech-card-description" id="key-feature-3-desc">
-                            Cargando...
-                        </p>
-                    </div>
-
-                    <div class="tech-card">
-                        <i class="tech-card-icon fas fa-shield-alt"></i>
-                        <h3 class="tech-card-title" id="key-feature-4-title">Cargando...</h3>
-                        <p class="tech-card-description" id="key-feature-4-desc">
-                            Cargando...
-                        </p>
-                    </div>
-                </div>
+            <section class="project-section" id="docs-section">
+                <h2 class="project-section-title" id="docs-section-title">Documentación</h2>
+                <p class="project-section-subtitle" id="docs-section-subtitle">Cargando...</p>
+                <div class="docs-grid" id="docs-grid"></div>
             </section>
 
         </div>
@@ -547,21 +159,7 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="../assets/js/main.js?v=3.6.0"></script>
-    <script>
-        // Project page initialization - use main.js functions
-        document.addEventListener('DOMContentLoaded', function () {
-            console.log('Project page DOM loaded, initializing...');
-
-            // Initialize using main.js functions
-            initializeLanguage();
-            initializeThemeToggle();
-            initializeLanguageSelector();
-
-            // Load project content
-            adProjectContent(currentLanguage);
-        });
-    </script>
+    <script src="../assets/js/project.js"></script>
 </body>
 
 </html>

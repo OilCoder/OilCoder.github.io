@@ -1,0 +1,635 @@
+/*
+ * @file project.css
+ * @brief Stylesheet for project detail pages
+ * @author Carlos Esquivel
+ */
+
+/* ===== CSS VARIABLES FOR THEMING ===== */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f2e8;
+    --bg-tertiary: #eae6d3;
+    --text-primary: #333333;
+    --text-secondary: #555555;
+    --text-tertiary: #666666;
+    --text-muted: #888888;
+    --border-primary: #e0dcc7;
+    --border-secondary: #f0f0f0;
+    --accent-primary: #d99a4e;
+    --accent-hover: #c8894a;
+    --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-tertiary: #21262d;
+    --text-primary: #f0f6fc;
+    --text-secondary: #e6edf3;
+    --text-tertiary: #c9d1d9;
+    --text-muted: #8b949e;
+    --border-primary: #30363d;
+    --border-secondary: #21262d;
+    --accent-primary: #f0883e;
+    --accent-hover: #da7633;
+    --card-bg: #161b22;
+}
+
+/* ===== RESET AND BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ===== HEADER ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-primary);
+    padding: 0.75rem 2rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+    color: var(--accent-primary);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ===== THEME TOGGLE ===== */
+.theme-toggle {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    width: 40px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    color: var(--text-primary);
+}
+
+.theme-toggle:hover {
+    border-color: var(--accent-primary);
+}
+
+/* ===== LANGUAGE TOGGLE ===== */
+.language-toggle {
+    display: flex;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-icon {
+    width: 20px;
+    height: auto;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.lang-btn.active .flag-icon,
+.lang-btn:hover .flag-icon {
+    opacity: 1;
+}
+
+.lang-btn:hover {
+    background-color: var(--accent-primary);
+    color: white;
+}
+
+.lang-btn.active {
+    background-color: var(--accent-primary);
+    color: white;
+}
+
+/* ===== CV BUTTON ===== */
+.btn-nav-cv {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background: var(--accent-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn-nav-cv:hover {
+    background: var(--accent-hover);
+}
+
+/* ===== PROJECT HERO ===== */
+.project-hero {
+    background: var(--bg-secondary);
+    padding: 3rem 2rem;
+    border-bottom: 1px solid var(--border-primary);
+    transition: background-color 0.3s ease;
+}
+
+.project-hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.project-back-btn:hover {
+    color: var(--accent-hover);
+}
+
+.project-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.project-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.project-meta-item i {
+    color: var(--accent-primary);
+}
+
+.project-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.project-btn-primary {
+    background: var(--accent-primary);
+    color: white;
+}
+
+.project-btn-primary:hover {
+    background: var(--accent-hover);
+}
+
+.project-btn-outline {
+    background: transparent;
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
+}
+
+.project-btn-outline:hover {
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* ===== PROJECT CONTENT ===== */
+.project-content {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.project-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-secondary);
+}
+
+.project-section:last-child {
+    border-bottom: none;
+}
+
+.project-section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.project-section-subtitle {
+    font-size: 1rem;
+    color: var(--text-tertiary);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* ===== TECH OVERVIEW CARDS ===== */
+.tech-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.tech-card {
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-secondary);
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tech-card-icon {
+    font-size: 2rem;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.tech-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.tech-card-description {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+/* ===== PIPELINE STEPS (Serpentine Flow) ===== */
+.pipeline-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.pipeline-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.pipeline-h-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-primary);
+    font-size: 1.1rem;
+}
+
+.pipeline-step {
+    padding: 1.25rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-secondary);
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    position: relative;
+}
+
+.pipeline-step:hover {
+    border-color: var(--accent-primary);
+}
+
+.pipeline-step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--accent-primary);
+    color: white;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.pipeline-step-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+}
+
+.pipeline-step-description {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* Connector between rows */
+.pipeline-connector {
+    display: flex;
+    position: relative;
+    height: 20px;
+}
+
+.pipeline-connector-arrow {
+    position: absolute;
+    color: var(--accent-primary);
+    font-size: 1.1rem;
+}
+
+.pipeline-connector-arrow.right {
+    right: calc(16.66% - 0.6rem);
+    top: 0;
+}
+
+.pipeline-connector-arrow.left {
+    left: calc(16.66% - 0.6rem);
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .pipeline-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .pipeline-h-arrow {
+        display: none;
+    }
+
+    /* On mobile, reorder reversed rows back to normal order */
+    .pipeline-row-reverse > *:nth-child(1) { order: 1; }
+    .pipeline-row-reverse > *:nth-child(2) { order: 2; }
+    .pipeline-row-reverse > *:nth-child(3) { order: 3; }
+    .pipeline-row-reverse > *:nth-child(4) { order: 4; }
+    .pipeline-row-reverse > *:nth-child(5) { order: 5; }
+
+    .pipeline-connector {
+        display: none;
+    }
+}
+
+/* ===== TECH STACK ===== */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-secondary);
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.tech-item-icon {
+    font-size: 1.5rem;
+    color: var(--accent-primary);
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.tech-item-logo {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.tech-item-info h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
+}
+
+.tech-item-info p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ===== RESULTS GRID ===== */
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.result-card {
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-secondary);
+    border-radius: 8px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.result-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+}
+
+.result-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.result-description {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ===== DOCUMENTATION GRID ===== */
+.docs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.doc-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border-secondary);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.doc-link:hover {
+    border-color: var(--accent-primary);
+    background: var(--bg-secondary);
+}
+
+.doc-icon {
+    font-size: 1.3rem;
+    color: var(--accent-primary);
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.doc-info h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.15rem;
+}
+
+.doc-info p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    padding: 2rem;
+    border-top: 1px solid var(--border-primary);
+    background: var(--bg-secondary);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: 1.6rem;
+    }
+
+    .project-meta {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .nav-menu {
+        gap: 0.75rem;
+    }
+
+    .nav-menu a {
+        font-size: 0.85rem;
+    }
+
+    .lang-text {
+        display: none;
+    }
+
+    .tech-overview,
+    .pipeline-steps,
+    .tech-stack,
+    .results-grid,
+    .docs-grid {
+        grid-template-columns: 1fr;
+    }
+}
